@@ -1,0 +1,15 @@
+﻿
+Single line of text  //Done
+Multiple lines of text //Done
+Choice (menu to choose from) //Done
+Number (1, 1.0, 100)// Done
+Currency ($, ¥, €)// Done
+Date and Time //Done
+Lookup (information already on this site)
+Yes/No (check box)// Done
+Person or Group// Done
+Hyperlink or Picture// In process
+!-----   Calculated (calculation based on other columns)  Don't do it!!!! --------!
+External Data    IMPORTANT !!!!!
+!-----   Content Type Id        Don't do it!!!!  ------!
+

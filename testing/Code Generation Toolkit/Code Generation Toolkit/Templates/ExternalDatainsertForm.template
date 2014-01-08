@@ -1,0 +1,672 @@
+<%@ Assembly Name="System.Xml" %>
+<%@ Import NameSpace="System.Xml" %>
+<%@ Import NameSpace="System.Collections" %>
+<%@ Argument Name="count" Type="int" %>
+<%@ Argument Name="controls" Type="string[]" %>
+<%@ Argument Name="controlsType" Type="string[]" %>
+<%@ Argument Name="ListName" Type="string" %>
+<%@ Argument Name="formatType" Type="string[]" %>
+<%@ Argument Name="groupNames" Type="string[]" %>
+<%@ Argument Name="savegroup" Type="string[]" %>
+<%@ Argument Name="aux" Type="int" %>
+<%@ Argument Name="number" Type="int" %>
+<%@ Argument Name="displayName" Type="string[]" %>
+<%@ Argument Name="requiredFields" Type="string[]" %>
+<%@ Argument Name="lookupOneToOne" Type="string[]" %>
+<%@ Argument Name="auxnum" Type="int" %>
+<%@ Argument Name="ClassName" Type="string" %>
+<%@ Argument Name="stringLength" Type="int[]" %>
+
+<style type="text/css">
+    
+   .aspButtonClass {
+        height: 20px;
+        border: 1px solid #666;
+        margin-bottom: 5px;
+    }
+
+	  .listSubTitle {
+		background-color: #3466A8;
+		border-bottom: 0 none !important;
+		color: #FFFFFF;
+		font: bold 9pt Verdana,Arial,Helvetica,sans-serif;
+		margin: 0;
+		padding: 5px;
+	}
+
+
+</style>
+
+<table width="50%">
+
+<%
+if(number!=0)
+{
+for(int y=0; y<number;y++)
+{
+%>
+<tr>	
+<td colspan="2" width="100%"><div class="listSubTitle"><%=groupNames[y].ToString()%></div></td>
+</tr>
+<%
+for(int z=0;z<aux;z++)
+{
+string values = savegroup[z].ToString();
+
+string[] choices = null;
+
+choices = values.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+if(choices[0]==groupNames[y])
+{
+for(int x=0; x<count;x++)
+{	
+if(displayName[x]==choices[1])
+{
+						
+if(controlsType[x].ToString()=="Text")
+{ 
+	if(stringLength[x]<=255)
+	{
+		if(requiredFields[x]=="Yes")
+		{
+		%>
+		<tr>		
+			<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+		</tr>
+		<%
+		}
+		else
+		{
+		%>
+		<tr>		
+			<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+		</tr>				 
+		<%
+		}
+	}
+	if(stringLength[x]>255)
+	{
+		if(requiredFields[x]=="Yes")
+		{
+		%>
+		<tr>		
+			<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" Width="100%" class="text" TextMode="MultiLine" HtmlEncode="false" runat="server" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+		</tr>								
+		<%
+		}
+		else
+		{
+		%>
+		<tr>		
+			<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" Width="100%" class="text" TextMode="MultiLine" HtmlEncode="false" runat="server" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+		</tr>								
+		<%
+		}
+	}
+}
+if(controlsType[x].ToString()=="Note")
+{
+if(requiredFields[x]=="Yes")
+{
+%>
+<tr>		
+    <td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" Width="100%" class="text" TextMode="MultiLine" HtmlEncode="false" runat="server" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+</tr>								
+<%
+}
+else
+{
+%>
+<tr>		
+    <td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" Width="100%" class="text" TextMode="MultiLine" HtmlEncode="false" runat="server" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+</tr>								
+<%
+}
+}
+if(controlsType[x].ToString()=="Lookup")
+{
+ if(requiredFields[x]=="Yes")
+	{
+	%>
+	<tr>
+		<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" ControlToValidate="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" InitialValue="0"></asp:RequiredFieldValidator></td>
+	</tr>
+	<%
+	}
+	else
+	{
+	%>
+	<tr>
+		<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList></td>
+	</tr>
+	<%
+	}
+}
+if(controlsType[x].ToString()=="BusinessData")
+{
+ if(requiredFields[x]=="Yes")
+	{
+	%>
+	<tr>
+		<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" ControlToValidate="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" InitialValue="0"></asp:RequiredFieldValidator></td>
+	</tr>
+	<%
+	}
+	else
+	{
+	%>
+	<tr>
+		<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList></td>
+	</tr>
+	<%
+	}
+}
+if(controlsType[x].ToString()=="Choice")
+{
+if(formatType[x].ToString()=="Dropdown")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList></td>
+</tr>
+<%
+}
+if(formatType[x].ToString()=="Choice")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:CheckBoxList ID="chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:CheckBoxList></td>
+</tr>			
+<%
+}
+if(formatType[x].ToString()=="RadioButtons")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:RadioButtonList ID="rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:RadioButtonList></td>
+</tr>				
+<%
+}
+}
+if(controlsType[x].ToString()=="Number")
+{
+if(requiredFields[x]=="Yes")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+</tr>
+<%
+}
+else
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+</tr>
+<%
+}
+}
+if(controlsType[x].ToString()=="Decimal")
+{
+if(requiredFields[x]=="Yes")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+</tr>
+<%
+}
+else
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+</tr>
+<%
+}
+}
+if(controlsType[x].ToString()=="Integer")
+{
+	if(requiredFields[x]=="Yes")
+	{
+		int ca=0;
+		for(int j=0; j<auxnum;j++)
+			{
+					string value = lookupOneToOne[j].ToString();
+
+					string[] choice = null;
+
+					choice = value.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+					if(choice[0]==displayName[x])
+					{
+					 ca=1;
+						if(choice[2]=="dropdownlist")
+						{
+						%>								
+							<tr>		
+							<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" ControlToValidate="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" InitialValue="0"></asp:RequiredFieldValidator></td>
+							</tr>
+						<%
+						}
+						if(choice[2]=="radiobutton")
+						{
+						%>	
+							<tr>		
+							<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:RadioButtonList runat="server" ID="rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  RepeatColumns="2" /><asp:RequiredFieldValidator ID="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" ControlToValidate="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" InitialValue="0"></asp:RequiredFieldValidator></td>
+							</tr>											
+						<%
+						}		
+					}					
+			}
+		if(ca==0)
+		{
+		%>
+		<tr>		
+			<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+		</tr>
+		<%
+		}
+	}
+	else
+	{
+	int ca=0;
+	for(int j=0; j<auxnum;j++)
+			{
+					string value = lookupOneToOne[j].ToString();
+
+					string[] choice = null;
+
+					choice = value.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+					if(choice[0]==displayName[x])
+					{
+					ca=1;
+					if(choice[2]=="dropdownlist")
+						{
+						%>								
+							<tr>		
+							<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList></td>
+							</tr>
+						<%
+						}
+						if(choice[2]=="radiobutton")
+						{
+						%>	
+							<tr>		
+							<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:RadioButtonList runat="server" ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  RepeatColumns="2" /></td>
+							</tr>											
+						<%
+						}		
+					}					
+			}
+		if(ca==0)
+		{
+		%>
+		<tr>		
+			<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+		</tr>
+		<%
+		}
+	}
+}
+if(controlsType[x].ToString()=="Currency")			
+{
+if(requiredFields[x]=="Yes")
+{
+%>								  
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+</tr>			
+<%
+}
+else
+{
+%>								  
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+</tr>			
+<%
+}
+}
+if(controlsType[x].ToString()=="DateTime")
+{	
+if(requiredFields[x]=="Yes")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><spuc:DateTimeControl runat="server" ID="<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" IsRequiredField="true"  DateOnly="true" /></td>
+</tr>								
+<%
+}
+else
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><spuc:DateTimeControl runat="server" ID="<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" DateOnly="true" /></td>
+</tr>								
+<%
+}
+}
+if(controlsType[x].ToString()=="Boolean")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:CheckBox runat="server" ID="chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ToolTip="<%=controls[x].ToString()%>" /></td>
+</tr>	
+<%
+}
+if(controlsType[x].ToString()=="User")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><wssawc:PeopleEditor ID="pe<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" width="350px" AllowEmpty="false" MultiSelect="false" SelectionSet="User"/></td>
+</tr>					
+<%
+}
+}
+}
+}	
+}
+}		
+}
+else{
+for(int x=0; x<count;x++)
+{				
+						
+if(controlsType[x].ToString()=="Text")
+{ 
+if(requiredFields[x]=="Yes")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+</tr>
+<%
+}
+else
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+</tr>				 
+<%
+}
+}
+if(controlsType[x].ToString()=="Note")
+{
+if(requiredFields[x]=="Yes")
+{
+%>
+<tr>		
+    <td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" Width="100%" class="text" TextMode="MultiLine" HtmlEncode="false" runat="server" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+</tr>								
+<%
+}
+else
+{
+%>
+<tr>		
+    <td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" Width="100%" class="text" TextMode="MultiLine" HtmlEncode="false" runat="server" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+</tr>								
+<%
+}
+}
+if(controlsType[x].ToString()=="Lookup")
+{
+ if(requiredFields[x]=="Yes")
+	{
+	%>
+	<tr>
+		<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" ControlToValidate="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" InitialValue="0"></asp:RequiredFieldValidator></td>
+	</tr>
+	<%
+	}
+	else
+	{
+	%>
+	<tr>
+		<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList></td>
+	</tr>
+	<%
+	}
+}
+if(controlsType[x].ToString()=="BusinessData")
+{
+ if(requiredFields[x]=="Yes")
+	{
+	%>
+	<tr>
+		<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" ControlToValidate="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" InitialValue="0"></asp:RequiredFieldValidator></td>
+	</tr>
+	<%
+	}
+	else
+	{
+	%>
+	<tr>
+		<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList></td>
+	</tr>
+	<%
+	}
+}
+if(controlsType[x].ToString()=="Choice")
+{
+if(formatType[x].ToString()=="Dropdown")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList></td>
+</tr>
+<%
+}
+if(formatType[x].ToString()=="Choice")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:CheckBoxList ID="chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:CheckBoxList></td>
+</tr>			
+<%
+}
+if(formatType[x].ToString()=="RadioButtons")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:RadioButtonList ID="rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:RadioButtonList></td>
+</tr>				
+<%
+}
+}
+if(controlsType[x].ToString()=="Number")
+{
+if(requiredFields[x]=="Yes")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+</tr>
+<%
+}
+else
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+</tr>
+<%
+}
+}
+if(controlsType[x].ToString()=="Decimal")
+{
+if(requiredFields[x]=="Yes")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+</tr>
+<%
+}
+else
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+</tr>
+<%
+}
+}
+if(controlsType[x].ToString()=="Integer")
+{
+	if(requiredFields[x]=="Yes")
+	{
+	int ca=0;
+		for(int j=0; j<auxnum;j++)
+			{
+					string value = lookupOneToOne[j].ToString();
+
+					string[] choice = null;
+
+					choice = value.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+					if(choice[0]==displayName[x])
+					{
+					ca=1;
+					if(choice[2]=="dropdownlist")
+						{
+						%>								
+							<tr>		
+							<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList><asp:RequiredFieldValidator ID="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" ControlToValidate="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" InitialValue="0"></asp:RequiredFieldValidator></td>
+							</tr>
+						<%
+						}
+						if(choice[2]=="radiobutton")
+						{
+						%>	
+							<tr>		
+							<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:RadioButtonList runat="server" ID="rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  RepeatColumns="2" /><asp:RequiredFieldValidator ID="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" ControlToValidate="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" InitialValue="0"></asp:RequiredFieldValidator></td>
+							</tr>											
+						<%
+						}		
+					}					
+			}
+			if(ca==0)
+			{
+			%>
+			<tr>		
+				<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+			</tr>
+			<%
+			}
+	}
+	else
+	{
+	int ca=0;
+	for(int j=0; j<auxnum;j++)
+			{
+				string value = lookupOneToOne[j].ToString();
+
+				string[] choice = null;
+
+				choice = value.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+				if(choice[0]==displayName[x])
+				{
+				ca=1;
+				if(choice[2]=="dropdownlist")
+						{
+						%>								
+							<tr>		
+							<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:DropDownList ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server"></asp:DropDownList></td>
+							</tr>
+						<%
+						}
+						if(choice[2]=="radiobutton")
+						{
+						%>	
+							<tr>		
+							<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:RadioButtonList runat="server" ID="ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  RepeatColumns="2" /></td>
+							</tr>											
+						<%
+						}		
+				}					
+			}
+			if(ca==0)
+			{
+			%>
+			<tr>		
+				<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+			</tr>
+			<%
+			}
+	}
+}
+if(controlsType[x].ToString()=="Currency")			
+{
+if(requiredFields[x]=="Yes")
+{
+%>								  
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox><asp:RequiredFieldValidator id="RequiredFieldValidator<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Display="Dynamic"  ErrorMessage="*" ControlToValidate="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"  ForeColor="Red"></asp:RequiredFieldValidator></td>
+</tr>			
+<%
+}
+else
+{
+%>								  
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:TextBox ID="txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" Width="386px" alt="<%=controls[x].ToString()%>" MaxLength="255"></asp:TextBox></td>
+</tr>			
+<%
+}
+}
+if(controlsType[x].ToString()=="DateTime")
+{	
+if(requiredFields[x]=="Yes")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><spuc:DateTimeControl runat="server" ID="<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ErrorMessage="*" IsRequiredField="true"  DateOnly="true" /></td>
+</tr>								
+<%
+}
+else
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><spuc:DateTimeControl runat="server" ID="<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" DateOnly="true" /></td>
+</tr>								
+<%
+}
+}
+if(controlsType[x].ToString()=="Boolean")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:CheckBox runat="server" ID="chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" ToolTip="<%=controls[x].ToString()%>" /></td>
+</tr>	
+<%
+}
+if(controlsType[x].ToString()=="User")
+{
+%>
+<tr>		
+	<td><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><wssawc:PeopleEditor ID="pe<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" width="350px" AllowEmpty="false" MultiSelect="false" SelectionSet="User"/></td>
+</tr>					
+<%
+}
+}
+}
+%>
+<tr height="60">
+	<td align="right"  colspan="2">				
+		<asp:Button ID="lbOK" runat="server" Text="Submit" onclick="btnOK_Click"  CssClass="aspButtonClass" />
+		<asp:Button ID="lbCancel" runat="server" Text="Cancel" OnClientClick="javascript:history.back(); return false;"  CssClass="aspButtonClass"/>
+	</td>
+</tr>
+</table>
+					
+
+
+		

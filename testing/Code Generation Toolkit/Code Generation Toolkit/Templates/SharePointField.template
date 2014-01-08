@@ -1,0 +1,32 @@
+<%@ Assembly Name="System.Xml" %>
+<%@ Import NameSpace="System.Xml" %>
+<%@ Import NameSpace="System.Collections" %>
+<%@ Import NameSpace="System.Text.RegularExpressions" %>
+<%@ Argument Name="NameSpace" Type="string" %>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.SharePoint;
+
+namespace <%=NameSpace%>
+{
+    public class SharePointField : IField
+    {
+        public SharePointField(object field)
+		{
+			this.Context = field;
+		}
+
+		public object Context { get; private set; }
+
+        public string Title
+		{
+			get
+			{
+				return ((SPField)this.Context).Title;
+			}
+		}
+    }
+}

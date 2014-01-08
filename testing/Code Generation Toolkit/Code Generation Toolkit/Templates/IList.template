@@ -1,0 +1,29 @@
+<%@ Assembly Name="System.Xml" %>
+<%@ Import NameSpace="System.Xml" %>
+<%@ Import NameSpace="System.Collections" %>
+<%@ Import NameSpace="System.Text.RegularExpressions" %>
+<%@ Argument Name="NameSpace" Type="string" %>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.SharePoint;
+
+namespace <%=NameSpace%>
+{
+  public interface IList
+    {
+        string Title { get; }
+
+        IEnumerable<IField> Fields { get; }
+
+        bool HasLanguageField { get; }
+
+        bool HasDeleteField { get; }
+
+        bool CheckInternalField(string sortfield);
+
+        SPListItemCollection GetItems();
+    }
+}

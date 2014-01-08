@@ -1,4 +1,0 @@
-Testeo
-======
-
-Carpeta de testeo

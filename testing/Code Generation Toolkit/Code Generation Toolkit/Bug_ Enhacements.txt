@@ -1,0 +1,120 @@
+Code Generator Bugs and Enhancements
+====================================
+
+Insert Web Part
+---------------
+
+1. Create a process to open the file and process the file with the following changes:
+	a. replace <add script tag> for <script type = "text/javascript">
+	b. replace <add script end tag> for </script>
+
+2. Add the following styles to the page, one is for a better looking button and the other for grouping fields
+
+	.aspButtonClass {
+        height: 20px;
+        border: 1px solid #666;
+        margin-bottom: 5px;
+    }
+
+	<asp:Button ID="btnSubmit" runat="server" Text="Submit" onclick="btnOK_Click" CssClass="aspButtonClass" />
+    
+    .listSubTitle {
+		background-color: #3466A8;
+		border-bottom: 0 none !important;
+		color: #FFFFFF;
+		font: bold 9pt Verdana,Arial,Helvetica,sans-serif;
+		margin: 0;
+		padding: 5px;
+	}
+
+	<tr><td colspan="4"><div class="listSubTitle">Employee General Information</div></td></tr>
+
+3. Add width='100%' to the initial <table>
+
+4. Change the "WIDTH" of all checkboxes from "386px" to "200px" why we don't use percentage "%"
+
+5. Change the assigned "ID" name of all labels to something more descriptive  
+
+	Example : <asp:label id="textWorkStreetAddress2" to <asp:label id="labelWorkStreetAddress2"
+
+6. There is an issue with the following method "LoadingLookupOneToOne"
+
+	query.Query = "<Where><Eq><FieldRef Name='Language'/><Value Type='Number'>" + intLCID + "</Value></Eq></Where>"
+
+	a. method is assuming that all external lists have a field language and that's not always the case
+	b. Also the "sort field" and "string IDfield" are passed incorrectly
+
+Update Web Part
+---------------
+
+1. Create a process to open the file and process the file with the following changes:
+	a. replace <add script tag> for <script type = "text/javascript">
+	b. replace <add script end tag> for </script>
+	c. replace <start server tag> for <%
+	d. replace <end server tag> for %>
+
+2. Add the following styles to the page, one is for a better looking button and the other for grouping fields
+
+	.aspButtonClass {
+        height: 20px;
+        border: 1px solid #666;
+        margin-bottom: 5px;
+    }
+
+	<asp:Button ID="btnSubmit" runat="server" Text="Submit" onclick="btnOK_Click" CssClass="aspButtonClass" />
+    
+    .listSubTitle {
+		background-color: #3466A8;
+		border-bottom: 0 none !important;
+		color: #FFFFFF;
+		font: bold 9pt Verdana,Arial,Helvetica,sans-serif;
+		margin: 0;
+		padding: 5px;
+	}
+
+	<tr><td colspan="4"><div class="listSubTitle">Employee General Information</div></td></tr>
+
+3. Add width='100%' to the initial <table>
+
+4. Change the "WIDTH" of all checkboxes from "386px" to "200px" why we don't use percentage "%"
+
+5. Change the assigned "ID" name of all labels to something more descriptive  
+
+	Example : <asp:label id="textWorkStreetAddress2" to <asp:label id="labelWorkStreetAddress2"
+
+6. There is an issue with the following method "LoadingLookupOneToOne"
+
+	query.Query = "<Where><Eq><FieldRef Name='Language'/><Value Type='Number'>" + intLCID + "</Value></Eq></Where>"
+
+	a. method is assuming that all external lists have a field language and that's not always the case
+	b. Also the "sort field" and "string IDfield" are passed incorrectly
+
+View Web Part
+---------------
+1. Create a process to open the file and process the file with the following changes:
+	a. replace <start server tag> for <%#
+	b. replace <end server tag> for %>
+
+2. Add the following styles to the page, this is for group fields	
+
+	<asp:Button ID="btnSubmit" runat="server" Text="Submit" onclick="btnOK_Click" CssClass="aspButtonClass" />
+    
+    .listSubTitle {
+		background-color: #3466A8;
+		border-bottom: 0 none !important;
+		color: #FFFFFF;
+		font: bold 9pt Verdana,Arial,Helvetica,sans-serif;
+		margin: 0;
+		padding: 5px;
+	}
+
+	<tr><td colspan="4"><div class="listSubTitle">Employee General Information</div></td></tr>
+
+3. Add width='100%' to the initial <table>
+
+4. Change the assigned "ID" name of all labels to something more descriptive  
+
+	Example : <asp:label id="textWorkStreetAddress2" to <asp:label id="labelWorkStreetAddress2"
+
+
+	    

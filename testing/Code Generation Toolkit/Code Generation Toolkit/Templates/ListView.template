@@ -1,0 +1,69 @@
+<%@ Assembly Name="System.Xml" %>
+<%@ Import NameSpace="System.Xml" %>
+<%@ Import NameSpace="System.Collections" %>
+<%@ Argument Name="count" Type="int" %>
+<%@ Argument Name="controls" Type="string[]" %>
+<%@ Argument Name="controlsType" Type="string[]" %>
+<%@ Argument Name="ListName" Type="string" %>
+<%@ Argument Name="groupNames" Type="string[]" %>
+<%@ Argument Name="savegroup" Type="string[]" %>
+<%@ Argument Name="aux" Type="int" %>
+<%@ Argument Name="number" Type="int" %>
+<%@ Argument Name="displayName" Type="string[]"%>
+<%@ Argument Name="idfield" Type="string" %>
+<%@ Argument Name="ClassName" Type="string" %>
+
+<style type="text/css">
+ .listSubTitle {
+		background-color: #3466A8;
+		border-bottom: 0 none !important;
+		color: #FFFFFF;
+		font: bold 9pt Verdana,Arial,Helvetica,sans-serif;
+		margin: 0;
+		padding: 5px;
+	}
+ .altercolor
+ {
+     background-color:#B9CCE5;
+ }
+ 
+ .gridViewStyle
+ {
+     min-width:500px;
+ }
+ </style>
+<table cellspacing="0" cellpadding="0">
+<tr><td><div class="listSubTitle"><%=ListName%></div></td></tr>
+<tr>
+<td>
+<asp:GridView ID="GridView1" CssClass="gridViewStyle" runat="server"  DataKeyNames="<%=idfield%>" AutoGenerateColumns="false" AlternatingRowStyle-BackColor="#E8EDF2"  OnRowDeleting="GridView1_RowDeleting" OnRowDataBound="OnRowDataBound" OnRowEditing="GridView1_EditIndexChanged" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+    <Columns>
+        <asp:CommandField  ShowSelectButton="true" EditImageUrl="/_layouts/Images/BJSmarts.ERP.SharePoint/edit.gif" DeleteImageUrl="/_layouts/Images/BJSmarts.ERP.SharePoint/delete.gif" SelectImageUrl="/_layouts/Images/BJSmarts.ERP.SharePoint/View.gif" ShowDeleteButton="true" ShowEditButton="true" ButtonType="Image" />
+		<%
+		for(int x=0; x<count;x++)
+			{
+		if(displayName[x].ToString()!=idfield)
+		{
+		if(displayName[x].ToString()!="Language")
+		{			
+		%>
+        <asp:BoundField DataField="<%=controls[x].ToString()%>" HeaderText="<%=displayName[x].ToString()%>" />       
+		<%
+		}
+		}
+		}
+		%>
+     </Columns>
+</asp:GridView>
+</td>
+</tr>
+<tr>
+<td>
+    <asp:LinkButton ID="LinkButton1" PostBackUrl="/Pages/<%=ListName.ToString().Replace(" ", string.Empty)%>InsertPage.aspx" runat="server">Add Item</asp:LinkButton>
+</td>
+</tr>
+</table>
+					
+
+
+		

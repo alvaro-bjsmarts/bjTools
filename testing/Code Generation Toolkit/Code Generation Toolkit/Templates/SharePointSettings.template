@@ -1,0 +1,22 @@
+<%@ Assembly Name="System.Xml" %>
+<%@ Import NameSpace="System.Xml" %>
+<%@ Import NameSpace="System.Collections" %>
+<%@ Import NameSpace="System.Text.RegularExpressions" %>
+<%@ Argument Name="NameSpace" Type="string" %>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Microsoft.SharePoint;
+
+namespace <%=NameSpace%>
+{
+    public class SharePointSettings : ISettings
+    {
+        public string DatabaseConnectionString
+        {
+            get { return "Initial Catalog=BJSmarts.ERP.Database;Data Source=(local);Integrated Security=SSPI;"; }
+        }
+    }
+}

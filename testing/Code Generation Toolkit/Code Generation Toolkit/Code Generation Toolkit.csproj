@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3636492-C7AE-4A36-9750-9CB793D745CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Code_Generation_Toolkit</RootNamespace>
+    <AssemblyName>Code Generation Toolkit</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateGroup.Designer.cs">
+      <DependentUpon>CreateGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemplateMaschine.cs" />
+    <EmbeddedResource Include="CreateGroup.resx">
+      <DependentUpon>CreateGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Templates\SharePointWeb.template" />
+    <None Include="Templates\SharePointUserControl.template" />
+    <None Include="Templates\SharePointUser.template" />
+    <None Include="Templates\SharePointSpanishLanguage.template" />
+    <None Include="Templates\SharePointSite.template" />
+    <None Include="Templates\SharePointSettings.template" />
+    <None Include="Templates\SharePointOrganization.template" />
+    <None Include="Templates\SharePointLog.template" />
+    <None Include="Templates\SharePointList.template" />
+    <None Include="Templates\SharePointLanguageFactory.template" />
+    <None Include="Templates\SharePointLanguage.template" />
+    <None Include="Templates\SharePointGroup.template" />
+    <None Include="Templates\SharePointField.template" />
+    <None Include="Templates\SharePointEnglishLanguage.template" />
+    <None Include="Templates\SharePointDebug.template" />
+    <None Include="Templates\SharePointCurrent.template" />
+    <None Include="Templates\SharePointContext.template" />
+    <None Include="Templates\IWeb.template" />
+    <None Include="Templates\IUserControl.template" />
+    <None Include="Templates\IUser.template" />
+    <None Include="Templates\ISite.template" />
+    <None Include="Templates\ISettings.template" />
+    <None Include="Templates\IOrganization.template" />
+    <None Include="Templates\ILog.template" />
+    <None Include="Templates\IList.template" />
+    <None Include="Templates\ILanguageFactory.template" />
+    <None Include="Templates\ILanguage.template" />
+    <None Include="Templates\IGroup.template" />
+    <None Include="Templates\IField.template" />
+    <None Include="Templates\IDebug.template" />
+    <None Include="Templates\ICurrent.template" />
+    <None Include="Templates\ListViewClass.template" />
+    <None Include="Templates\ListView.template" />
+    <None Include="Templates\ExternalDatainsertForm.template" />
+    <None Include="Templates\ExternalDataupdateForm.template" />
+    <None Include="Templates\ExternalDataviewForm.template" />
+    <None Include="Templates\ExternalDataupdateClass.template" />
+    <None Include="Templates\ExternalDatainsertClass.template" />
+    <None Include="Templates\ExternalDataviewClass.template" />
+    <None Include="Templates\ResourceFile.template" />
+    <None Include="Templates\ResourceFileES.template" />
+    <None Include="Templates\updateForm.template" />
+    <None Include="Templates\updateClass.template" />
+    <None Include="Templates\insertForm.template" />
+    <None Include="Templates\insertClass.template" />
+    <None Include="Templates\viewClass.template" />
+    <None Include="Templates\viewForm.template" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code Generated\" />
+    <Folder Include="Examples\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bug_ Enhacements.txt" />
+    <Content Include="Notes.txt" />
+    <Content Include="ReadmeFile.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

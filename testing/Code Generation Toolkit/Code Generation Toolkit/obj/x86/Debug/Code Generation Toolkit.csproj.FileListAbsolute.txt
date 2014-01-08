@@ -1,0 +1,47 @@
+C:\Projects\BJSmarts Code Generation Toolkit\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.exe
+C:\Projects\BJSmarts Code Generation Toolkit\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.pdb
+C:\Projects\BJSmarts Code Generation Toolkit\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.Main.resources
+C:\Projects\BJSmarts Code Generation Toolkit\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.Properties.Resources.resources
+C:\Projects\BJSmarts Code Generation Toolkit\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.csproj.GenerateResource.Cache
+C:\Projects\BJSmarts Code Generation Toolkit\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.exe
+C:\Projects\BJSmarts Code Generation Toolkit\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.pdb
+C:\Projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.exe
+C:\Projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.pdb
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.exe
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.pdb
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.Main.resources
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.Properties.Resources.resources
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.exe.config
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.exe
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.pdb
+C:\Users\Administrator\Desktop\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.exe.config
+C:\projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.exe
+C:\projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.pdb
+C:\projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.Main.resources
+C:\projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.Properties.Resources.resources
+C:\projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\ResGen.read.1.tlog
+C:\projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\ResGen.write.1.tlog
+C:\projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.CreateGroup.resources
+C:\Projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Users\sp-Admin\Desktop\Projects\Projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.exe.config
+C:\Users\sp-Admin\Desktop\Projects\Projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.exe
+C:\Users\sp-Admin\Desktop\Projects\Projects\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.pdb
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.exe.config
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.exe
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code Generation Toolkit.pdb
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.exe
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Code Generation Toolkit.pdb
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.CreateGroup.resources
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.Main.resources
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\Code_Generation_Toolkit.Properties.Resources.resources
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\sp-Admin\Desktop\New folder\BJSmarts Code Generation Toolkit\src\Code Generation Toolkit\Code Generation Toolkit\obj\x86\Debug\ResGen.write.1.tlog

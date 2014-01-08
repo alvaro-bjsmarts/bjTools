@@ -1,0 +1,129 @@
+<%@ Assembly Name="System.Xml" %>
+<%@ Import NameSpace="System.Xml" %>
+<%@ Import NameSpace="System.Collections" %>
+<%@ Argument Name="count" Type="int" %>
+<%@ Argument Name="controls" Type="string[]" %>
+<%@ Argument Name="controlsType" Type="string[]" %>
+<%@ Argument Name="ListName" Type="string" %>
+<%@ Argument Name="groupNames" Type="string[]" %>
+<%@ Argument Name="savegroup" Type="string[]" %>
+<%@ Argument Name="aux" Type="int" %>
+<%@ Argument Name="number" Type="int" %>
+<%@ Argument Name="displayName" Type="string[]"%>
+<%@ Argument Name="attachment" Type="string" %>
+
+
+<style type="text/css">
+    
+  .listSubTitle {
+		background-color: #3466A8;
+		border-bottom: 0 none !important;
+		color: #FFFFFF;
+		font: bold 9pt Verdana,Arial,Helvetica,sans-serif;
+		margin: 0;
+		padding: 5px;
+	}
+
+	 .aspButtonClass {
+        height: 20px;
+        border: 1px solid #666;
+        margin-bottom: 5px;
+    }
+
+</style>
+<table width="100%">
+		<%
+		if(number!=0)
+		{
+			for(int y=0; y<number;y++)
+			{
+			 %>
+			<tr>	
+				 <td colspan="2" width="100%"><div class="listSubTitle"><%=groupNames[y].ToString()%></div></td>
+			</tr>
+			<%
+				 for(int z=0;z<aux;z++)
+				 {
+				 string values = savegroup[z].ToString();
+
+				 string[] choices = null;
+
+				 choices = values.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+				 if(choices[0]==groupNames[y])
+				 {
+					for(int x=0; x<count;x++)
+					{	
+						if(displayName[x]==choices[1])
+						{
+						%>
+						<tr>		
+						 <td  width="165px"><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:Label runat="server" ID="lbl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"></asp:Label></td>
+						</tr>		
+						<%
+						}
+					}
+				  }	
+				}
+			}		
+		}
+		else
+		{
+			for(int x=0; x<count;x++)
+			{								
+			 %>
+			<tr>		
+				 <td  width="165px"><asp:label id="label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>" runat="server" /></td><td><asp:Label runat="server" ID="lbl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>"></asp:Label></td>
+			</tr>		
+			 <%									
+			}
+		}
+		if(attachment=="True")
+		{
+		 %>	
+		<tr>
+        <td width="165px">Attachments</td>
+        <td>
+        <asp:DataList ID="dlfiles" runat="server" RepeatLayout="Table" RepeatColumns="1"
+                CellPadding="0" CellSpacing="0" >
+                <HeaderTemplate>
+                <table cellpadding="0" cellspacing="0" border="0">  
+                <tr>  
+                    <th>  
+                        <asp:Label ID="lblTitle" runat="server"></asp:Label>  
+                    </th>  
+                    <th>  
+                        <asp:Label ID="lblBlank" runat="server"></asp:Label>  
+                    </th>    
+                </tr>  
+                </HeaderTemplate>
+                <ItemTemplate>
+                        <tr>                    
+                            <td>
+                                <b><span>
+									<!-- add the Server Tags in OnClientClick and Text -->									
+                                	
+                                </span></b>
+                            </td>                               
+                        </tr>            
+                </ItemTemplate>
+                <FooterTemplate>  
+                    </table>  
+                </FooterTemplate> 
+            </asp:DataList>
+        </td>
+    </tr>
+	<%
+	}
+	%>
+<tr height="60">
+	<td align="right"  colspan="2">		
+		<asp:Button ID="lbEdit" runat="server" Text="Edit" OnClick="b_Click"  CssClass="aspButtonClass" />
+		<asp:Button ID="lbBack" runat="server" Text="Back" OnClientClick="javascript:history.back(); return false;"  CssClass="aspButtonClass"/>
+	</td>
+</tr> 	
+</table>
+					
+
+
+		

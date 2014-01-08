@@ -1,0 +1,1035 @@
+<%@ Assembly Name="System.Xml" %>
+<%@ Import NameSpace="System.Xml" %>
+<%@ Import NameSpace="System.Collections" %>
+<%@ Import NameSpace="System.Text.RegularExpressions" %>
+<%@ Argument Name="count" Type="int" %>
+<%@ Argument Name="controls" Type="string[]" %>
+<%@ Argument Name="controlsType" Type="string[]" %>
+<%@ Argument Name="ListName" Type="string" %>
+<%@ Argument Name="formatType" Type="string[]" %>
+<%@ Argument Name="NameSpace" Type="string" %>
+<%@ Argument Name="lookupListname" Type="string[]" %>
+<%@ Argument Name="lookupExternalListname" Type="string[]" %>
+<%@ Argument Name="attachment" Type="string" %>
+<%@ Argument Name="auxnum" Type="int" %>
+<%@ Argument Name="lookupOneToOne" Type="string[]" %>
+<%@ Argument Name="idfield" Type="string" %>
+<%@ Argument Name="displayName" Type="string[]" %>
+<%@ Argument Name="ClassName" Type="string" %>
+<%@ Argument Name="deletedAndlanguajeDetect" Type="string[]" %>
+<%@ Argument Name="deletedNumber" Type="int" %>
+<%@ Argument Name="typeDataBase" Type="string[]" %>
+<%@ Argument Name="countdb" Type="int" %>
+<%@ Argument Name="PrimaryKeyColumnName" Type="string" %>
+<%@ Argument Name="keycomprove" Type="string" %>
+using System;
+using System.Configuration;
+using System.Text.RegularExpressions;
+
+namespace <%=NameSpace%>
+{
+	[Serializable]
+	public partial class Update<%=ListName.ToString().Replace(" ", string.Empty)%>Control :SharePointUserControl, ICallbackEventHandler
+	{
+		private int intLCID = System.Threading.Thread.CurrentThread.CurrentUICulture.LCID;
+		private string[] args = null;
+
+		protected void Page_Load(object sender, EventArgs e)
+        {
+			
+            this.Page.Form.Enctype = "multipart/form-data";
+            SPContext currentContext = SPContext.Current;
+
+            if (!Page.IsPostBack)
+            {
+                if (Page.Request.QueryString["RecordID"] != null)
+                {  
+					loadLocalizedValueFields();
+
+					SPSecurity.RunWithElevatedPrivileges(delegate()
+					{
+						using (SPSite site = new SPSite(SPContext.Current.Site.Url))
+						{
+							using (SPWeb web = site.OpenWeb())
+							{
+								SPListItem ListItem;
+                                
+								ListItem = GetCurrentItem();
+									
+								<%
+								for(int x=0; x<count;x++)
+								{
+								if(controlsType[x].ToString()=="Text")
+								{ %>
+								txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text = GetItemText(ListItem, "<%=controls[x].ToString()%>");
+								<%
+								}
+								if(controlsType[x].ToString()=="Note")
+								{
+								%>
+								txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text = GetItemText(ListItem, "<%=controls[x].ToString()%>");									
+								<%
+								}
+								if(controlsType[x]=="Lookup")
+								{
+								%>
+								LoadingLookupTable("<%=lookupListname[x].ToString()%>", ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>, "ID", true);
+								ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedIndex = GetItemIndex(ListItem, ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>, "<%=controls[x].ToString()%>");
+								<%
+								}
+								if(controlsType[x]=="BusinessData")
+								{
+								int ca=0;
+										for(int j=0; j<auxnum;j++)
+										{
+										 string values = lookupOneToOne[j].ToString();
+
+											 string[] choices = null;
+
+											 choices = values.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+											 if(choices[0]==displayName[x])
+											 {
+												 ca=1;
+												 if(choices[2]=="dropdownlist")
+													{
+													%>								
+														LoadingLookupOneToOne("<%=choices[1].ToString()%>", ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>,"<%=choices[3].ToString()%>","Sort_Order", "<%=choices[4].ToString()%>", true, intLCID );
+														ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedIndex = GetItemIndexBCSField(ListItem,  ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>, "<%=controls[x].ToString()%>");
+													<%
+													}
+													if(choices[2]=="radiobutton")
+													{
+													%>	
+														LoadingRadioChoiceTableOneToOne("<%=choices[1].ToString()%>", rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>,"<%=choices[3].ToString()%>","Sort_Order", "<%=choices[4].ToString()%>", true, intLCID );
+														GetItemCheckedRadioOnetoOne(ListItem, "<%=controls[x].ToString()%>", rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>);					
+													<%
+													}
+											 }											 
+										}
+								if(ca==0)
+								{
+								%>
+									LoadingBCSLookupTable("<%=lookupExternalListname[x].ToString()%>", ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>, "SORT_ORDER", true);
+									ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedIndex = GetItemIndexBCSField(ListItem,  ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>, "<%=controls[x].ToString()%>");
+								<%
+								}
+								}
+								if(controlsType[x]=="Choice")
+								{
+								if(formatType[x]=="Dropdown")
+								{
+								%>
+								LoadingDropdownTable("<%=ListName%>", "<%=controls[x].ToString().Replace("_x0020_", " ")%>", ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>, "Sort_x0020_Order", false);
+								ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedIndex =  ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Items.IndexOf(ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Items.FindByValue(GetItemText(ListItem,"<%=controls[x].ToString()%>")));
+								<%
+								}
+								if(formatType[x]=="RadioButtons")
+								{
+								%>
+								LoadingRadioChoiceTable("<%=ListName%>","<%=controls[x].ToString()%>", rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>);
+								GetItemCheckedRadio(ListItem, "<%=controls[x].ToString()%>", rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>);
+								<%
+								}
+								if(formatType[x]=="Choice")
+								{
+								%>
+								LoadingChoiceTable("<%=ListName%>","<%=controls[x].ToString()%>", chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>);
+								GetitemChecked(ListItem, "<%=controls[x].ToString()%>", <%=controls[x].ToString().Replace("_x0020_", string.Empty)%>);
+								<%
+								}
+								}
+								if(controlsType[x].ToString()=="Number")
+								{
+								%>
+								txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text = GetItemText(ListItem, "<%=controls[x].ToString()%>");									
+								<%
+								}
+								if(controlsType[x].ToString()=="Integer")
+								{
+								%>
+								txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text = GetItemText(ListItem, "<%=controls[x].ToString()%>");									
+								<%
+								}
+								if(controlsType[x].ToString()=="Currency")			
+								{
+								%>								  
+								txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text = GetItemText(ListItem, "<%=controls[x].ToString()%>");	
+								<%
+								}
+								if(controlsType[x].ToString()=="DateTime")	
+								{
+								%>
+								if(ListItem["<%=controls[x].ToString()%>"] != null)
+								{
+								DateTime SuggestedStartDate;
+								DateTime.TryParse(GetItemText(ListItem, "<%=controls[x].ToString()%>"), out SuggestedStartDate);
+								<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedDate = SuggestedStartDate;
+								}									
+								<%
+								}
+								if(controlsType[x].ToString()=="Boolean")
+								{
+								%>
+								GetItemCheckBox(ListItem, "<%=controls[x].ToString()%>", chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>);
+								<%
+								}
+								if(controlsType[x].ToString()=="User")
+								{
+								%>
+									
+								SPFieldUserValue group<%=controls[x].ToString().Replace("_x0020_", string.Empty)%> = null;
+
+								if (ListItem["<%=controls[x].ToString()%>"] != null)
+								{
+									group<%=controls[x].ToString().Replace("_x0020_", string.Empty)%> = new SPFieldUserValue(web, ListItem["<%=controls[x].ToString()%>"].ToString());
+								}
+
+								if (group<%=controls[x].ToString().Replace("_x0020_", string.Empty)%> != null)
+								{
+									pe<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.CommaSeparatedAccounts = group<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.User.ToString();
+								}								
+								<%
+								}						
+												
+								}
+								if(attachment=="True")
+								{
+								%>
+								try
+								{
+									BindAttachmentData();
+								}
+								catch (Exception ex)
+								{
+									 SharePointContext.Current.Log.Error(ex.Message, ex.StackTrace);
+								}
+								<%
+								}
+								%>
+							}
+                        }
+                    });
+				}
+            }
+		}
+
+		private void loadLocalizedValueFields()
+        {
+		<%
+		for(int x=0; x<count;x++)
+		{
+			if(controlsType[x]!="Counter")
+			{
+		%>
+			label<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text = getLocalizedValue("<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>Text", intLCID,"<%=ListName%>ResourceFile");
+		<%
+			}
+		}
+		%>
+		}
+
+		protected void btnOK_Click(object sender, EventArgs e)
+        {
+			if(Page.IsValid)
+            {           
+				SPUser currentUser = GetCurrentUser();
+
+				SPSecurity.RunWithElevatedPrivileges(delegate()
+				{
+					using (SPSite site = new SPSite(SPContext.Current.Site.Url))
+					{
+						using (SPWeb web = site.OpenWeb())
+						{
+							updateRecord(currentUser, web, false);
+							updateRecordtoDB(web);
+							Page.Response.Redirect(SPContext.Current.Site.Url);
+						}
+					}
+				});
+			}           
+        }
+
+		protected SPUser GetCurrentUser()
+        {
+            SPUser user;
+
+            using (SPSite site = new SPSite(SPContext.Current.Site.Url))
+            {
+                using (SPWeb web = site.OpenWeb())
+                {
+                    user = web.CurrentUser;
+                }
+            }
+
+            return user;
+        }
+
+				
+
+		private void updateRecord(SPUser author, SPWeb web, Boolean IsDraft)
+        {
+            web.AllowUnsafeUpdates = true;
+
+            SPListItemCollection listItems = web.Lists["<%=ListName%>"].Items;
+
+            SPListItem item;
+           
+			int RecordId = int.Parse(Context.Request.QueryString["RecordID"].ToString());
+			item = listItems.GetItemById(RecordId);
+         
+			<%
+			for(int x=0; x<count;x++)
+			{								
+				if(controlsType[x].ToString()=="Text")
+				{ 
+				%>
+				item["<%=controls[x].ToString()%>"] = txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text;			
+				<%
+				}
+				if(controlsType[x].ToString()=="Note")
+				{
+				%>
+				item["<%=controls[x].ToString()%>"] = Server.HtmlEncode(txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text);									
+				<%
+				}
+				if(controlsType[x].ToString()=="Lookup")
+				{
+				%>
+				if (ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Items.Count > 0)
+				{
+					if (!ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedValue.Equals("0"))
+					{
+						item["<%=controls[x].ToString()%>"] = new SPFieldLookupValue(int.Parse(ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedValue), ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedItem.Text);
+					}
+				}
+				<%
+				}
+				if(controlsType[x].ToString()=="BusinessData")
+				{
+				int ca=0;
+					for(int j=0; j<auxnum;j++)
+					{
+					 string values = lookupOneToOne[j].ToString();
+
+						 string[] choices = null;
+
+						 choices = values.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+						 if(choices[0]==displayName[x])
+						 {
+						   ca=1;
+							 if(choices[2]=="dropdownlist")
+							{
+							%>	
+								SetExternalFieldValue(item, "<%=displayName[x].ToString()%>", ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedItem.Text);				
+							<%
+							}
+							if(choices[2]=="radiobutton")
+							{
+							%>	
+								SetExternalFieldValue(item, "<%=displayName[x].ToString()%>", rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedItem.Text);										
+							<%
+							}
+						 }						
+					}
+					if(ca==0)
+					{
+				%>
+				       SetExternalFieldValue(item, "<%=displayName[x].ToString()%>", ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedItem.Text);				
+				<%
+				}
+				}
+				if(controlsType[x].ToString()=="Choice")
+				{
+				if(formatType[x].ToString()=="Dropdown")
+				{
+				%>
+
+				if(ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Items.Count > 0)
+				{
+				if(!ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedValue.Equals("0"))
+				{
+				item["<%=controls[x].ToString()%>"] = ddl<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedItem.Text;
+				}
+				}				
+				<%
+				}
+				if(formatType[x].ToString()=="Choice")
+				{
+				%>
+
+				SPFieldMultiChoiceValue values = new SPFieldMultiChoiceValue();
+
+				for (int i = 0; i < chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Items.Count; i++)
+				{
+					if (chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Items[i].Selected)
+					{
+						values.Add(chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Items[i].Text);
+
+					}
+				}
+
+				item["<%=controls[x].ToString()%>"] = values;
+
+				<%
+				}
+				if(formatType[x].ToString()=="RadioButtons")
+				{
+				%>
+
+				item["<%=controls[x].ToString()%>"] = rbtn<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedItem;
+				<%
+				}
+				}
+				if(controlsType[x].ToString()=="Number")
+				{
+				%>
+					Decimal <%=controls[x].ToString().Replace("_x0020_", string.Empty)%>=0;
+
+						try
+						{
+							  <%=controls[x].ToString().Replace("_x0020_", string.Empty)%> = Decimal.Parse(txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text);
+						}
+						catch (Exception ex)
+						{
+							 SharePointContext.Current.Log.Error(ex.Message, ex.StackTrace);
+						}
+
+				item["<%=controls[x].ToString()%>"] = <%=controls[x].ToString().Replace("_x0020_", string.Empty)%>;
+				<%
+				}
+				if(controlsType[x].ToString()=="Integer")
+				{
+				%>
+				Decimal <%=controls[x].ToString().Replace("_x0020_", string.Empty)%>=0;
+
+						try
+						{
+							  <%=controls[x].ToString().Replace("_x0020_", string.Empty)%> = Decimal.Parse(txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text);
+						}
+						catch (Exception ex)
+						{
+							LogError(ex.Message, ex.StackTrace);
+						}
+
+				item["<%=controls[x].ToString()%>"] = <%=controls[x].ToString().Replace("_x0020_", string.Empty)%>;
+				<%
+				}
+				if(controlsType[x].ToString()=="Currency")			
+				{
+				%>
+				item["<%=controls[x].ToString()%>"] = txt<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Text;
+				<%
+				}
+				if(controlsType[x].ToString()=="DateTime")	
+				{
+				%>
+
+				if (!<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.IsDateEmpty)
+				{
+				item["<%=controls[x].ToString()%>"] = <%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.SelectedDate;
+				}									
+				<%
+				}
+				if(controlsType[x].ToString()=="Boolean")
+				{
+				%>
+				item["<%=controls[x].ToString()%>"] = chk<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Checked ? true : false;
+				<%
+				}
+				if(controlsType[x].ToString()=="User")
+				{
+				%>
+
+				ArrayList arr<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>Users = new ArrayList();
+				PickerEntity user<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>Entity = new PickerEntity();
+				SPFieldUserValueCollection group<%=controls[x].ToString().Replace("_x0020_", string.Empty)%> = new SPFieldUserValueCollection();
+
+				for (int i = 0; i < pe<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Accounts.Count; i++)
+				{
+					user<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>Entity = (PickerEntity)pe<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Entities[i];
+					arr<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>Users.Add(user<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>Entity.Key);
+				}
+
+				foreach (object obj in arr<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>Users)
+				{
+					String login = obj.ToString();
+					SPUser user = web.EnsureUser(login);
+					SPFieldUserValue val = new SPFieldUserValue(web, user.ID, user.Name);
+					group<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>.Add(val);
+				}
+				
+				 item["<%=controls[x].ToString()%>"] = group<%=controls[x].ToString().Replace("_x0020_", string.Empty)%>;							
+				
+				<%
+				}													
+			}
+
+			for(int k=0;k<deletedNumber;k++)
+			{
+				if(deletedAndlanguajeDetect[k].ToString()=="Language")
+				{
+			%>
+				if (intLCID == 1033)
+				{
+					item["Language"]= 0;
+				}
+
+				if (intLCID == 3082)
+				{
+					item["Language"]= 1;
+				}
+				
+			<%
+				}			
+			}
+
+			
+			if(attachment=="True")
+			{
+			%>
+
+			//attach files
+            for (int i = 0; i < Request.Files.Count; i++)
+            {
+
+                HttpPostedFile PostedFile = Request.Files[i];
+
+                if (PostedFile.ContentLength > 0)
+                {
+                    string FileName = System.IO.Path.GetFileName(PostedFile.FileName);
+
+                    Stream fStream = PostedFile.InputStream;
+                    byte[] contents = new byte[fStream.Length];
+                    fStream.Position = 0;
+
+                    fStream.Read(contents, 0, (int)fStream.Length);
+                    fStream.Close();
+
+                    item.Attachments.Add(FileName, contents);
+                }
+            }
+			<%
+			}
+			%>
+			item.Update();
+
+            web.AllowUnsafeUpdates = false;
+		}	
+		
+				
+		protected void updateRecordtoDB(SPWeb web)
+        {
+            SPSecurity.RunWithElevatedPrivileges(delegate()
+            {
+                SqlConnection connection = new SqlConnection(SharePointContext.Current.Settings.DatabaseConnectionString);
+				         
+				SqlCommand cmd = new SqlCommand();
+						       
+                connection.Open();
+
+                try
+                {
+                    if (Page.Request.QueryString["RecordId"] != null)
+                    {
+                        int RecordId = int.Parse(Page.Request.QueryString["RecordId"].ToString());
+                         
+                        SPList list = web.Lists["<%=ListName%>"];
+                        SPListItem item = list.Items.GetItemById(RecordId);
+
+						if ( item != null )
+						{
+
+                                string sql = "UPDATE [BJSmarts.ERP.Database].[dbo].[<%=ListName%>] SET "+
+
+								<%
+								string fieldsDB="";								
+								for(int x=0; x<countdb;x++)
+								{		
+								
+									string values = typeDataBase[x].ToString();
+									string[] choices = null;
+									choices = values.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+
+								   if(x!=countdb-1)
+								   {
+								   fieldsDB= fieldsDB+"\""+ choices[0]+"="+"'@"+choices[0]+"',\"+"+"\n";								 
+								   }
+								   if(x==countdb-1)
+								   {
+								    fieldsDB= fieldsDB+"\""+ choices[0]+"="+"'@"+choices[0]+"'";							   
+								   }
+								}
+								
+									string valuesW = typeDataBase[0].ToString();
+									string[] choicesW = null;
+									choicesW = valuesW.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+															
+								%>
+
+
+								<%=fieldsDB%>" +
+                                " WHERE <%=choicesW[0].ToString()%>='@<%=choicesW[0].ToString()%>'";
+
+								SqlCommand cmd = new SqlCommand(sql, connection);
+
+								<%
+								for(int x=0; x<countdb;x++)
+								{
+
+									string values = typeDataBase[x].ToString();
+
+									string[] choices = null;
+
+									choices = values.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+								if(keycomprove=="true")
+								{
+
+									if(choices[0]!=PrimaryKeyColumnName)
+									{
+									for(int z=0; z<count;z++)
+									{										
+										if(choices[0]==displayName[z].ToString().Replace(" ", string.Empty))
+										{
+																		
+											if(controlsType[z]=="BusinessData")
+											{
+
+												for(int j=0; j<auxnum;j++)
+												{
+														 string valuesOne = lookupOneToOne[j].ToString();
+
+														 string[] parts = null;
+
+														 parts = valuesOne.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+													 if(parts[0]==displayName[z])
+													 {
+
+														if(choices[1]=="int")
+														{
+														%>
+																if ( item["<%=controls[z]%>"] != null ) 
+																{
+																cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Int).Value = int.Parse(item["<%=controls[z]%>"].ToString());
+																cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  GetItemBscRecord("<%=parts[1].ToString()%>", item["<%=controls[z]%>"].ToString(), "<%=parts[3].ToString()%>","<%=parts[4].ToString()%>");
+																}
+																else 
+																{
+																cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Int).Value =  DBNull.Value;
+																cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  DBNull.Value;
+																}
+														<%
+														}
+														if(choices[1]=="nvarchar")
+														{
+														%>
+																if ( item["<%=controls[z]%>"] != null ) 
+																{
+																cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.NVarChar, 50).Value = item["<%=controls[z]%>"].ToString();
+																cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value = GetItemBscRecord("<%=parts[1].ToString()%>", item["<%=controls[z]%>"].ToString(), "<%=parts[3].ToString()%>","<%=parts[4].ToString()%>");
+																}
+																else 
+																{
+																cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.NVarChar, 50).Value = DBNull.Value;
+																cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  DBNull.Value;
+																}
+														<%
+														}
+														if(choices[1]=="datetime")
+														{
+														%>
+																if ( item["<%=controls[z]%>"] != null ) 
+																{
+																	cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.DateTime).Value = DateTime.Parse(item["<%=controls[z]%>"].ToString());
+																	cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value = GetItemBscRecord("<%=parts[1].ToString()%>", item["<%=controls[z]%>"].ToString(), "<%=parts[3].ToString()%>","<%=parts[4].ToString()%>");
+																}
+																else 
+																{
+																	cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.DateTime).Value = DBNull.Value;
+																	cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  DBNull.Value;
+																}			
+														<%
+														}
+														if(choices[1]=="decimal")
+														{
+														%>
+																if ( item["<%=controls[z]%>"] != null ) 
+																{
+																	cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Decimal).Value = decimal.Parse(item["<%=controls[z]%>"].ToString());
+																	cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value = GetItemBscRecord("<%=parts[1].ToString()%>", item["<%=controls[z]%>"].ToString(), "<%=parts[3].ToString()%>","<%=parts[4].ToString()%>");
+																}
+																else
+																{
+																	cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Decimal).Value = DBNull.Value;
+																	cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  DBNull.Value;
+																}
+														<%
+														}
+													}
+												}
+											}
+									
+											else
+											{
+													if(choices[1]=="int")
+													{
+													%>
+														if ( item["<%=controls[z]%>"] != null ) 
+														{
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Int).Value = int.Parse(item["<%=controls[z]%>"].ToString());
+														}
+														else {
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Int).Value =  DBNull.Value;
+														}
+													<%
+													}
+													if(choices[1]=="nvarchar")
+													{
+													%>
+														if ( item["<%=controls[z]%>"] != null ) 
+														{
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.NVarChar, 50).Value = item["<%=controls[z]%>"].ToString();
+														}
+														else {
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.NVarChar, 50).Value = DBNull.Value;
+														}
+													<%
+													}
+													if(choices[1]=="datetime")
+													{
+													%>
+														if ( item["<%=controls[z]%>"] != null ) 
+														{
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.DateTime).Value = DateTime.Parse(item["<%=controls[z]%>"].ToString());
+														}
+														else {
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.DateTime).Value = DBNull.Value;
+														}													 
+													<%
+													}
+													if(choices[1]=="decimal")
+													{
+													%>
+														if ( item["<%=controls[z]%>"] != null ) 
+														{
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Decimal).Value = decimal.Parse(item["<%=controls[z]%>"].ToString());
+														}
+														else {
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Decimal).Value = DBNull.Value;
+														}
+													<%
+													}
+												}
+											}
+									 }
+
+									 }
+								}
+								else
+								{
+
+								for(int z=0; z<count;z++)
+									{										
+										if(choices[0]==displayName[z].ToString().Replace(" ", string.Empty))
+										{
+																		
+											if(controlsType[z]=="BusinessData")
+											{
+
+												for(int j=0; j<auxnum;j++)
+												{
+														 string valuesOne = lookupOneToOne[j].ToString();
+
+														 string[] parts = null;
+
+														 parts = valuesOne.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+													 if(parts[0]==displayName[z])
+													 {
+
+														if(choices[1]=="int")
+														{
+														%>
+																if ( item["<%=controls[z]%>"] != null ) 
+																{
+																cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Int).Value = int.Parse(item["<%=controls[z]%>"].ToString());
+																cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  GetItemBscRecord("<%=parts[1].ToString()%>", item["<%=controls[z]%>"].ToString(), "<%=parts[3].ToString()%>","<%=parts[4].ToString()%>");
+																}
+																else 
+																{
+																cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Int).Value =  DBNull.Value;
+																cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  DBNull.Value;
+																}
+														<%
+														}
+														if(choices[1]=="nvarchar")
+														{
+														%>
+																if ( item["<%=controls[z]%>"] != null ) 
+																{
+																cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.NVarChar, 50).Value = item["<%=controls[z]%>"].ToString();
+																cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value = GetItemBscRecord("<%=parts[1].ToString()%>", item["<%=controls[z]%>"].ToString(), "<%=parts[3].ToString()%>","<%=parts[4].ToString()%>");
+																}
+																else 
+																{
+																cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.NVarChar, 50).Value = DBNull.Value;
+																cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  DBNull.Value;
+																}
+														<%
+														}
+														if(choices[1]=="datetime")
+														{
+														%>
+																if ( item["<%=controls[z]%>"] != null ) 
+																{
+																	cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.DateTime).Value = DateTime.Parse(item["<%=controls[z]%>"].ToString());
+																	cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value = GetItemBscRecord("<%=parts[1].ToString()%>", item["<%=controls[z]%>"].ToString(), "<%=parts[3].ToString()%>","<%=parts[4].ToString()%>");
+																}
+																else 
+																{
+																	cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.DateTime).Value = DBNull.Value;
+																	cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  DBNull.Value;
+																}			
+														<%
+														}
+														if(choices[1]=="decimal")
+														{
+														%>
+																if ( item["<%=controls[z]%>"] != null ) 
+																{
+																	cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Decimal).Value = decimal.Parse(item["<%=controls[z]%>"].ToString());
+																	cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value = GetItemBscRecord("<%=parts[1].ToString()%>", item["<%=controls[z]%>"].ToString(), "<%=parts[3].ToString()%>","<%=parts[4].ToString()%>");
+																}
+																else
+																{
+																	cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Decimal).Value = DBNull.Value;
+																	cmd.Parameters.Add("@<%=choices[0]%>Id", SqlDbType.Int).Value =  DBNull.Value;
+																}
+														<%
+														}
+													}
+												}
+											}
+									
+											else
+											{
+													if(choices[1]=="int")
+													{
+													%>
+														if ( item["<%=controls[z]%>"] != null ) 
+														{
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Int).Value = int.Parse(item["<%=controls[z]%>"].ToString());
+														}
+														else {
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Int).Value =  DBNull.Value;
+														}
+													<%
+													}
+													if(choices[1]=="nvarchar")
+													{
+													%>
+														if ( item["<%=controls[z]%>"] != null ) 
+														{
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.NVarChar, 50).Value = item["<%=controls[z]%>"].ToString();
+														}
+														else {
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.NVarChar, 50).Value = DBNull.Value;
+														}
+													<%
+													}
+													if(choices[1]=="datetime")
+													{
+													%>
+														if ( item["<%=controls[z]%>"] != null ) 
+														{
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.DateTime).Value = DateTime.Parse(item["<%=controls[z]%>"].ToString());
+														}
+														else {
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.DateTime).Value = DBNull.Value;
+														}													 
+													<%
+													}
+													if(choices[1]=="decimal")
+													{
+													%>
+														if ( item["<%=controls[z]%>"] != null ) 
+														{
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Decimal).Value = decimal.Parse(item["<%=controls[z]%>"].ToString());
+														}
+														else {
+															cmd.Parameters.Add("@<%=choices[0]%>", SqlDbType.Decimal).Value = DBNull.Value;
+														}
+													<%
+													}
+												}
+											}
+									 }
+
+								}
+						}
+
+						for(int k=0;k<deletedNumber;k++)
+							{
+								if(deletedAndlanguajeDetect[k].ToString()=="Language")
+								{
+							%>							
+									
+									if ( item["Language"] != null ) 
+										{
+											cmd.Parameters.Add("@Language", SqlDbType.Int).Value = int.Parse(item["Language"].ToString());
+										}
+										else {
+											cmd.Parameters.Add("@Language", SqlDbType.Int).Value =  DBNull.Value;
+										}			
+
+							
+				
+							<%
+								}
+								if(deletedAndlanguajeDetect[k].ToString()=="Deleted")
+								{									
+									%>
+										if ( item["Deleted"] != null ) 
+										{
+											cmd.Parameters.Add("@Deleted", SqlDbType.Int).Value = int.Parse(item["Deleted"].ToString());
+										}
+										else {
+											cmd.Parameters.Add("@Deleted", SqlDbType.Int).Value =  DBNull.Value;
+										}
+									<%					
+								}
+							}
+
+
+						    %>
+                                                         
+                                cmd.ExecuteNonQuery(); 
+
+						}                     
+                    }
+                }
+                catch (Exception ex)
+                {
+                    //throw new Exception(ex.ToString(), ex);
+                    Console.Write(ex.ToString());
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            });
+        }        
+			
+
+		<%
+		if(attachment=="True")
+		{
+		%>
+		public void BindAttachmentData()
+        {
+            using (SPSite site = new SPSite(SPContext.Current.Site.Url))
+            {
+                using (SPWeb web = site.OpenWeb())
+                {
+                    SPListItem currentItem = null;
+
+                    if (Page.Request.QueryString["RecordId"] != null)
+                    {
+                        int RecordId = int.Parse(Page.Request.QueryString["RecordId"].ToString());
+                        
+                        SPList list = web.Lists["<%=ListName%>"];
+                        currentItem = list.Items.GetItemById(RecordId);
+                        
+                    }
+
+                    DataTable dt = new DataTable();
+
+                    dt.Columns.Add("Filename");
+                    dt.Columns.Add("FilenameUrl");
+
+                    for (int i = 0; i < currentItem.Attachments.Count; i++)
+                    {
+                        String filename = currentItem.Attachments[i];
+
+                        String attachmentAbsoluteURL =
+                                currentItem.Attachments.UrlPrefix
+                                + filename;
+
+                        SPFile attachmentFile = web.GetFile(attachmentAbsoluteURL);
+
+                        String listUrl = web.Url + "/" + currentItem.ParentList.RootFolder.Url;
+                        String attachmentUrl = listUrl + "/attachments/" + currentItem.ID + "/" + attachmentFile.Name;
+
+                        dt.Rows.Add();
+                        dt.Rows[i]["Filename"] = attachmentFile.Name;
+                        dt.Rows[i]["FilenameUrl"] = attachmentUrl;
+                    }
+
+                    dlfiles.DataSource = dt;
+                    dlfiles.DataBind();
+                }
+            }
+
+        }
+
+		public string GetCallbackResult()
+        {
+
+            StringWriter sr = new StringWriter();
+            HtmlTextWriter htm = new HtmlTextWriter(sr);
+            this.dlfiles.RenderControl(htm);
+            return sr.ToString();
+            htm.Close();
+            sr.Close();
+        }
+
+        public void RaiseCallbackEvent(string eventArgument)
+        {
+            this.args = eventArgument.Split(',');
+
+            DeleteAttachment(args[0].ToString());
+
+            BindAttachmentData();
+        }
+
+        private void DeleteAttachment(String leafName)
+        {
+            SPListItem item = GetCurrentItem();
+
+            item.Attachments.Delete(leafName);
+
+            item.Update();
+        }
+
+
+		<%
+		}
+		%>
+
+		
+	  public SPListItem GetCurrentItem()
+       {
+           SPListItem item = null;
+
+           if (Page.Request.QueryString["RecordId"] != null)
+           {
+               int RecordId = int.Parse(Page.Request.QueryString["RecordId"].ToString());
+
+               using (SPSite site = new SPSite(SPContext.Current.Site.Url))
+               {
+                   using (SPWeb web = site.OpenWeb())
+                   {
+                       SPList list = web.Lists["<%=ListName%>"];
+                       item = list.Items.GetItemById(RecordId);
+                   }
+               }
+           }
+
+           return item;
+       }
+	}
+}
