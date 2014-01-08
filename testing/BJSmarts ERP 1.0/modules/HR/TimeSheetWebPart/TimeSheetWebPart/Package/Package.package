@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a52252ed-b367-4ec6-894d-8df63046e410" solutionId="a52252ed-b367-4ec6-894d-8df63046e410" resetWebServer="false" name="TimeSheetWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="dbd9fabc-ecb3-4c0f-bd6c-0cd6eaa7d2d7" />
+  </features>
+</package>

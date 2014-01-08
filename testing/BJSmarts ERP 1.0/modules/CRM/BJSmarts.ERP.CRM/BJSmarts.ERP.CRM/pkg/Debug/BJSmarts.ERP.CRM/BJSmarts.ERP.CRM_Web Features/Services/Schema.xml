@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Services" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/BJSmarts.ERP.CRM-Services" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" ColName="nvarchar1"/>
+      <Field Type="Text" DisplayName="Service Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{8366eac9-40a3-45a1-956b-3100e872ed3d}" SourceID="{9c2a2bc6-09dc-47cf-befd-14c30f60ab0f}" StaticName="Service_x0020_Name" Name="Service_x0020_Name" ColName="nvarchar4" RowOrdinal="0"/>
+      <Field Type="Note" DisplayName="Service Description" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{6036382d-0acc-4e8a-99c1-da58147e7824}" SourceID="{9c2a2bc6-09dc-47cf-befd-14c30f60ab0f}" StaticName="Service_x0020_Description" Name="Service_x0020_Description" ColName="ntext2" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="ServiceId" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{d68d15f7-c816-494e-b82c-f17d037fe0ca}" SourceID="{9c2a2bc6-09dc-47cf-befd-14c30f60ab0f}" StaticName="ServiceId" Name="ServiceId" ColName="nvarchar3" RowOrdinal="0"/>
+      <Field Type="Note" DisplayName="Notes" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{117dc0d9-a572-4f96-b49f-7541d7b317a0}" SourceID="{9c2a2bc6-09dc-47cf-befd-14c30f60ab0f}" StaticName="Notes" Name="Notes" ColName="ntext3" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Organization" Required="FALSE" EnforceUniqueValues="FALSE" ID="{14f4e5d7-e312-4ff4-87b5-e66723c1ce87}" SourceID="{de352c6d-ce31-4c34-b583-d586afd07f18}" StaticName="Organization" BaseRenderingType="Text" Name="Organization" ColName="nvarchar5" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="ERP Organizations" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="ERP_x0020_Organizations_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="ERP_x0020_Organizations_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="ERP Organizations_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="ERP Organizations_ID" ID="{ef47867a-78b1-4fd6-a9c9-32736c0c92f7}" SourceID="{de352c6d-ce31-4c34-b583-d586afd07f18}" StaticName="ERP_x0020_Organizations_ID" Name="ERP_x0020_Organizations_ID" ColName="ntext4" RowOrdinal="0"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Service_x0020_Name"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

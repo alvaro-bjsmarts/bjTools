@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Contacts" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/BJSmarts.ERP.CRM-Contacts" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" Hidden="FALSE" ColName="nvarchar33"/>
+      <Field Type="Text" DisplayName="First Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{0ca04009-cfd7-4814-86a2-b3ae41ed4860}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="First_x0020_Name" Name="First_x0020_Name" ColName="nvarchar3" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Last Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{e8ef6e55-c45d-4ed7-9cbe-e15b698fab99}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Last_x0020_Name" Name="Last_x0020_Name" ColName="nvarchar4" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Job Title" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{79f54240-4cd9-42a9-8b5b-1c266589d85e}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Job_x0020_Title" Name="Job_x0020_Title" ColName="nvarchar5" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Account" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{af5ddbef-fc34-4168-9e36-1466ee85cfbc}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Account" Name="Account" ColName="nvarchar6" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Business Phone" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{3490c06b-d439-4964-8a05-292e6b690c38}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Business_x0020_Phone" Name="Business_x0020_Phone" ColName="nvarchar7" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Home Phone" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{f2ea4f41-9d99-41ea-a3ed-6ebd334c1791}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Home_x0020_Phone" Name="Home_x0020_Phone" ColName="nvarchar8" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Mobile Phone" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{d600dc4e-aa10-4b14-8417-4d187897a692}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Mobile_x0020_Phone" Name="Mobile_x0020_Phone" ColName="nvarchar9" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Fax Phone" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{17ba2d08-4815-403d-a6ad-5cb478aeef3f}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Fax_x0020_Phone" Name="Fax_x0020_Phone" ColName="nvarchar10" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Email" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{c732baab-4fda-4907-b9ef-f72167cd8e17}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Email" Name="Email" ColName="nvarchar11" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Street Address 1" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{1646d1c1-7660-4d83-9a7f-c5d973ee761f}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Street_x0020_Address_x0020_1" Name="Street_x0020_Address_x0020_1" ColName="nvarchar12" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Street Address 2" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{026f5513-136c-48f5-8a62-4e6f38c81ddd}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Street_x0020_Address_x0020_2" Name="Street_x0020_Address_x0020_2" ColName="nvarchar13" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="City" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{c0ee3c93-5fd6-44fc-a55a-13b7c2cbdc02}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="City" Name="City" ColName="nvarchar14" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="State Province" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{a8dd30e4-5149-421d-99a1-81eeb262c094}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="State_x0020_Province" Name="State_x0020_Province" ColName="nvarchar15" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Zip Postal Code" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{1058eb95-444b-41d1-8dfa-724c5baae793}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Zip_x0020_Postal_x0020_Code" Name="Zip_x0020_Postal_x0020_Code" ColName="nvarchar16" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Country" Required="FALSE" EnforceUniqueValues="FALSE" ID="{900ee327-470b-4776-bc7f-d72f57f13687}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Country" BaseRenderingType="Text" Name="Country" ColName="nvarchar17" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="ERP Countries" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="ERP_x0020_Countries_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="ERP_x0020_Countries_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="ERP Countries_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="ERP Countries_ID" ID="{65b6663d-7888-4aa1-8011-112b9a1c1b77}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="ERP_x0020_Countries_ID" Name="ERP_x0020_Countries_ID" ColName="ntext2" RowOrdinal="0"/>
+      <Field Type="Note" DisplayName="Description" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{ea837625-0de3-4541-8b10-c67024ffe24f}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Description" Name="Description" ColName="ntext3" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Department" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{f7b579c7-eb9b-4eb3-b798-9a5788104f4a}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Department" Name="Department" ColName="nvarchar18" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Role" Required="FALSE" EnforceUniqueValues="FALSE" ID="{127d44c8-294b-4a63-b0f3-5f02372481ad}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Role" BaseRenderingType="Text" Name="Role" ColName="nvarchar19" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM Role" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_Role_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_Role_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM Role_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM Role_ID" ID="{f481bccc-9949-456e-9b30-6b96093d5714}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="CRM_x0020_Role_ID" Name="CRM_x0020_Role_ID" ColName="ntext4" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Manager" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{6b8cab19-6506-43bf-9760-7c8c5f05341b}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Manager" Name="Manager" ColName="nvarchar20" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Manager Phone" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{b99cbfac-c85a-45b6-ac3e-dcac3d3c37ee}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Manager_x0020_Phone" Name="Manager_x0020_Phone" ColName="nvarchar21" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Gender" Required="FALSE" EnforceUniqueValues="FALSE" ID="{1bb67399-33ca-4835-a3f5-84588b0444a3}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Gender" BaseRenderingType="Text" Name="Gender" ColName="nvarchar22" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="ERP Genders" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="ERP_x0020_Genders_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="ERP_x0020_Genders_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="ERP Genders_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="ERP Genders_ID" ID="{bfb45688-4731-4fab-ab97-3bfce3db1973}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="ERP_x0020_Genders_ID" Name="ERP_x0020_Genders_ID" ColName="ntext5" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Currency" Required="FALSE" EnforceUniqueValues="FALSE" ID="{b925d852-ec5d-4434-a0c1-15f7c1e7ac3d}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Currency" BaseRenderingType="Text" Name="Currency" ColName="nvarchar23" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="ERP Currency Type" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="ERP_x0020_Currency_x0020_Type_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="ERP_x0020_Currency_x0020_Type_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="ERP Currency Type_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="ERP Currency Type_ID" ID="{45b0f0f3-d8ae-446c-8da2-2e1508ef5d83}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="ERP_x0020_Currency_x0020_Type_ID" Name="ERP_x0020_Currency_x0020_Type_ID" ColName="ntext6" RowOrdinal="0"/>
+      <Field Type="Note" DisplayName="Notes" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{1d7eb89b-0002-4466-9df3-06a8b501cb9d}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Notes" Name="Notes" ColName="ntext7" RowOrdinal="0"/>
+      <Field Type="Lookup" DisplayName="Lead" Required="FALSE" EnforceUniqueValues="FALSE" List="{ca7c1fd6-92c5-436e-a6af-c142b17f6b65}" ShowField="Subject" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{750a372f-3621-4aaf-9ac7-ef6073824f5c}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Lead" Name="Lead" ColName="int1" RowOrdinal="0"/>
+      <Field Type="Choice" DisplayName="Deleted" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{2a3174bb-4749-4332-b632-b4588d2a828f}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Deleted" Name="Deleted" ColName="nvarchar24" RowOrdinal="0">
+        <Default>No</Default>
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="URL" DisplayName="Edit Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{12e62c8a-2ad8-4eea-bd31-7dbae75e49a6}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Edit_x0020_Hyperlink" Name="Edit_x0020_Hyperlink" ColName="nvarchar25" RowOrdinal="0" ColName2="nvarchar26" RowOrdinal2="0"/>
+      <Field Type="URL" DisplayName="View Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{81be6374-3f04-49c2-9015-7de6588bd152}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="View_x0020_Hyperlink" Name="View_x0020_Hyperlink" ColName="nvarchar27" RowOrdinal="0" ColName2="nvarchar28" RowOrdinal2="0"/>
+      <Field Type="URL" DisplayName="Account Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{6faadad9-302f-43d1-aa5f-8a8b4eb04bfc}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Account_x0020_Hyperlink" Name="Account_x0020_Hyperlink" ColName="nvarchar29" RowOrdinal="0" ColName2="nvarchar30" RowOrdinal2="0"/>
+      <Field Type="URL" DisplayName="Lead Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{19bf4b30-ee93-4baf-ad99-3232d872106b}" SourceID="{428069f6-21c3-42b7-aa1f-27d07fe2d3b2}" StaticName="Lead_x0020_Hyperlink" Name="Lead_x0020_Hyperlink" ColName="nvarchar31" RowOrdinal="0" ColName2="nvarchar32" RowOrdinal2="0"/>
+      <Field Type="BusinessData" DisplayName="Organization" Required="FALSE" EnforceUniqueValues="FALSE" ID="{3208d8c5-7de4-42a0-91a2-752d57f4d44d}" SourceID="{9157c4c0-18b8-4b97-a85d-6764c03c8ec5}" StaticName="Organization" BaseRenderingType="Text" Name="Organization" ColName="nvarchar1" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="ERP Organizations" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="ERP_x0020_Organizations_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="ERP_x0020_Organizations_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="ERP Organizations_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="ERP Organizations_ID" ID="{6b4d4282-7c91-4e26-ba15-524ade4102f5}" SourceID="{9157c4c0-18b8-4b97-a85d-6764c03c8ec5}" StaticName="ERP_x0020_Organizations_ID" Name="ERP_x0020_Organizations_ID" ColName="ntext1" RowOrdinal="0"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

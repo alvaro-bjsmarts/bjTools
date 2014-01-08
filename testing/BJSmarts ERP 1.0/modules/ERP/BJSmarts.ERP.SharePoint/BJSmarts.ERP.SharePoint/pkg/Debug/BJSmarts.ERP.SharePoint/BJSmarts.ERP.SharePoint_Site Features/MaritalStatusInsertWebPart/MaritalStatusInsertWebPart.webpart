@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="BJSmarts.ERP.SharePoint.WebParts.Marital.MaritalStatusInsertWebPart.MaritalStatusInsertWebPart, BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">MaritalStatusInsertWebPart</property>
+        <property name="Description" type="string">My Visual WebPart</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

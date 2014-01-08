@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="EmployeeTypesUpdateWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="EmployeeTypesUpdateWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="EmployeeTypesUpdateWebPart.webpart" Target="EmployeeTypesUpdateWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTypesUpdateWebPartUserControl.ascx" Target="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeTypesUpdateWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeTypesUpdateWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

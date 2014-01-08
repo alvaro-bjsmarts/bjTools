@@ -1,0 +1,1 @@
+bin\Debug\TimeSheetWebPart.wsp

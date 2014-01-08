@@ -1,0 +1,8 @@
+C:\Projects\BJSmarts ERP 1.0\db\BJSmarts.ERP.Database\BJSmarts.ERP.Database\obj\Debug\BJSmarts.ERP.Database.dbschema
+C:\Projects\BJSmarts ERP 1.0\db\BJSmarts.ERP.Database\BJSmarts.ERP.Database\sql\debug\BJSmarts.ERP.Database_Script.PreDeployment.sql
+C:\Projects\BJSmarts ERP 1.0\db\BJSmarts.ERP.Database\BJSmarts.ERP.Database\sql\debug\BJSmarts.ERP.Database_Script.PostDeployment.sql
+C:\Projects\BJSmarts ERP 1.0\db\BJSmarts.ERP.Database\BJSmarts.ERP.Database\sql\debug\BJSmarts.ERP.Database_Database.sqlsettings
+C:\Projects\BJSmarts ERP 1.0\db\BJSmarts.ERP.Database\BJSmarts.ERP.Database\sql\debug\BJSmarts.ERP.Database_Database.sqldeployment
+C:\Projects\BJSmarts ERP 1.0\db\BJSmarts.ERP.Database\BJSmarts.ERP.Database\sql\debug\BJSmarts.ERP.Database_Database.sqlcmdvars
+C:\Projects\BJSmarts ERP 1.0\db\BJSmarts.ERP.Database\BJSmarts.ERP.Database\sql\debug\BJSmarts.ERP.Database.deploymanifest
+C:\Projects\BJSmarts ERP 1.0\db\BJSmarts.ERP.Database\BJSmarts.ERP.Database\sql\debug\BJSmarts.ERP.Database.dbschema

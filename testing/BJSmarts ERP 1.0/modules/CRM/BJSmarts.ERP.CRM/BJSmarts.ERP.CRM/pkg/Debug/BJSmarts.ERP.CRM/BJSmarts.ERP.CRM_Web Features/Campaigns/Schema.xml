@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Campaigns" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/BJSmarts.ERP.CRM-Campaigns" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Hidden="TRUE" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" ColName="nvarchar1"/>
+      <Field Type="Text" DisplayName="Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{04816c86-4803-4e21-bf15-b9e2eda241d5}" SourceID="{83b1680f-fe26-4be5-af1b-15b49502b923}" StaticName="Name" Name="Name" ColName="nvarchar3" RowOrdinal="0"/>
+      <Field Type="Note" DisplayName="Description" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{a6b6f50a-0c4a-49c2-94af-a8aa917316ce}" SourceID="{83b1680f-fe26-4be5-af1b-15b49502b923}" StaticName="Description" Name="Description" ColName="ntext2" RowOrdinal="0"/>
+      <Field Type="Currency" DisplayName="Total Cost" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" LCID="1033" ID="{76ed42a5-da3a-4286-914b-57340cb2c094}" SourceID="{83b1680f-fe26-4be5-af1b-15b49502b923}" StaticName="Total_x0020_Cost" Name="Total_x0020_Cost" ColName="float1" RowOrdinal="0"/>
+      <Field Type="Currency" DisplayName="Budget Allocated" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" LCID="1033" ID="{a300a586-a269-4205-9531-a6d47216b5af}" SourceID="{83b1680f-fe26-4be5-af1b-15b49502b923}" StaticName="Budget_x0020_Allocated" Name="Budget_x0020_Allocated" ColName="float2" RowOrdinal="0"/>
+      <Field Type="Currency" DisplayName="Estimated Revenue" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" LCID="1033" ID="{3293646b-1690-4b63-8645-f9b2c88588c8}" SourceID="{83b1680f-fe26-4be5-af1b-15b49502b923}" StaticName="Estimated_x0020_Revenue" Name="Estimated_x0020_Revenue" ColName="float3" RowOrdinal="0"/>
+      <Field Type="DateTime" DisplayName="Proposed Begin Date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{9643b614-73e4-43e4-8422-607b2b4414e9}" SourceID="{83b1680f-fe26-4be5-af1b-15b49502b923}" StaticName="Proposed_x0020_Begin_x0020_Date" Name="Proposed_x0020_Begin_x0020_Date" ColName="datetime1" RowOrdinal="0"/>
+      <Field Type="DateTime" DisplayName="Proposed End Date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{14ddffc1-6b63-40bd-9f35-6bc74fbf7324}" SourceID="{83b1680f-fe26-4be5-af1b-15b49502b923}" StaticName="Proposed_x0020_End_x0020_Date" Name="Proposed_x0020_End_x0020_Date" ColName="datetime2" RowOrdinal="0"/>
+      <Field Type="DateTime" DisplayName="Actual Begin Date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{c45731e9-a6a1-4800-870a-5ffa087ad2cb}" SourceID="{83b1680f-fe26-4be5-af1b-15b49502b923}" StaticName="Actual_x0020_Begin_x0020_Date" Name="Actual_x0020_Begin_x0020_Date" ColName="datetime3" RowOrdinal="0"/>
+      <Field Type="DateTime" DisplayName="Actual End Date" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{0b718c9d-9a6d-4670-8c2f-e78ea066c55a}" SourceID="{83b1680f-fe26-4be5-af1b-15b49502b923}" StaticName="Actual_x0020_End_x0020_Date" Name="Actual_x0020_End_x0020_Date" ColName="datetime4" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Campaign Status" Required="FALSE" ID="{a0dbeed3-453b-4ab5-8661-c387b2fa00e5}" SourceID="{b41ac995-79f4-485a-95f8-72bbc2b22d1e}" StaticName="Campaign_x0020_Status" BaseRenderingType="Text" Name="Campaign_x0020_Status" ColName="nvarchar4" RowOrdinal="0" Version="3" Group="" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM CampaignStatus" BdcField="Name" Profile="/_layouts/ActionRedirect.aspx?EntityNamespace=http%3A%2F%2Flocalhost%3A51816&amp;EntityName=CRM%20CampaignStatus&amp;LOBSystemInstanceName=BJSmarts%2EERP%2EDatabase&amp;ItemID=" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_CampaignStatus_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_CampaignStatus_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType"/>
+      <Field Type="Note" DisplayName="CRM CampaignStatus_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM CampaignStatus_ID" ID="{ca8ba4b0-4fcb-4d51-9cd6-a990c6abdc83}" SourceID="{b41ac995-79f4-485a-95f8-72bbc2b22d1e}" StaticName="CRM_x0020_CampaignStatus_ID" Name="CRM_x0020_CampaignStatus_ID" ColName="ntext3" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Campaign Type" Required="FALSE" ID="{92e1a16c-e771-401c-8fbb-67c0e4004881}" SourceID="{b41ac995-79f4-485a-95f8-72bbc2b22d1e}" StaticName="Campaign_x0020_Type" BaseRenderingType="Text" Name="Campaign_x0020_Type" ColName="nvarchar5" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM CampaignType" BdcField="Name" Profile="/_layouts/ActionRedirect.aspx?EntityNamespace=http%3A%2F%2Flocalhost%3A51816&amp;EntityName=CRM%20CampaignType&amp;LOBSystemInstanceName=BJSmarts%2EERP%2EDatabase&amp;ItemID=" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_CampaignType_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_CampaignType_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM CampaignType_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM CampaignType_ID" ID="{7c4fe587-b336-4e22-8b2d-be39aa72053b}" SourceID="{b41ac995-79f4-485a-95f8-72bbc2b22d1e}" StaticName="CRM_x0020_CampaignType_ID" Name="CRM_x0020_CampaignType_ID" ColName="ntext4" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Organization" Required="FALSE" EnforceUniqueValues="FALSE" ID="{11385566-b01d-4cb6-8091-84e7289096f0}" SourceID="{090ba576-8441-4620-a2c6-d9465573e3ac}" StaticName="Organization" BaseRenderingType="Text" Name="Organization" ColName="nvarchar6" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="ERP Organizations" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="ERP_x0020_Organizations_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="ERP_x0020_Organizations_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="ERP Organizations_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="ERP Organizations_ID" ID="{fea221d5-2c85-423f-bd47-cf03558bc4bc}" SourceID="{090ba576-8441-4620-a2c6-d9465573e3ac}" StaticName="ERP_x0020_Organizations_ID" Name="ERP_x0020_Organizations_ID" ColName="ntext5" RowOrdinal="0"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments"></FieldRef>
+          <FieldRef Name="LinkTitle"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

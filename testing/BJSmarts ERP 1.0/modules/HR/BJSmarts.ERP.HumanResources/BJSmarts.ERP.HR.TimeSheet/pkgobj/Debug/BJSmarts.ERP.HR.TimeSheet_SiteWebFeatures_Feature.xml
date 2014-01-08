@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="e5f61a94-6b54-4129-af2a-68867c52f740" Scope="Site" Title="BJSmarts.ERP.HR.TimeSheet Feature1">
+  <ElementManifests>
+    <ElementManifest Location="EmployeeTimeSheetWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeTimeSheetWebPart\EmployeeTimeSheetWebPart.webpart" />
+  </ElementManifests>
+</Feature>

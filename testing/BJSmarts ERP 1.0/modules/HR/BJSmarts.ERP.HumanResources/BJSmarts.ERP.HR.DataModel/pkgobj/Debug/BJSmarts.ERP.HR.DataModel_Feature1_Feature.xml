@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="My SharePoint BDC Feature" Id="a5c90de3-cf16-45e0-b776-263071b8270b" ReceiverAssembly="BJSmarts.ERP.HR.DataModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6f353aa0097c843a" ReceiverClass="BJSmarts.ERP.HR.DataModel.Features.Feature1.Feature1EventReceiver" Scope="Farm" Title="BJSmarts.ERP.HR.DataModel Feature1">
+  <Properties>
+    <Property Key="GloballyAvailable" Value="true" />
+    <Property Key="BdcModel1" Value="BdcAssemblies\BJSmarts.ERP.HR.DataModel.dll" />
+    <Property Key="BJSmarts.ERP.HR.ModelLobSystem" Value="BdcAssemblies\BJSmarts.ERP.HR.DataModel.dll" />
+    <Property Key="IncrementalUpdate" Value="true" />
+    <Property Key="ModelFileName" Value="BJSmarts.ERP.HR.DataModel\BJSmarts.ERP.HR.Model.bdcm" />
+  </Properties>
+  <ElementManifests>
+    <ElementFile Location="BJSmarts.ERP.HR.DataModel\BJSmarts.ERP.HR.Model.bdcm" />
+    <ElementFile Location="BdcAssemblies\BJSmarts.ERP.HR.DataModel.dll" />
+  </ElementManifests>
+</Feature>

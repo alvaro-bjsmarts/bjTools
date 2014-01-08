@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="BJSmarts.ERP.HRTimeSheetsCreation Feature1" Id="42e8d222-144c-4d70-a6f2-bce3bb9f2f55" ReceiverAssembly="BJSmarts.ERP.HRTimeSheetsCreation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f35d6eaf23c8b1a9" ReceiverClass="BJSmarts.ERP.HRTimeSheetsCreation.Features.Main.MainEventReceiver" Scope="Site"></Feature>

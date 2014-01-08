@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Application Sub Modules"
+                OnQuickLaunch="FALSE"
+                TemplateType="10121"
+                Url="Lists/Application Sub Modules"
+                Description="My List Instance">
+
+    <Data>
+      <Rows>
+        <Row>          
+          <Field Name="Title">Employee Directory</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="Display">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">TimeSheets</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="Display">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="Display">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="Display">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="Display">Yes</Field>
+        </Row>        
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

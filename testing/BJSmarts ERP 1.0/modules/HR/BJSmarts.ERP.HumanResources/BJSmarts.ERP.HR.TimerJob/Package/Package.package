@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="01e8e53b-7728-474c-b4a4-4dcda0ad5ab5" solutionId="01e8e53b-7728-474c-b4a4-4dcda0ad5ab5" resetWebServer="false" name="BJSmarts.ERP.HR.TimerJob" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="800e4779-6a0e-4bbe-b29d-3c43802648b0" />
+  </features>
+</package>

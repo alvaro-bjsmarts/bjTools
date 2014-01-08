@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="74cdd5ae-1636-4f31-9828-ea80c1fa5822" solutionId="74cdd5ae-1636-4f31-9828-ea80c1fa5822" resetWebServer="false" name="BJSmarts.ERP.HumanResources" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5c782000-e519-4cf1-bb69-e3c377a73783" />
+    <featureReference itemId="e273f00b-d82c-47d5-a9fb-3fc5ae550ec7" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="a2deb62e-75d7-4268-9a1d-c31c4a2358af" />
+    <projectItemReference itemId="45a59741-b122-4d6f-af9f-2d1dd4cff32c" />
+    <projectItemReference itemId="9667cae2-e138-455a-bf9c-c4c9b0c093e6" />
+  </projectItems>
+</package>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="GendersUpdateWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="GendersUpdateWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="GendersUpdateWebPart.webpart" Target="GendersUpdateWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="GendersUpdateWebPartUserControl.ascx" Target="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Genders\GendersUpdateWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BJSmarts.ERP.SharePoint.WebParts.Genders.GendersUpdateWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f0b316cb-fccb-4230-81c8-e380aeb946ec" description="This feature will provision all BJSmarts ERP CRM Web Level Features" featureId="f0b316cb-fccb-4230-81c8-e380aeb946ec" imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="BJSmarts ERP CRM Web Level Features" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+  <projectItems>
+    <projectItemReference itemId="34ec8245-4ff3-41a6-a02f-e9e6774bdf3c" />
+    <projectItemReference itemId="1a65b781-c7b8-4ae9-b7e2-df17b2fefcf0" />
+    <projectItemReference itemId="b79583d0-6246-495e-a0b4-ac73e58b4633" />
+    <projectItemReference itemId="2eadac1c-85d5-47d3-9eba-cfe0c879db75" />
+    <projectItemReference itemId="84230080-cc96-44a3-9ed5-33558837e49f" />
+    <projectItemReference itemId="3c3d182b-acf5-4a0a-b791-621688ebf9a0" />
+    <projectItemReference itemId="39d72b70-b469-4fce-afb1-7e96155affac" />
+    <projectItemReference itemId="a7b8de0e-1199-4b24-9374-a8fd24d2709b" />
+    <projectItemReference itemId="cb11162d-dc0b-44dd-8564-1eb3893a4538" />
+    <projectItemReference itemId="d7f82d14-bd45-4c9d-ab91-775e424634eb" />
+    <projectItemReference itemId="5e18e596-8cc8-4466-af62-09bb7a572c4d" />
+    <projectItemReference itemId="53bb910a-2271-4287-81a4-3368b7075b19" />
+    <projectItemReference itemId="d9445077-1da4-47e6-b017-31fed87e555b" />
+    <projectItemReference itemId="d5bea987-3e85-434f-b5a5-55b42dce8535" />
+    <projectItemReference itemId="1ae09af8-f9bc-456d-8feb-d9b76eeda06b" />
+    <projectItemReference itemId="01393d32-b7c2-4cbf-8b48-3ebcb41bd39e" />
+    <projectItemReference itemId="9b4673ce-20f9-4011-a6dd-d5652dee2121" />
+    <projectItemReference itemId="a4e575b9-04f4-4475-ba73-b6d034c87d93" />
+    <projectItemReference itemId="280b23ae-fb68-4b24-85bf-0bf1a3b4ffe9" />
+    <projectItemReference itemId="c1c96744-e1d1-49d7-9fe7-7ca1fc112b26" />
+    <projectItemReference itemId="f1fd5c59-2d59-4093-94dd-af53ad4cd365" />
+    <projectItemReference itemId="e67c610d-064c-4e79-9361-083c889c4643" />
+    <projectItemReference itemId="97e7aaf8-26d7-44e8-bea0-93384341e739" />
+    <projectItemReference itemId="8cc88bb3-d7b2-4f78-b932-64275ca1c340" />
+    <projectItemReference itemId="0e45e5f3-9440-4ed3-913f-6488adc02ef3" />
+    <projectItemReference itemId="cba48bb2-aaec-4631-8a27-2a52109c0c65" />
+    <projectItemReference itemId="73ebf2e7-52e8-4903-b7a2-c804fa422cf7" />
+    <projectItemReference itemId="eca4267e-3b1f-424f-a4f5-de064e80cc28" />
+    <projectItemReference itemId="b4311781-4898-449f-b0c4-4905f2837ad3" />
+    <projectItemReference itemId="04ac5838-77f6-4f24-8653-377a1ec9d26c" />
+    <projectItemReference itemId="1afc06a0-a962-49cf-9ee8-17be99d30113" />
+    <projectItemReference itemId="81476cca-d3fd-493e-98c9-02b5b685d786" />
+    <projectItemReference itemId="4526ac07-01c8-46a9-b46e-af7e3c2dfdd5" />
+    <projectItemReference itemId="ff70e0a2-ac65-4b89-a869-fff0af69d4b4" />
+    <projectItemReference itemId="2c561d23-d93c-4c7f-aadf-8433c6e42d52" />
+    <projectItemReference itemId="d48ba85c-0305-4a34-94a2-7107c4f97492" />
+    <projectItemReference itemId="cc8552da-7b91-4435-ba43-4878f70c6ff1" />
+    <projectItemReference itemId="a96bb843-6c79-4caa-8dbb-aa6c4f0b5ed7" />
+    <projectItemReference itemId="d6128796-8256-494c-9b09-3799a517621c" />
+    <projectItemReference itemId="cfe143f7-91fc-4853-82db-7201a2d1754a" />
+    <projectItemReference itemId="d240e431-a8d0-4a6b-9b87-234ca781f189" />
+    <projectItemReference itemId="13d4d4ed-1dfe-47cb-b16e-49493ddc1c0d" />
+    <projectItemReference itemId="2f9c5ece-4f3b-4b75-b338-766063c0282d" />
+    <projectItemReference itemId="0d70e4e0-a5b6-4681-8024-332dfe631b6d" />
+    <projectItemReference itemId="e6ef9e3f-cf71-4338-bbbb-46de0eabcbf0" />
+    <projectItemReference itemId="79d89dcc-70d8-41e8-bc35-7a98a5aad895" />
+    <projectItemReference itemId="f9291295-9ace-4856-8be7-73cf3ecc8de5" />
+    <projectItemReference itemId="cbcc8707-c070-4054-b50e-6783b8fd3a10" />
+    <projectItemReference itemId="fa506b0b-320a-4422-8230-54d72c23829d" />
+    <projectItemReference itemId="c71e1f1a-1132-43d2-934e-45460bf6b618" />
+    <projectItemReference itemId="a8221bd9-7723-4cf1-90bb-87e160ba1c07" />
+    <projectItemReference itemId="bf5e2495-c2f5-4680-a647-163e485c3d1d" />
+  </projectItems>
+</feature>

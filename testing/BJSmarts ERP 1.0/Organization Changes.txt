@@ -1,0 +1,24 @@
+
+
+ERRORS WITH CODE GENERATOR
+
+item["Department"] = Convert.ToInt64(ddlDepartment.SelectedValue);
+//SetExternalFieldValue(item, "Department", ddlDepartment.SelectedItem.Text);
+
+Insert Form
+===========
+
+using BJSmarts.ERP.SharePoint.Entities;
+
+item["OrganizationId"] = SharePointContext.Current.Organization.ID;
+item["Organization"] = SharePointContext.Current.Organization.Name;
+
+Update Form
+===========
+
+using BJSmarts.ERP.SharePoint.Entities;
+
+item["OrganizationId"] = SharePointContext.Current.Organization.ID;
+item["Organization"] = SharePointContext.Current.Organization.Name;
+
+

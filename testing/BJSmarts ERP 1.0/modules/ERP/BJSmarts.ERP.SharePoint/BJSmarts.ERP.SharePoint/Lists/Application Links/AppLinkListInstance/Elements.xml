@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Application Links"
+                OnQuickLaunch="FALSE"
+                TemplateType="10103"
+                Url="Lists/Application Links"
+                Description="My List Instance">    
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="URL">/Pages/EmployeeTimesheetPage.aspx, Weekly Time Entry</Field>
+          <Field Name="Permissions">Employees</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">2;#TimeSheets</Field>
+          <Field Name="Sort_x0020_Order">1</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Timesheet.aspx, Time Activity</Field>
+          <Field Name="Permissions">Employees</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">2;#TimeSheets</Field>
+          <Field Name="Sort_x0020_Order">2</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Reports.aspx, Employee PayStub</Field>
+          <Field Name="Permissions">Employees</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">1;#Employee Directory</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Timesheet.aspx.aspx, Timesheet Management</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">2;#TimeSheets</Field>
+          <Field Name="Sort_x0020_Order">4</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/EmployeesInsertPage.aspx, Add Employee</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">1;#Employee Directory</Field>
+          <Field Name="Sort_x0020_Order">5</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Lists/Employees/AllItems.aspx, Manage Employees</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">1;#Employee Directory</Field>
+          <Field Name="Sort_x0020_Order">6</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Employee.aspx, Employee Account Management</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">1;#Employee Directory</Field>
+          <Field Name="Sort_x0020_Order">7</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Reports.aspx, Employees PayStub Summary Report</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">2;#TimeSheets</Field>
+          <Field Name="Sort_x0020_Order">8</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/EmployeeTimesheetPage.aspx, Llenado de Planillas</Field>
+          <Field Name="Permissions">Employees</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">2;#TimeSheets</Field>
+          <Field Name="Sort_x0020_Order">1</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Default.aspx, Actividades de Planilla</Field>
+          <Field Name="Permissions">Employees</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">2;#TimeSheets</Field>
+          <Field Name="Sort_x0020_Order">2</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Default.aspx, Planilla de Empleado</Field>
+          <Field Name="Permissions">Employees</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">1;#Employee Directory</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Default.aspx, Manejo de Planillas</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">2;#TimeSheets</Field>
+          <Field Name="Sort_x0020_Order">4</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/EmployeesInsertPage.aspx, Anadir Empleado</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">1;#Employee Directory</Field>
+          <Field Name="Sort_x0020_Order">5</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Default.aspx, Manage de Empleados</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">1;#Employee Directory</Field>
+          <Field Name="Sort_x0020_Order">6</Field>
+          <Field Name="Language">1</Field>
+        </Row>        
+        <Row>
+          <Field Name="URL">/Pages/Default.aspx, Manejo de Cuentas</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">1;#Employee Directory</Field>
+          <Field Name="Sort_x0020_Order">7</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Default.aspx, Reporte de Planillas</Field>
+          <Field Name="Permissions">Supervisors</Field>
+          <Field Name="Module">1;#Human Resources</Field>
+          <Field Name="SubModule">2;#TimeSheets</Field>
+          <Field Name="Sort_x0020_Order">8</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Leads</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">1</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Opportunities</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">2</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Accounts</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Contacts</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">4</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Marketing Lists</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">5</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Competitors</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">6</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Products</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">7</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Quotes</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">8</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Orders</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">9</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Invoices</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">10</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Goals</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">11</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Leads</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">1</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Accounts</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">2</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Contacts</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Marketing Lists</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">4</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Campaigns</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">5</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Products</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">6</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>          
+          <Field Name="URL">/Pages/Services.aspx, Cases</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">1</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Accounts</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">2</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Contacts</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Services</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Contracts</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">4</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Products</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">5</Field>
+          <Field Name="Language">0</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Goals</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">6</Field>
+          <Field Name="Language">0</Field>
+        </Row>               
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Initiativas</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">1</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Oportunidades</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">2</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Cuentas</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Contactos</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">4</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Listas de Marketing</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">5</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Competidores</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">6</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Productos</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">7</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Estimados</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">8</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Ordenes</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">9</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Facturas</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">10</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Sales.aspx, Objetivos</Field>
+          <Field Name="Permissions">Sales</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">3;#Sales</Field>
+          <Field Name="Sort_x0020_Order">11</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Iniciativas</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">1</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Cuentas</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">2</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Contactos</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Listas de Marketing</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">4</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Campanas</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">5</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Marketing.aspx, Productos</Field>
+          <Field Name="Permissions">Marketing</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">4;#Marketing</Field>
+          <Field Name="Sort_x0020_Order">6</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Casos</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">1</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Cuentas</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">2</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Contactos</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Servicios</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">3</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Contractos</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">4</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Productos</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">5</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+        <Row>
+          <Field Name="URL">/Pages/Services.aspx, Objectivos</Field>
+          <Field Name="Permissions">Services</Field>
+          <Field Name="Module">2;#CRM</Field>
+          <Field Name="SubModule">5;#Services</Field>
+          <Field Name="Sort_x0020_Order">6</Field>
+          <Field Name="Language">1</Field>
+        </Row>
+      </Rows>
+    </Data>    
+  </ListInstance>
+</Elements>

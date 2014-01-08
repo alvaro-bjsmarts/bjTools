@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="BJSmarts ERP Employee TimeSheet Creation Job" Id="60bdbf49-d75e-4851-9a8f-bc517e93842b" ReceiverAssembly="BJSmarts.ERP.HR.TimerJob, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e4dfae44cf0c5df" ReceiverClass="BJSmarts.ERP.HR.TimerJob.Features.Feature1.Feature1EventReceiver" Scope="Site" Title="BJSmarts ERP Employee TimeSheet Creation Job"></Feature>

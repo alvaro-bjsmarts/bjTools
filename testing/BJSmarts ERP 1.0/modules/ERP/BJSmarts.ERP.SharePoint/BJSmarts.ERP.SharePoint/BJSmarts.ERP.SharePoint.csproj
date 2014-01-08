@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C168FBE-A533-44B7-8FC9-95DF96DD586D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BJSmarts.ERP.SharePoint</RootNamespace>
+    <AssemblyName>BJSmarts.ERP.SharePoint</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BusinessData, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.BusinessData.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\ICurrent.cs" />
+    <Compile Include="Entities\IDebug.cs" />
+    <Compile Include="Entities\IField.cs" />
+    <Compile Include="Entities\IGroup.cs" />
+    <Compile Include="Entities\ILanguage.cs" />
+    <Compile Include="Entities\ILanguageFactory.cs" />
+    <Compile Include="Entities\IList.cs" />
+    <Compile Include="Entities\ILog.cs" />
+    <Compile Include="Entities\IOrganization.cs" />
+    <Compile Include="Entities\ISettings.cs" />
+    <Compile Include="Entities\ISite.cs" />
+    <Compile Include="Entities\IUser.cs" />
+    <Compile Include="Entities\IUserControl.cs" />
+    <Compile Include="Entities\IWeb.cs" />
+    <Compile Include="Entities\SharePointContext.cs" />
+    <Compile Include="Entities\SharePointCurrent.cs" />
+    <Compile Include="Entities\SharePointDebug.cs" />
+    <Compile Include="Entities\SharePointEnglishLanguage.cs" />
+    <Compile Include="Entities\SharePointField.cs" />
+    <Compile Include="Entities\SharePointGroup.cs" />
+    <Compile Include="Entities\SharePointLanguage.cs" />
+    <Compile Include="Entities\SharePointLanguageFactory.cs" />
+    <Compile Include="Entities\SharePointList.cs" />
+    <Compile Include="Entities\SharePointLog.cs" />
+    <Compile Include="Entities\SharePointOrganization.cs" />
+    <Compile Include="Entities\SharePointSettings.cs" />
+    <Compile Include="Entities\SharePointSite.cs" />
+    <Compile Include="Entities\SharePointSpanishLanguage.cs" />
+    <Compile Include="Entities\SharePointUser.cs" />
+    <Compile Include="Entities\SharePointUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entities\SharePointWeb.cs" />
+    <Compile Include="Features\Web Features\Web Features.EventReceiver.cs">
+      <DependentUpon>Web Features.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\Countries\CountriesInsertWebPart\CountriesInsertWebPart.cs" />
+    <Compile Include="WebParts\Countries\CountriesInsertWebPart\CountriesInsertWebPartUserControl.ascx.cs">
+      <DependentUpon>CountriesInsertWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Countries\CountriesInsertWebPart\CountriesInsertWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CountriesInsertWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Countries\CountriesListViewWebPart\CountriesListViewWebPart.cs" />
+    <Compile Include="WebParts\Countries\CountriesListViewWebPart\CountriesListViewWebPartUserControl.ascx.cs">
+      <DependentUpon>CountriesListViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Countries\CountriesListViewWebPart\CountriesListViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CountriesListViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Countries\CountriesUpdateWebPart\CountriesUpdateWebPart.cs" />
+    <Compile Include="WebParts\Countries\CountriesUpdateWebPart\CountriesUpdateWebPartUserControl.ascx.cs">
+      <DependentUpon>CountriesUpdateWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Countries\CountriesUpdateWebPart\CountriesUpdateWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CountriesUpdateWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Countries\CountriesViewWebPart\CountriesViewWebPart.cs" />
+    <Compile Include="WebParts\Countries\CountriesViewWebPart\CountriesViewWebPartUserControl.ascx.cs">
+      <DependentUpon>CountriesViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Countries\CountriesViewWebPart\CountriesViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CountriesViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Currency\CurrencyInsertWebPart\CurrencyInsertWebPart.cs" />
+    <Compile Include="WebParts\Currency\CurrencyInsertWebPart\CurrencyInsertWebPartUserControl.ascx.cs">
+      <DependentUpon>CurrencyInsertWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Currency\CurrencyInsertWebPart\CurrencyInsertWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CurrencyInsertWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Currency\CurrencyListViewWebPart\CurrencyListViewWebPart.cs" />
+    <Compile Include="WebParts\Currency\CurrencyListViewWebPart\CurrencyListViewWebPartUserControl.ascx.cs">
+      <DependentUpon>CurrencyListViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Currency\CurrencyListViewWebPart\CurrencyListViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CurrencyListViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Currency\CurrencyUpdateWebPart\CurrencyUpdateWebPart.cs" />
+    <Compile Include="WebParts\Currency\CurrencyUpdateWebPart\CurrencyUpdateWebPartUserControl.ascx.cs">
+      <DependentUpon>CurrencyUpdateWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Currency\CurrencyUpdateWebPart\CurrencyUpdateWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CurrencyUpdateWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Currency\CurrencyViewWebPart\CurrencyViewWebPart.cs" />
+    <Compile Include="WebParts\Currency\CurrencyViewWebPart\CurrencyViewWebPartUserControl.ascx.cs">
+      <DependentUpon>CurrencyViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Currency\CurrencyViewWebPart\CurrencyViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>CurrencyViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Genders\GendersInsertWebPart\GendersInsertWebPart.cs" />
+    <Compile Include="WebParts\Genders\GendersInsertWebPart\GendersInsertWebPartUserControl.ascx.cs">
+      <DependentUpon>GendersInsertWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Genders\GendersInsertWebPart\GendersInsertWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>GendersInsertWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Genders\GendersListViewWebPart\GendersListViewWebPart.cs" />
+    <Compile Include="WebParts\Genders\GendersListViewWebPart\GendersListViewWebPartUserControl.ascx.cs">
+      <DependentUpon>GendersListViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Genders\GendersListViewWebPart\GendersListViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>GendersListViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Genders\GendersUpdateWebPart\GendersUpdateWebPart.cs" />
+    <Compile Include="WebParts\Genders\GendersUpdateWebPart\GendersUpdateWebPartUserControl.ascx.cs">
+      <DependentUpon>GendersUpdateWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Genders\GendersUpdateWebPart\GendersUpdateWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>GendersUpdateWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Genders\GendersViewWebPart\GendersViewWebPart.cs" />
+    <Compile Include="WebParts\Genders\GendersViewWebPart\GendersViewWebPartUserControl.ascx.cs">
+      <DependentUpon>GendersViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Genders\GendersViewWebPart\GendersViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>GendersViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Industry\IndustryInsertWebPart\IndustryInsertWebPart.cs" />
+    <Compile Include="WebParts\Industry\IndustryInsertWebPart\IndustryInsertWebPartUserControl.ascx.cs">
+      <DependentUpon>IndustryInsertWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Industry\IndustryInsertWebPart\IndustryInsertWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>IndustryInsertWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Industry\IndustryListViewWebPart\IndustryListViewWebPart.cs" />
+    <Compile Include="WebParts\Industry\IndustryListViewWebPart\IndustryListViewWebPartUserControl.ascx.cs">
+      <DependentUpon>IndustryListViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Industry\IndustryListViewWebPart\IndustryListViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>IndustryListViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Industry\IndustryUpdateWebPart\IndustryUpdateWebPart.cs" />
+    <Compile Include="WebParts\Industry\IndustryUpdateWebPart\IndustryUpdateWebPartUserControl.ascx.cs">
+      <DependentUpon>IndustryUpdateWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Industry\IndustryUpdateWebPart\IndustryUpdateWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>IndustryUpdateWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Industry\IndustryViewWebPart\IndustryViewWebPart.cs" />
+    <Compile Include="WebParts\Industry\IndustryViewWebPart\IndustryViewWebPartUserControl.ascx.cs">
+      <DependentUpon>IndustryViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Industry\IndustryViewWebPart\IndustryViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>IndustryViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\LinkWebPart\Module.cs" />
+    <Compile Include="WebParts\LinkWebPart\LinkWebPart.cs" />
+    <Compile Include="WebParts\LinkWebPart\LinkWebPartUserControl.ascx.cs">
+      <DependentUpon>LinkWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\LinkWebPart\LinkWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>LinkWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Marital\MaritalStatusInsertWebPart\MaritalStatusInsertWebPart.cs" />
+    <Compile Include="WebParts\Marital\MaritalStatusInsertWebPart\MaritalStatusInsertWebPartUserControl.ascx.cs">
+      <DependentUpon>MaritalStatusInsertWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Marital\MaritalStatusInsertWebPart\MaritalStatusInsertWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>MaritalStatusInsertWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Marital\MaritalStatusListViewWebPart\MaritalStatusListViewWebPart.cs" />
+    <Compile Include="WebParts\Marital\MaritalStatusListViewWebPart\MaritalStatusListViewWebPartUserControl.ascx.cs">
+      <DependentUpon>MaritalStatusListViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Marital\MaritalStatusListViewWebPart\MaritalStatusListViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>MaritalStatusListViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Marital\MaritalStatusUpdateWebPart\MaritalStatusUpdateWebPart.cs" />
+    <Compile Include="WebParts\Marital\MaritalStatusUpdateWebPart\MaritalStatusUpdateWebPartUserControl.ascx.cs">
+      <DependentUpon>MaritalStatusUpdateWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Marital\MaritalStatusUpdateWebPart\MaritalStatusUpdateWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>MaritalStatusUpdateWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Marital\MaritalStatusViewWebPart\MaritalStatusViewWebPart.cs" />
+    <Compile Include="WebParts\Marital\MaritalStatusViewWebPart\MaritalStatusViewWebPartUserControl.ascx.cs">
+      <DependentUpon>MaritalStatusViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Marital\MaritalStatusViewWebPart\MaritalStatusViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>MaritalStatusViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Organization\OrganizationsInsertWebPart\OrganizationsInsertWebPart.cs" />
+    <Compile Include="WebParts\Organization\OrganizationsInsertWebPart\OrganizationsInsertWebPartUserControl.ascx.cs">
+      <DependentUpon>OrganizationsInsertWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Organization\OrganizationsInsertWebPart\OrganizationsInsertWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>OrganizationsInsertWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Organization\OrganizationsListViewWebPart\OrganizationsListViewWebPart.cs" />
+    <Compile Include="WebParts\Organization\OrganizationsListViewWebPart\OrganizationsListViewWebPartUserControl.ascx.cs">
+      <DependentUpon>OrganizationsListViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Organization\OrganizationsListViewWebPart\OrganizationsListViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>OrganizationsListViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Organization\OrganizationsUpdateWebPart\OrganizationsUpdateWebPart.cs" />
+    <Compile Include="WebParts\Organization\OrganizationsUpdateWebPart\OrganizationsUpdateWebPartUserControl.ascx.cs">
+      <DependentUpon>OrganizationsUpdateWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Organization\OrganizationsUpdateWebPart\OrganizationsUpdateWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>OrganizationsUpdateWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Organization\OrganizationsViewWebPart\OrganizationsViewWebPart.cs" />
+    <Compile Include="WebParts\Organization\OrganizationsViewWebPart\OrganizationsViewWebPartUserControl.ascx.cs">
+      <DependentUpon>OrganizationsViewWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Organization\OrganizationsViewWebPart\OrganizationsViewWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>OrganizationsViewWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Web Features\Web Features.feature">
+      <FeatureId>{e1a8634e-2c14-4649-8110-47e00271a758}</FeatureId>
+    </None>
+    <None Include="Features\Site Features\Site Features.feature">
+      <FeatureId>{5e514c22-f722-446e-a35a-0f29fcc86dcf}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8b69bf1d-5e39-4c4d-9fd3-7b22acc6d8a6}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Lists\Application Errors\AppErrorsListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34f99c5d-2943-4e59-ba03-6b5edcf2728e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Application Errors\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{27768344-9e9b-48db-9a62-d7cd617b1c5d}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Application Links\AppLinkListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4b0cef1f-26e7-48c5-b412-7e6870322b46}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Application Links\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16c777a6-6ba9-442b-ac07-c47960ef4249}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Application Modules\AppModulesListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{83a92748-a5e7-49ff-9a84-0751f44e326f}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Application Modules\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f4b259d9-ae7c-4839-a4b7-46de609eb8e0}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Application Sub Modules\ApplicationSubModulesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{87351e73-aae4-48c5-8aa6-062f009e81bc}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Application Sub Modules\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{984af26a-3c08-413b-a9bd-8b944ce604c9}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Countries\ListsCountries_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{42e80a6f-e310-46b2-94c3-8dcdc44b6a89}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Countries\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f55a25bb-96e3-4fc5-90cb-45b1652aab3a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Currency_Type\ListsCurrency_Type_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2ab4b30-426e-4045-9a5b-fe8162e3105e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Currency_Type\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2932956e-defe-434c-be35-033efa23c3a0}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Genders\ListsGenders_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c44cd1ab-1583-4bdd-a191-181e73ebea61}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Genders\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8e478bfe-4d8d-4664-b768-826c213efe58}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Industry\ListsIndustry_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{04d36abd-382e-4a38-b5b6-f633a962b8d4}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Industry\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5b8fc80d-ac84-42e9-bf88-4f23c791d78f}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Language\ListsLanguage_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{377f6dfa-9083-456c-915d-1c8fc896b914}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Language\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ae10370-28ba-40c6-ba29-e4ce9466b436}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Marital_Status\ListsMarital_Status_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{33cbe5b2-8710-400c-91ae-b056e5c6f002}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Marital_Status\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{53fb7ef4-c3a9-49a1-8f79-e839ff0327a8}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Organizations\ListsOrganizations_pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3ea6b1bb-dfff-4cde-bc10-244456e272b4}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Organizations\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c8dc767-f3af-4f26-b4cc-783297df6cc8}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{00aba7f7-6985-4ba2-9c04-e8d9ebf5cce9}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4705fe8c-060f-4259-9f8d-faecbc5a5908}</SharePointProjectItemId>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9c60b1b7-2faf-4311-998c-2fb1b9764e25}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Countries\CountriesInsertWebPart\CountriesInsertWebPart.webpart" />
+    <None Include="WebParts\Countries\CountriesInsertWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0ee32775-3373-4e66-a739-3014d5bb99e7}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Countries\CountriesListViewWebPart\CountriesListViewWebPart.webpart" />
+    <None Include="WebParts\Countries\CountriesListViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b80a6cbd-8bf5-456b-8191-c315255133ef}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Countries\CountriesUpdateWebPart\CountriesUpdateWebPart.webpart" />
+    <None Include="WebParts\Countries\CountriesUpdateWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{67d78af5-65f0-4633-b26d-2240367f0717}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Countries\CountriesViewWebPart\CountriesViewWebPart.webpart" />
+    <None Include="WebParts\Countries\CountriesViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cdca6785-d866-4e05-8e5c-b0200c3d612d}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Currency\CurrencyInsertWebPart\CurrencyInsertWebPart.webpart" />
+    <None Include="WebParts\Currency\CurrencyInsertWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4fac368d-d8dd-479a-985a-623599efd328}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Currency\CurrencyListViewWebPart\CurrencyListViewWebPart.webpart" />
+    <None Include="WebParts\Currency\CurrencyListViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca2d2af8-2080-4039-b8fe-3a22332e2244}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Currency\CurrencyUpdateWebPart\CurrencyUpdateWebPart.webpart" />
+    <None Include="WebParts\Currency\CurrencyUpdateWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a509dc37-1013-4221-b50a-ace7bb6d615e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Currency\CurrencyViewWebPart\CurrencyViewWebPart.webpart" />
+    <None Include="WebParts\Currency\CurrencyViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1829564c-f362-4ffb-a338-c8e82c113161}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Genders\GendersInsertWebPart\GendersInsertWebPart.webpart" />
+    <None Include="WebParts\Genders\GendersInsertWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a3734c4e-eafc-455e-a2f0-304cece820e6}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Genders\GendersListViewWebPart\GendersListViewWebPart.webpart" />
+    <None Include="WebParts\Genders\GendersListViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb56cf15-2c5a-4680-9b6f-ecec9e4e52c3}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Genders\GendersUpdateWebPart\GendersUpdateWebPart.webpart" />
+    <None Include="WebParts\Genders\GendersUpdateWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e691482c-f1c6-40a8-a827-b41065baf8cf}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Genders\GendersViewWebPart\GendersViewWebPart.webpart" />
+    <None Include="WebParts\Genders\GendersViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5e3dfd55-b907-4d33-baef-be9deb9fb3d9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Industry\IndustryInsertWebPart\IndustryInsertWebPart.webpart" />
+    <None Include="WebParts\Industry\IndustryInsertWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{64c2b553-9549-4920-bdab-01108de945b6}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Industry\IndustryListViewWebPart\IndustryListViewWebPart.webpart" />
+    <None Include="WebParts\Industry\IndustryListViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9fdbecf3-45b9-4a10-b756-4ed8276e7e14}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Industry\IndustryUpdateWebPart\IndustryUpdateWebPart.webpart" />
+    <None Include="WebParts\Industry\IndustryUpdateWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a309ed8-01bf-4110-84b3-57c16b2be611}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Industry\IndustryViewWebPart\IndustryViewWebPart.webpart" />
+    <None Include="WebParts\Industry\IndustryViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4b4d7835-57dd-4bdb-9221-987749eff5fb}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\LinkWebPart\LinkWebPart.webpart" />
+    <None Include="WebParts\LinkWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4084b206-aa43-4ae2-a8cd-86016754185f}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Marital\MaritalStatusInsertWebPart\MaritalStatusInsertWebPart.webpart" />
+    <None Include="WebParts\Marital\MaritalStatusInsertWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3897634f-cd6d-407f-82db-cf5b1b1607e7}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Marital\MaritalStatusListViewWebPart\MaritalStatusListViewWebPart.webpart" />
+    <None Include="WebParts\Marital\MaritalStatusListViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{159c31b2-35d1-4b3b-ace5-4d4ab7a62042}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Marital\MaritalStatusUpdateWebPart\MaritalStatusUpdateWebPart.webpart" />
+    <None Include="WebParts\Marital\MaritalStatusUpdateWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9946d2a6-ae5b-4c8d-a116-c13a3fe5dcd9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Marital\MaritalStatusViewWebPart\MaritalStatusViewWebPart.webpart" />
+    <None Include="WebParts\Marital\MaritalStatusViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{22b44fdb-a74f-475b-a9b2-5e864b14d383}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Organization\OrganizationsInsertWebPart\OrganizationsInsertWebPart.webpart" />
+    <None Include="WebParts\Organization\OrganizationsInsertWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{079fc103-07f7-41bb-9048-a460b6cd4c46}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Organization\OrganizationsListViewWebPart\OrganizationsListViewWebPart.webpart" />
+    <None Include="WebParts\Organization\OrganizationsListViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ca57b3c9-d3a4-42f8-a081-6bc7bedd0af3}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Organization\OrganizationsUpdateWebPart\OrganizationsUpdateWebPart.webpart" />
+    <None Include="WebParts\Organization\OrganizationsUpdateWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{492b8549-5585-4a8f-b660-367d2bfc3fe9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Organization\OrganizationsViewWebPart\OrganizationsViewWebPart.webpart" />
+    <None Include="WebParts\Organization\OrganizationsViewWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6da9cc06-f98c-4815-bdeb-3eecddeee72c}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Web Features\Web Features.Template.xml">
+      <DependentUpon>Web Features.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Site Features\Site Features.Template.xml">
+      <DependentUpon>Site Features.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\BJSmarts.ERP.SharePoint\delete.gif" />
+    <Content Include="Images\BJSmarts.ERP.SharePoint\edit.gif" />
+    <Content Include="Images\BJSmarts.ERP.SharePoint\link_list-48x48.png" />
+    <Content Include="Images\BJSmarts.ERP.SharePoint\View.gif" />
+    <Content Include="Lists\Application Errors\Elements.xml" />
+    <Content Include="Lists\Application Errors\AppErrorsListInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\Application Errors\Schema.xml" />
+    <Content Include="Lists\Application Links\Elements.xml" />
+    <Content Include="Lists\Application Links\AppLinkListInstance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\Application Links\Schema.xml" />
+    <Content Include="Lists\Application Modules\Elements.xml" />
+    <Content Include="Lists\Application Modules\AppModulesListInstance\Elements.xml" />
+    <Content Include="Lists\Application Modules\Schema.xml" />
+    <Content Include="Lists\Application Sub Modules\Elements.xml" />
+    <Content Include="Lists\Application Sub Modules\ApplicationSubModulesInstance\Elements.xml" />
+    <Content Include="Lists\Application Sub Modules\Schema.xml" />
+    <Content Include="Lists\Countries\Elements.xml" />
+    <Content Include="Lists\Countries\ListsCountries_pages\Elements.xml" />
+    <Content Include="Lists\Countries\Schema.xml" />
+    <Content Include="Lists\Currency_Type\Elements.xml" />
+    <Content Include="Lists\Currency_Type\ListsCurrency_Type_pages\Elements.xml" />
+    <Content Include="Lists\Currency_Type\Schema.xml" />
+    <Content Include="Lists\Genders\Elements.xml" />
+    <Content Include="Lists\Genders\ListsGenders_pages\Elements.xml" />
+    <Content Include="Lists\Genders\Schema.xml" />
+    <Content Include="Lists\Industry\Elements.xml" />
+    <Content Include="Lists\Industry\ListsIndustry_pages\Elements.xml" />
+    <Content Include="Lists\Industry\Schema.xml" />
+    <Content Include="Lists\Language\Elements.xml" />
+    <Content Include="Lists\Language\ListsLanguage_pages\Elements.xml" />
+    <Content Include="Lists\Language\Schema.xml" />
+    <Content Include="Lists\Marital_Status\Elements.xml" />
+    <Content Include="Lists\Marital_Status\ListsMarital_Status_pages\Elements.xml" />
+    <Content Include="Lists\Marital_Status\Schema.xml" />
+    <Content Include="Lists\Organizations\Elements.xml" />
+    <Content Include="Lists\Organizations\ListsOrganizations_pages\Elements.xml" />
+    <Content Include="Lists\Organizations\Schema.xml" />
+    <Content Include="Pages\CountriesInsertPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Pages\CountriesListViewPage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Pages\CountriesUpdatePage.aspx" />
+    <Content Include="Pages\CountriesViewPage.aspx" />
+    <Content Include="Pages\CurrencyTypeInsertPage.aspx" />
+    <Content Include="Pages\CurrencyTypeListViewPage.aspx" />
+    <Content Include="Pages\CurrencyTypeUpdatePage.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Pages\CurrencyTypeViewPage.aspx" />
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\GendersInsertPage.aspx" />
+    <Content Include="Pages\GendersListViewPage.aspx" />
+    <Content Include="Pages\GendersUpdatePage.aspx" />
+    <Content Include="Pages\GendersViewPage.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\IndustryInsertPage.aspx" />
+    <Content Include="Pages\IndustryListViewPage.aspx" />
+    <Content Include="Pages\IndustryUpdatePage.aspx" />
+    <Content Include="Pages\IndustryViewPage.aspx" />
+    <Content Include="Pages\InitialConfigurationPage.aspx" />
+    <Content Include="Pages\MaritalStatusInsertPage.aspx" />
+    <Content Include="Pages\MaritalStatusListViewPage.aspx" />
+    <Content Include="Pages\MaritalStatusUpdatePage.aspx" />
+    <Content Include="Pages\MaritalStatusViewPage.aspx" />
+    <Content Include="Pages\OrganizationsInsertPage.aspx" />
+    <Content Include="Pages\OrganizationsListViewPage.aspx" />
+    <Content Include="Pages\OrganizationsUpdatePage.aspx" />
+    <Content Include="Pages\OrganizationsViewPage.aspx" />
+    <Content Include="Pages\Wizard.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Countries\CountriesInsertWebPart\CountriesInsertWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Countries\CountriesInsertWebPart\Elements.xml" />
+    <Content Include="WebParts\Countries\CountriesListViewWebPart\CountriesListViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Countries\CountriesListViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Countries\CountriesUpdateWebPart\CountriesUpdateWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Countries\CountriesUpdateWebPart\Elements.xml" />
+    <Content Include="WebParts\Countries\CountriesViewWebPart\CountriesViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Countries\CountriesViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Currency\CurrencyInsertWebPart\CurrencyInsertWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Currency\CurrencyInsertWebPart\Elements.xml" />
+    <Content Include="WebParts\Currency\CurrencyListViewWebPart\CurrencyListViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Currency\CurrencyListViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Currency\CurrencyUpdateWebPart\CurrencyUpdateWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Currency\CurrencyUpdateWebPart\Elements.xml" />
+    <Content Include="WebParts\Currency\CurrencyViewWebPart\CurrencyViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Currency\CurrencyViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Genders\GendersInsertWebPart\Elements.xml" />
+    <Content Include="WebParts\Genders\GendersInsertWebPart\GendersInsertWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Genders\GendersListViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Genders\GendersListViewWebPart\GendersListViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Genders\GendersUpdateWebPart\Elements.xml" />
+    <Content Include="WebParts\Genders\GendersUpdateWebPart\GendersUpdateWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Genders\GendersViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Genders\GendersViewWebPart\GendersViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Industry\IndustryInsertWebPart\Elements.xml" />
+    <Content Include="WebParts\Industry\IndustryInsertWebPart\IndustryInsertWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Industry\IndustryListViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Industry\IndustryListViewWebPart\IndustryListViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Industry\IndustryUpdateWebPart\Elements.xml" />
+    <Content Include="WebParts\Industry\IndustryUpdateWebPart\IndustryUpdateWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Industry\IndustryViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Industry\IndustryViewWebPart\IndustryViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\LinkWebPart\Elements.xml" />
+    <Content Include="WebParts\LinkWebPart\LinkWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Marital\MaritalStatusInsertWebPart\Elements.xml" />
+    <Content Include="WebParts\Marital\MaritalStatusInsertWebPart\MaritalStatusInsertWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Marital\MaritalStatusListViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Marital\MaritalStatusListViewWebPart\MaritalStatusListViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Marital\MaritalStatusUpdateWebPart\Elements.xml" />
+    <Content Include="WebParts\Marital\MaritalStatusUpdateWebPart\MaritalStatusUpdateWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Marital\MaritalStatusViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Marital\MaritalStatusViewWebPart\MaritalStatusViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Organization\OrganizationsInsertWebPart\Elements.xml" />
+    <Content Include="WebParts\Organization\OrganizationsInsertWebPart\OrganizationsInsertWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Organization\OrganizationsListViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Organization\OrganizationsListViewWebPart\OrganizationsListViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Organization\OrganizationsUpdateWebPart\Elements.xml" />
+    <Content Include="WebParts\Organization\OrganizationsUpdateWebPart\OrganizationsUpdateWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\Organization\OrganizationsViewWebPart\Elements.xml" />
+    <Content Include="WebParts\Organization\OrganizationsViewWebPart\OrganizationsViewWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CountriesResourceFile.es-ES.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CountriesResourceFile.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CurrencyTypeResourceFile.es-ES.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CurrencyTypeResourceFile.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\GendersResourceFile.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\GendersResourceFile.es-ES.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\IndustryResourceFile.es-ES.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\IndustryResourceFile.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MaritalStatusResourceFile.es-ES.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\MaritalStatusResourceFile.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\OrganizationsResourceFile.es-ES.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\OrganizationsResourceFile.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

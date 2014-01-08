@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="02bfc85a-934f-4854-b804-db5bb3eabd6e" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="BJSmarts.ERP.HRTimeSheetsCreation.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="BJSmarts.ERP.HRTimeSheetsCreation_Main\Feature.xml" />
+  </FeatureManifests>
+</Solution>

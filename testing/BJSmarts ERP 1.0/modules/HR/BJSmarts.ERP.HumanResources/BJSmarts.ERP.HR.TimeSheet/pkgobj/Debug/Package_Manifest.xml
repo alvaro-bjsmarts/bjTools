@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="2a5f24f7-a9a1-44cc-bc09-c49be1a38ad1" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="BJSmarts.ERP.HR.TimeSheet.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="BJSmarts.ERP.HR.TimeSheet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=00a988fa34dd5589" Namespace="BJSmarts.ERP.HR.TimeSheet.WebParts.EmployeeTimeSheetWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\BJSmarts.ERP.HR.TimeSheet\ApprovalRejectTimesheet.aspx" />
+    <TemplateFile Location="Layouts\BJSmarts.ERP.HR.TimeSheet\SubmitTimesheet.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="BJSmarts.ERP.HR.TimeSheet_WebFeatures\Feature.xml" />
+    <FeatureManifest Location="BJSmarts.ERP.HR.TimeSheet_SiteWebFeatures\Feature.xml" />
+  </FeatureManifests>
+</Solution>

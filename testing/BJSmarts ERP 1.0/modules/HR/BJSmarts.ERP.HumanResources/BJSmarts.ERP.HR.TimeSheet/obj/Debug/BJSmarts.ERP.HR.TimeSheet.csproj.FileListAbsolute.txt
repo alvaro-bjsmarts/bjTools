@@ -1,0 +1,6 @@
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HR.TimeSheet\bin\Debug\BJSmarts.ERP.HR.TimeSheet.dll
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HR.TimeSheet\bin\Debug\BJSmarts.ERP.HR.TimeSheet.pdb
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HR.TimeSheet\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HR.TimeSheet\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HR.TimeSheet\obj\Debug\BJSmarts.ERP.HR.TimeSheet.dll
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HR.TimeSheet\obj\Debug\BJSmarts.ERP.HR.TimeSheet.pdb

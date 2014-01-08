@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="486cbace-8513-4b4c-850e-df0ae1701625" solutionId="486cbace-8513-4b4c-850e-df0ae1701625" resetWebServer="false" name="BJSmarts.ERP.CRM" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="cb859774-36b3-4901-b133-9a120ee8725d" />
+  </features>
+</package>

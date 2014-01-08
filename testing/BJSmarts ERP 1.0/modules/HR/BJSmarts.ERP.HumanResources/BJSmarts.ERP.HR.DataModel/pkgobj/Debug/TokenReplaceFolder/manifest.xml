@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c66b4be4-e4ef-4713-823f-5d480794e825" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="BJSmarts.ERP.HR.DataModel.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="BJSmarts.ERP.HR.DataModel_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

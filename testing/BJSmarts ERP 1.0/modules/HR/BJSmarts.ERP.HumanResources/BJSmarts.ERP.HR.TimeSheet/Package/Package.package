@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2a5f24f7-a9a1-44cc-bc09-c49be1a38ad1" solutionId="2a5f24f7-a9a1-44cc-bc09-c49be1a38ad1" resetWebServer="false" name="BJSmarts.ERP.HR.TimeSheet" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="3f0e9e7e-f742-4ba2-9f96-29c74d3a5fdd" />
+    <featureReference itemId="ace7cfbf-4f4a-463a-aaeb-d135418a15ba" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="a4a2845b-1109-48d7-bd0b-afd5332a1f26" />
+    <projectItemReference itemId="5e1bc7b5-ef9d-48fd-9514-b7b29e25fa96" />
+  </projectItems>
+</package>

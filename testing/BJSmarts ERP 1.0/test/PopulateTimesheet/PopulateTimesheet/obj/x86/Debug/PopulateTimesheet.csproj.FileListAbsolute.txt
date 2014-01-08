@@ -1,0 +1,6 @@
+C:\Projects\BJSmarts ERP 1.0\test\PopulateTimesheet\PopulateTimesheet\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Projects\BJSmarts ERP 1.0\test\PopulateTimesheet\PopulateTimesheet\bin\Debug\PopulateTimesheet.exe.config
+C:\Projects\BJSmarts ERP 1.0\test\PopulateTimesheet\PopulateTimesheet\bin\Debug\PopulateTimesheet.exe
+C:\Projects\BJSmarts ERP 1.0\test\PopulateTimesheet\PopulateTimesheet\bin\Debug\PopulateTimesheet.pdb
+C:\Projects\BJSmarts ERP 1.0\test\PopulateTimesheet\PopulateTimesheet\obj\x86\Debug\PopulateTimesheet.exe
+C:\Projects\BJSmarts ERP 1.0\test\PopulateTimesheet\PopulateTimesheet\obj\x86\Debug\PopulateTimesheet.pdb

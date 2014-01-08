@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[Products]
+(
+	[ProductId] [int] IDENTITY(1,1) NOT NULL,
+	[Product Name] nvarchar(50),
+	[Product Description] nvarchar(250),
+	[Product Code] nvarchar(50),
+	[SubjectId] int,
+	[Subject] nvarchar (50),
+	[CategoryId] int,
+	[Category] nvarchar (50),
+	[CanBeSold] int,
+	[CanBePurchased] int,
+	[ProductTypeId] int,
+	[CurrencyId] int,
+	[Currency] nvarchar (50), 
+	[SalePrice] decimal,
+	[CostPrice] decimal,
+	[Vendor Name] nvarchar(50),
+	[Vendor Description] nvarchar(250),
+	[Vendor Part Number] nvarchar(50),
+	[IndustryId] int,
+	[Industry] nvarchar(50),
+	[Sort_Order] int,
+	[Language] int,
+	[Deleted] int
+)

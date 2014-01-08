@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="EmployeeInsertWebPart" List="113" Url="_catalogs/wp">
+    <File Path="EmployeeInsertWebPart\EmployeeInsertWebPart.webpart" Url="EmployeeInsertWebPart.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="ERP Web Parts" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,6 @@
+C:\Projects\BJSmarts ERP 1.0\modules\HR\TimeSheetWebPart\TimeSheetWebPart\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\BJSmarts ERP 1.0\modules\HR\TimeSheetWebPart\TimeSheetWebPart\bin\Debug\TimeSheetWebPart.dll
+C:\Projects\BJSmarts ERP 1.0\modules\HR\TimeSheetWebPart\TimeSheetWebPart\bin\Debug\TimeSheetWebPart.pdb
+C:\Projects\BJSmarts ERP 1.0\modules\HR\TimeSheetWebPart\TimeSheetWebPart\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Projects\BJSmarts ERP 1.0\modules\HR\TimeSheetWebPart\TimeSheetWebPart\obj\Debug\TimeSheetWebPart.dll
+C:\Projects\BJSmarts ERP 1.0\modules\HR\TimeSheetWebPart\TimeSheetWebPart\obj\Debug\TimeSheetWebPart.pdb

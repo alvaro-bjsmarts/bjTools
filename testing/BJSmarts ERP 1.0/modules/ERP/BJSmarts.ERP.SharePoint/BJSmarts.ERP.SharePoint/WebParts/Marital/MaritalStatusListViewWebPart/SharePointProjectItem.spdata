@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="MaritalStatusListViewWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="MaritalStatusListViewWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="MaritalStatusListViewWebPart.webpart" Target="MaritalStatusListViewWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="MaritalStatusListViewWebPartUserControl.ascx" Target="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Marital\MaritalStatusListViewWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BJSmarts.ERP.SharePoint.WebParts.Marital.MaritalStatusListViewWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="00aba7f7-6985-4ba2-9c04-e8d9ebf5cce9" solutionId="00aba7f7-6985-4ba2-9c04-e8d9ebf5cce9" resetWebServer="false" name="BJSmarts.ERP.SharePoint" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5e514c22-f722-446e-a35a-0f29fcc86dcf" />
+    <featureReference itemId="e1a8634e-2c14-4649-8110-47e00271a758" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="8b69bf1d-5e39-4c4d-9fd3-7b22acc6d8a6" />
+    <projectItemReference itemId="9c60b1b7-2faf-4311-998c-2fb1b9764e25" />
+  </projectItems>
+</package>

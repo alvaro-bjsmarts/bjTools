@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="This feature will provision all BJSmarts ERP CRM Data Model Feature" Id="0998997f-e113-4482-a86f-e1a52facc676" ReceiverAssembly="BJSmarts.ERP.CRM.DataModel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=91ed87922cb7829d" ReceiverClass="BJSmarts.ERP.CRM.DataModel.Features.Main.MainEventReceiver" Scope="Farm" Title="BJSmarts ERP CRM Data Model Feature">
+  <Properties>
+    <Property Key="GloballyAvailable" Value="true" />
+    <Property Key="BdcModel1" Value="BdcAssemblies\BJSmarts.ERP.CRM.DataModel.dll" />
+    <Property Key="IncrementalUpdate" Value="true" />
+    <Property Key="ModelFileName" Value="BJSmarts.ERP.CRM.DataModel\BJSmarts.ERP.CRM.Model.bdcm" />
+  </Properties>
+  <ElementManifests>
+    <ElementFile Location="BJSmarts.ERP.CRM.DataModel\BJSmarts.ERP.CRM.Model.bdcm" />
+    <ElementFile Location="BdcAssemblies\BJSmarts.ERP.CRM.DataModel.dll" />
+  </ElementManifests>
+</Feature>

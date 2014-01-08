@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="00aba7f7-6985-4ba2-9c04-e8d9ebf5cce9" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="BJSmarts.ERP.SharePoint.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.LinkWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.CountriesInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.CountriesUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.CountriesViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.CountriesListViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Organization.OrganizationsInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Organization.OrganizationsListViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Organization.OrganizationsUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Organization.OrganizationsViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Currency.CurrencyInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Currency.CurrencyListViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Currency.CurrencyUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Currency.CurrencyViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Genders.GendersInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Genders.GendersListViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Genders.GendersUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Genders.GendersViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Industry.IndustryInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Industry.IndustryListViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Industry.IndustryUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Industry.IndustryViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Marital.MaritalStatusInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Marital.MaritalStatusListViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Marital.MaritalStatusUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" Namespace="BJSmarts.ERP.SharePoint.WebParts.Marital.MaritalStatusViewWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="Resources\CountriesResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\CountriesResourceFile.resx" />
+    <RootFile Location="Resources\CurrencyTypeResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\CurrencyTypeResourceFile.resx" />
+    <RootFile Location="Resources\GendersResourceFile.resx" />
+    <RootFile Location="Resources\GendersResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\IndustryResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\IndustryResourceFile.resx" />
+    <RootFile Location="Resources\MaritalStatusResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\MaritalStatusResourceFile.resx" />
+    <RootFile Location="Resources\OrganizationsResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\OrganizationsResourceFile.resx" />
+  </RootFiles>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts\LinkWebPart\LinkWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts\CountriesInsertWebPart\CountriesInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts\CountriesUpdateWebPart\CountriesUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts\CountriesViewWebPart\CountriesViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts\CountriesListViewWebPart\CountriesListViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Organization\OrganizationsInsertWebPart\OrganizationsInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Organization\OrganizationsListViewWebPart\OrganizationsListViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Organization\OrganizationsUpdateWebPart\OrganizationsUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Organization\OrganizationsViewWebPart\OrganizationsViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Currency\CurrencyInsertWebPart\CurrencyInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Currency\CurrencyListViewWebPart\CurrencyListViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Currency\CurrencyUpdateWebPart\CurrencyUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Currency\CurrencyViewWebPart\CurrencyViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Genders\GendersInsertWebPart\GendersInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Genders\GendersListViewWebPart\GendersListViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Genders\GendersUpdateWebPart\GendersUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Genders\GendersViewWebPart\GendersViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Industry\IndustryInsertWebPart\IndustryInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Industry\IndustryListViewWebPart\IndustryListViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Industry\IndustryUpdateWebPart\IndustryUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Industry\IndustryViewWebPart\IndustryViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Marital\MaritalStatusInsertWebPart\MaritalStatusInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Marital\MaritalStatusListViewWebPart\MaritalStatusListViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Marital\MaritalStatusUpdateWebPart\MaritalStatusUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Marital\MaritalStatusViewWebPart\MaritalStatusViewWebPartUserControl.ascx" />
+    <TemplateFile Location="Images\BJSmarts.ERP.SharePoint\delete.gif" />
+    <TemplateFile Location="Images\BJSmarts.ERP.SharePoint\edit.gif" />
+    <TemplateFile Location="Images\BJSmarts.ERP.SharePoint\link_list-48x48.png" />
+    <TemplateFile Location="Images\BJSmarts.ERP.SharePoint\View.gif" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="BJSmarts.ERP.SharePoint_Site Features\Feature.xml" />
+    <FeatureManifest Location="BJSmarts.ERP.SharePoint_Web Features\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="02bfc85a-934f-4854-b804-db5bb3eabd6e" solutionId="02bfc85a-934f-4854-b804-db5bb3eabd6e" resetWebServer="false" name="BJSmarts.ERP.HRTimeSheetsCreation" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="7d837685-c9b2-44ca-91e9-77935981c44e" />
+  </features>
+</package>

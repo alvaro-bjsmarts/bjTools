@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Application Links" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/BJSmarts.ERP.SharePoint-ApplicationLinks" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Hidden="TRUE" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" ColName="nvarchar1"/>
+      <Field Type="URL" DisplayName="URL" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{9e01a551-aaa1-4c79-ba51-b33acd4652c9}" SourceID="{3b95be05-d022-4a14-b2d0-05f9e40f916f}" StaticName="URL" Name="URL" ColName="nvarchar3" RowOrdinal="0" ColName2="nvarchar4" RowOrdinal2="0"/>
+      <Field Type="Choice" DisplayName="Permissions" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{584e3da9-8b45-4d41-b0c8-15a8f9644dd2}" SourceID="{3b95be05-d022-4a14-b2d0-05f9e40f916f}" StaticName="Permissions" Name="Permissions" ColName="nvarchar5" RowOrdinal="0">
+        <CHOICES>
+          <CHOICE>Administrators</CHOICE>
+          <CHOICE>Sales</CHOICE>
+          <CHOICE>Marketing</CHOICE>
+          <CHOICE>Services</CHOICE>
+          <CHOICE>Executives</CHOICE>
+          <CHOICE>Employees</CHOICE>
+        </CHOICES>
+      </Field>
+
+      <Field ID="{F5070AF6-AD37-4DB2-A06B-25F32299A5B4}"
+          Name="SubModule"
+          DisplayName="SubModule"
+          Type="Lookup"
+          List="Lists/Application Sub Modules"
+          ShowField="Title"
+          Required="FALSE"
+          EnforceUniqueValues="FALSE" />
+
+      <Field ID="{B0F8B12E-177E-4E44-B006-E2AD1730F78A}"
+          Name="Module"
+          DisplayName="Module"
+          Type="Lookup"
+          List="Lists/Application Modules"
+          ShowField="Title"
+          Required="FALSE"
+          EnforceUniqueValues="FALSE" />
+      
+      <Field Type="Number" DisplayName="Sort Order" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{909dcc26-69ef-4e20-a0aa-ab58f5a6ca1c}" SourceID="{3b95be05-d022-4a14-b2d0-05f9e40f916f}" StaticName="Sort_x0020_Order" Name="Sort_x0020_Order" ColName="float1" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Language" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{730c903d-19f8-4472-9ccf-619f0ba3877b}" SourceID="{3b95be05-d022-4a14-b2d0-05f9e40f916f}" StaticName="Language" Name="Language" ColName="float2" RowOrdinal="0">
+        <Default>0</Default>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="URL"></FieldRef>
+          <FieldRef Name="Permissions"></FieldRef>
+          <FieldRef Name="Module"></FieldRef>
+          <FieldRef Name="SubModule"></FieldRef>
+          <FieldRef Name="Sort_x0020_Order"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

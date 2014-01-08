@@ -1,0 +1,12 @@
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\bin\Debug\BJSmarts.ERP.HumanResources.dll
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\bin\Debug\BJSmarts.ERP.HumanResources.pdb
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\obj\Debug\BJSmarts.ERP.HumanResources.dll
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\obj\Debug\BJSmarts.ERP.HumanResources.pdb
+C:\Projects\BJSmarts ERP 1.0\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Users\sp-Admin\Desktop\New folder\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\bin\Debug\BJSmarts.ERP.HumanResources.dll
+C:\Users\sp-Admin\Desktop\New folder\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\bin\Debug\BJSmarts.ERP.HumanResources.pdb
+C:\Users\sp-Admin\Desktop\New folder\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Users\sp-Admin\Desktop\New folder\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sp-Admin\Desktop\New folder\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\obj\Debug\BJSmarts.ERP.HumanResources.dll
+C:\Users\sp-Admin\Desktop\New folder\modules\HR\BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources\obj\Debug\BJSmarts.ERP.HumanResources.pdb

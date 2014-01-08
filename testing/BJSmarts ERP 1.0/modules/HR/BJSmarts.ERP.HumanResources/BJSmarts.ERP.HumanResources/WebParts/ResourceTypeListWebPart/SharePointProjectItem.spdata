@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="ResourceTypeListWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="ResourceTypeListWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="ResourceTypeListWebPart.webpart" Target="ResourceTypeListWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="ResourceTypeListWebPartUserControl.ascx" Target="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\ResourceTypeListWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BJSmarts.ERP.HumanResources.WebParts.ResourceTypeListWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

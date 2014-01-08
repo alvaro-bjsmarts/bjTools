@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Module Name="Reporting Library_" Url="Reporting Library" RootWebOnly="FALSE" Path="Files\1ReportingLibrary" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<File Url="HR Data Source.rsds" Type="GhostableInLibrary" Path="2HRDataSource.rsds">
+			<Property Name="ID" Value="1" />
+			<Property Name="ContentTypeId" Value="0x010100D8704AF8ED734F4088724751E0F2727D00E970C2D08C5CF941A2C5B6FB8D7BA9F2" />
+			<Property Name="ContentType" Value="Report Builder Model" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="Reporting Library" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="HR Data Source.rsds" />
+			<Property Name="MetaInfo" Value="1;#vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_modifiedby:SR|DISNEYLAND\\sp-siteadmin&#xD;&#xA;ContentTypeId:SW|0x010100D8704AF8ED734F4088724751E0F2727D00E970C2D08C5CF941A2C5B6FB8D7BA9F2&#xD;&#xA;vti_author:SR|DISNEYLAND\\sp-siteadmin&#xD;&#xA;" />
+			<Property Name="Order" Value="100.000000000000" />
+		</File>
+		<File Url="HR Data Model.smdl" Type="GhostableInLibrary" Path="3HRDataModel.smdl">
+			<Property Name="ID" Value="2" />
+			<Property Name="ContentTypeId" Value="0x010100D8704AF8ED734F4088724751E0F2727D00E970C2D08C5CF941A2C5B6FB8D7BA9F2" />
+			<Property Name="ContentType" Value="Report Builder Model" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="Reporting Library" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="HR Data Model.smdl" />
+			<Property Name="MetaInfo" Value="2;#vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_modifiedby:SR|DISNEYLAND\\sp-siteadmin&#xD;&#xA;ContentTypeId:SW|0x010100D8704AF8ED734F4088724751E0F2727D00E970C2D08C5CF941A2C5B6FB8D7BA9F2&#xD;&#xA;vti_author:SR|DISNEYLAND\\sp-siteadmin&#xD;&#xA;" />
+			<Property Name="Order" Value="200.000000000000" />
+		</File>
+		<File Url="HRDetail.rdl" Type="GhostableInLibrary" Path="HRDetail.rdl">
+			<Property Name="ID" Value="4" />
+			<Property Name="ContentTypeId" Value="0x010100D8704AF8ED734F4088724751E0F2727D00E970C2D08C5CF941A2C5B6FB8D7BA9F2" />
+			<Property Name="ContentType" Value="Report Builder Model" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="Reporting Library" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="HRDetail.rdl" />
+			<Property Name="MetaInfo" Value="4;#vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;ContentTypeId:SW|0x010100D8704AF8ED734F4088724751E0F2727D00E970C2D08C5CF941A2C5B6FB8D7BA9F2&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;" />
+			<Property Name="Order" Value="400.000000000000" />
+		</File>
+		<File Url="HRSummary.rdl" Type="GhostableInLibrary" Path="HRSummary.rdl">
+			<Property Name="ID" Value="3" />
+			<Property Name="ContentTypeId" Value="0x010100D8704AF8ED734F4088724751E0F2727D00E970C2D08C5CF941A2C5B6FB8D7BA9F2" />
+			<Property Name="ContentType" Value="Report Builder Model" />
+			<Property Name="_ModerationStatus" Value="0" />
+			<Property Name="FileDirRef" Value="Reporting Library" />
+			<Property Name="FSObjType" Value="0" />
+			<Property Name="FileLeafRef" Value="HRSummary.rdl" />
+			<Property Name="MetaInfo" Value="3;#vti_parserversion:SR|14.0.0.4762&#xD;&#xA;vti_folderitemcount:IR|0&#xD;&#xA;vti_foldersubfolderitemcount:IR|0&#xD;&#xA;vti_modifiedby:SR|SHAREPOINT\\system&#xD;&#xA;ContentTypeId:SW|0x010100D8704AF8ED734F4088724751E0F2727D00E970C2D08C5CF941A2C5B6FB8D7BA9F2&#xD;&#xA;vti_author:SR|SHAREPOINT\\system&#xD;&#xA;" />
+			<Property Name="Order" Value="300.000000000000" />
+		</File>
+	</Module>
+</Elements>

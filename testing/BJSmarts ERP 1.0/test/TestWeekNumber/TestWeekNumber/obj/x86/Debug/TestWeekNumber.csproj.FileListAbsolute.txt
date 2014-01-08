@@ -1,0 +1,6 @@
+C:\Projects\BJSmarts ERP 1.0\test\TestWeekNumber\TestWeekNumber\bin\Debug\TestWeekNumber.exe
+C:\Projects\BJSmarts ERP 1.0\test\TestWeekNumber\TestWeekNumber\bin\Debug\TestWeekNumber.pdb
+C:\Projects\BJSmarts ERP 1.0\test\TestWeekNumber\TestWeekNumber\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Projects\BJSmarts ERP 1.0\test\TestWeekNumber\TestWeekNumber\obj\x86\Debug\TestWeekNumber.exe
+C:\Projects\BJSmarts ERP 1.0\test\TestWeekNumber\TestWeekNumber\obj\x86\Debug\TestWeekNumber.pdb
+C:\Projects\BJSmarts ERP 1.0\test\TestWeekNumber\TestWeekNumber\bin\Debug\Microsoft.Sharepoint.Sandbox.dll

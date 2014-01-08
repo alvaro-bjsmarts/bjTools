@@ -1,0 +1,6 @@
+C:\Projects\BJSmarts ERP 1.0\test\TestWorkflow\TestWorkflow\bin\Debug\TestWorkflow.dll
+C:\Projects\BJSmarts ERP 1.0\test\TestWorkflow\TestWorkflow\bin\Debug\TestWorkflow.pdb
+C:\Projects\BJSmarts ERP 1.0\test\TestWorkflow\TestWorkflow\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Projects\BJSmarts ERP 1.0\test\TestWorkflow\TestWorkflow\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\BJSmarts ERP 1.0\test\TestWorkflow\TestWorkflow\obj\Debug\TestWorkflow.dll
+C:\Projects\BJSmarts ERP 1.0\test\TestWorkflow\TestWorkflow\obj\Debug\TestWorkflow.pdb

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f61524df-7f69-4d6b-9f80-5ad47a1d98dd" solutionId="f61524df-7f69-4d6b-9f80-5ad47a1d98dd" resetWebServer="false" name="EmployeeTimeSheetWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="64a78c46-f75c-4f28-b773-5b37b0bc7236" />
+  </features>
+</package>

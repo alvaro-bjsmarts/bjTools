@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="IndustryViewWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="IndustryViewWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="IndustryViewWebPart.webpart" Target="IndustryViewWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="IndustryViewWebPartUserControl.ascx" Target="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Industry\IndustryViewWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BJSmarts.ERP.SharePoint.WebParts.Industry.IndustryViewWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

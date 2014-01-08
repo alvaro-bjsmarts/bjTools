@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="74cdd5ae-1636-4f31-9828-ea80c1fa5822" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="BJSmarts.ERP.HumanResources.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeTypesInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeTypesListWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeTypesUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeTypesViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.ResourceTypeInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.ResourceTypeListWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.ResourceTypeUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.ResourceTypeViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeAcctsInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeAcctsListWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeAcctsUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeAcctsViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeTTInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeTTListWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeTTUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.EmployeeTTViewWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.DepartmentInsertWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.DepartmentListWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.DepartmentUpdateWebPart" TypeName="*" />
+        <SafeControl Assembly="BJSmarts.ERP.HumanResources, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ea3e714b5f3d15f6" Namespace="BJSmarts.ERP.HumanResources.WebParts.DepartmentViewWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="Resources\EmployeeTypesResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\EmployeeTypesResourceFile.resx" />
+    <RootFile Location="Resources\ResourceTypesResourceFile.resx" />
+    <RootFile Location="Resources\ResourceTypesResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\EmployeeAccountsResourceFile.resx" />
+    <RootFile Location="Resources\EmployeeAccountsResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\EmployeeTerminationTypeResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\EmployeeTerminationTypeResourceFile.resx" />
+    <RootFile Location="Resources\DepartmentsResourceFile.resx" />
+    <RootFile Location="Resources\DepartmentsResourceFile.es-ES.resx" />
+    <RootFile Location="Resources\EmployeesResourceFile.resx" />
+    <RootFile Location="Resources\EmployeesResourceFile.es-ES.resx" />
+  </RootFiles>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeInsertWebPart\EmployeeInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeUpdateWebPart\EmployeeUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeViewWebPart\EmployeeViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeTypesInsertWebPart\EmployeeTypesInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeTypesListWebPart\EmployeeTypesListWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeTypesUpdateWebPart\EmployeeTypesUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeTypesViewWebPart\EmployeeTypesViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\ResourceTypeInsertWebPart\ResourceTypeInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\ResourceTypeListWebPart\ResourceTypeListWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\ResourceTypeUpdateWebPart\ResourceTypeUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\ResourceTypeViewWebPart\ResourceTypeViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeAcctsInsertWebPart\EmployeeAcctsInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeAcctsListWebPart\EmployeeAcctsListWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeAcctsUpdateWebPart\EmployeeAcctsUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeAcctsViewWebPart\EmployeeAcctsViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeTTInsertWebPart\EmployeeTTInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeTTListWebPart\EmployeeTTListWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeTTUpdateWebPart\EmployeeTTUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\EmployeeTTViewWebPart\EmployeeTTViewWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\DepartmentInsertWebPart\DepartmentInsertWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\DepartmentListWebPart\DepartmentListWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\DepartmentUpdateWebPart\DepartmentUpdateWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\BJSmarts.ERP.HumanResources.WebParts\DepartmentViewWebPart\DepartmentViewWebPartUserControl.ascx" />
+    <TemplateFile Location="Images\BJSmarts.ERP.HumanResources\link_list-48x48.png" />
+    <TemplateFile Location="Images\BJSmarts.ERP.HumanResources\TimeSheet.jpg" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="BJSmarts.ERP.HumanResources_Web Features\Feature.xml" />
+    <FeatureManifest Location="BJSmarts.ERP.HumanResources_Site Features\Feature.xml" />
+  </FeatureManifests>
+</Solution>

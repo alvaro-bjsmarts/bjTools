@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Products" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/BJSmarts.ERP.CRM-Products" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Hidden="TRUE" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" ColName="nvarchar1"/>
+      <Field Type="Text" DisplayName="Product Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{3a607c0a-daa5-40e0-a495-91b9b529073c}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Product_x0020_Name" Name="Product_x0020_Name" ColName="nvarchar3" RowOrdinal="0"/>
+      <Field Type="Note" DisplayName="Product Description" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{6f8f92cb-9239-4c8b-83a0-65ae02e85e86}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Product_x0020_Description" Name="Product_x0020_Description" ColName="ntext2" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Product Code" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{edb81c5c-1468-4e91-8544-d2f217b6e6db}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Product_x0020_Code" Name="Product_x0020_Code" ColName="nvarchar4" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Subject" Required="FALSE" EnforceUniqueValues="FALSE" ID="{3e205d80-9117-4026-b82d-8c0ea8e0e39f}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Subject" BaseRenderingType="Text" Name="Subject" ColName="nvarchar5" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM Subject" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_Subject_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_Subject_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM Subject_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM Subject_ID" ID="{b70a2be7-5570-4839-950d-a20e08971b29}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="CRM_x0020_Subject_ID" Name="CRM_x0020_Subject_ID" ColName="ntext3" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Product Category" Required="FALSE" EnforceUniqueValues="FALSE" ID="{b1d31cbf-c9f1-4eaa-a35e-b62c81dd08be}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Product_x0020_Category" BaseRenderingType="Text" Name="Product_x0020_Category" ColName="nvarchar6" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM ProductCategories" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_ProductCategories_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_ProductCategories_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM ProductCategories_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM ProductCategories_ID" ID="{ff748ea1-d8cd-4f7b-a68e-88382e87ceac}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="CRM_x0020_ProductCategories_ID" Name="CRM_x0020_ProductCategories_ID" ColName="ntext4" RowOrdinal="0"/>
+      <Field Type="Choice" DisplayName="CanBeSold" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{4ab748b6-4054-4347-9329-94110694b6da}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="CanBeSold" Name="CanBeSold" ColName="nvarchar7" RowOrdinal="0">
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="CanBePurchase" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{bc3da612-64f9-4730-833c-068bb0e219bf}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="CanBePurchase" Name="CanBePurchase" ColName="nvarchar8" RowOrdinal="0">
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="BusinessData" DisplayName="Product Type" Required="FALSE" EnforceUniqueValues="FALSE" ID="{a33fdd06-6b2a-4d71-8d59-9b100a046aaa}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Product_x0020_Type" BaseRenderingType="Text" Name="Product_x0020_Type" ColName="nvarchar9" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM AccountCategory" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_AccountCategory_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_AccountCategory_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM AccountCategory_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM AccountCategory_ID" ID="{28e03b90-42b7-46f5-8c48-b153cc616a63}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="CRM_x0020_AccountCategory_ID" Name="CRM_x0020_AccountCategory_ID" ColName="ntext5" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Currency" Required="FALSE" EnforceUniqueValues="FALSE" ID="{fc06fad3-c081-451e-9c9c-538140ed210a}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Currency" BaseRenderingType="Text" Name="Currency" ColName="nvarchar10" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="ERP Currency Type" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="ERP_x0020_Currency_x0020_Type_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="ERP_x0020_Currency_x0020_Type_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="ERP Currency Type_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="ERP Currency Type_ID" ID="{5144beb6-ce1b-4c88-b87f-45736326eb85}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="ERP_x0020_Currency_x0020_Type_ID" Name="ERP_x0020_Currency_x0020_Type_ID" ColName="ntext6" RowOrdinal="0"/>
+      <Field Type="Currency" DisplayName="Sale Price" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" LCID="1033" ID="{7845bf69-2585-4d03-876e-7cb0e53a1a18}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Sale_x0020_Price" Name="Sale_x0020_Price" ColName="float1" RowOrdinal="0"/>
+      <Field Type="Currency" DisplayName="Cost Price" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" LCID="1033" ID="{f58a5cd1-402d-467e-b3c2-07dd87031158}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Cost_x0020_Price" Name="Cost_x0020_Price" ColName="float2" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Vendor Name" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{2aff0421-ab3b-466f-a6b1-a93839069008}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Vendor_x0020_Name" Name="Vendor_x0020_Name" ColName="nvarchar11" RowOrdinal="0"/>
+      <Field Type="Note" DisplayName="Vendor Description" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{e9a24a74-d711-40f8-9936-46617ade4dc8}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Vendor_x0020_Description" Name="Vendor_x0020_Description" ColName="ntext7" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Vendor Part Number" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{e6228173-98c6-4011-8b42-5b105968aa01}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Vendor_x0020_Part_x0020_Number" Name="Vendor_x0020_Part_x0020_Number" ColName="nvarchar12" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Sort_Order" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{85b1d9f5-9a7e-4878-853f-6b678549d9cc}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Sort_Order" Name="Sort_Order" ColName="float3" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Language" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{c4f43b0a-20c4-4065-a81b-2e2e2c058219}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Language" Name="Language" ColName="float4" RowOrdinal="0"/>
+      <Field Type="Choice" DisplayName="Deleted" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{9683e158-98db-40f5-9141-92f38a5e3b44}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Deleted" Name="Deleted" ColName="nvarchar13" RowOrdinal="0">
+        <Default>Yes</Default>
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="URL" DisplayName="Edit Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{91bf253f-fc74-4487-a206-c10df37f3c37}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="Edit_x0020_Hyperlink" Name="Edit_x0020_Hyperlink" ColName="nvarchar14" RowOrdinal="0" ColName2="nvarchar15" RowOrdinal2="0"/>
+      <Field Type="URL" DisplayName="View Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{cadfbc44-3da6-47a8-a694-c6c5c26d0a4a}" SourceID="{65c08829-ff2d-405a-b53a-9bb0265b339f}" StaticName="View_x0020_Hyperlink" Name="View_x0020_Hyperlink" ColName="nvarchar16" RowOrdinal="0" ColName2="nvarchar17" RowOrdinal2="0"/>
+      <Field Type="BusinessData" DisplayName="Organization" Required="FALSE" EnforceUniqueValues="FALSE" ID="{83a6a239-a5ea-4507-9987-fc7ea4148194}" SourceID="{31cac32e-26f5-40dc-b88e-d6a27af036ac}" StaticName="Organization" BaseRenderingType="Text" Name="Organization" ColName="nvarchar18" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="ERP Organizations" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="ERP_x0020_Organizations_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="ERP_x0020_Organizations_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="ERP Organizations_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="ERP Organizations_ID" ID="{fa06c4c7-f533-42f1-90d6-6e295f9ab1df}" SourceID="{31cac32e-26f5-40dc-b88e-d6a27af036ac}" StaticName="ERP_x0020_Organizations_ID" Name="ERP_x0020_Organizations_ID" ColName="ntext8" RowOrdinal="0"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Product_x0020_Name"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

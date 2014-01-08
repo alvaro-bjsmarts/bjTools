@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="d9d0f600-100b-498a-a0d4-0b9b2ec0d963" Scope="Site" Title="BJSmarts ERP HumanResources Site Level Features">
+  <ElementManifests>
+    <ElementManifest Location="EmployeeInsertWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeInsertWebPart\EmployeeInsertWebPart.webpart" />
+    <ElementManifest Location="EmployeeUpdateWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeUpdateWebPart\EmployeeUpdateWebPart.webpart" />
+    <ElementManifest Location="EmployeeViewWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeViewWebPart\EmployeeViewWebPart.webpart" />
+    <ElementManifest Location="EmployeeTypesInsertWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeTypesInsertWebPart\EmployeeTypesInsertWebPart.webpart" />
+    <ElementManifest Location="EmployeeTypesListWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeTypesListWebPart\EmployeeTypesListWebPart.webpart" />
+    <ElementManifest Location="EmployeeTypesUpdateWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeTypesUpdateWebPart\EmployeeTypesUpdateWebPart.webpart" />
+    <ElementManifest Location="EmployeeTypesViewWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeTypesViewWebPart\EmployeeTypesViewWebPart.webpart" />
+    <ElementManifest Location="ResourceTypeInsertWebPart\Elements.xml" />
+    <ElementFile Location="ResourceTypeInsertWebPart\ResourceTypeInsertWebPart.webpart" />
+    <ElementManifest Location="ResourceTypeListWebPart\Elements.xml" />
+    <ElementFile Location="ResourceTypeListWebPart\ResourceTypeListWebPart.webpart" />
+    <ElementManifest Location="ResourceTypeUpdateWebPart\Elements.xml" />
+    <ElementFile Location="ResourceTypeUpdateWebPart\ResourceTypeUpdateWebPart.webpart" />
+    <ElementManifest Location="ResourceTypeViewWebPart\Elements.xml" />
+    <ElementFile Location="ResourceTypeViewWebPart\ResourceTypeViewWebPart.webpart" />
+    <ElementManifest Location="EmployeeAcctsInsertWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeAcctsInsertWebPart\EmployeeAcctsInsertWebPart.webpart" />
+    <ElementManifest Location="EmployeeAcctsListWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeAcctsListWebPart\EmployeeAcctsListWebPart.webpart" />
+    <ElementManifest Location="EmployeeAcctsUpdateWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeAcctsUpdateWebPart\EmployeeAcctsUpdateWebPart.webpart" />
+    <ElementManifest Location="EmployeeAcctsViewWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeAcctsViewWebPart\EmployeeAcctsViewWebPart.webpart" />
+    <ElementManifest Location="EmployeeTTInsertWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeTTInsertWebPart\EmployeeTTInsertWebPart.webpart" />
+    <ElementManifest Location="EmployeeTTListWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeTTListWebPart\EmployeeTTListWebPart.webpart" />
+    <ElementManifest Location="EmployeeTTUpdateWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeTTUpdateWebPart\EmployeeTTUpdateWebPart.webpart" />
+    <ElementManifest Location="EmployeeTTViewWebPart\Elements.xml" />
+    <ElementFile Location="EmployeeTTViewWebPart\EmployeeTTViewWebPart.webpart" />
+    <ElementManifest Location="DepartmentInsertWebPart\Elements.xml" />
+    <ElementFile Location="DepartmentInsertWebPart\DepartmentInsertWebPart.webpart" />
+    <ElementManifest Location="DepartmentListWebPart\Elements.xml" />
+    <ElementFile Location="DepartmentListWebPart\DepartmentListWebPart.webpart" />
+    <ElementManifest Location="DepartmentUpdateWebPart\Elements.xml" />
+    <ElementFile Location="DepartmentUpdateWebPart\DepartmentUpdateWebPart.webpart" />
+    <ElementManifest Location="DepartmentViewWebPart\Elements.xml" />
+    <ElementFile Location="DepartmentViewWebPart\DepartmentViewWebPart.webpart" />
+  </ElementManifests>
+</Feature>

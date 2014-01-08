@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="2ab1e79c-11c9-4bba-859e-7d0c0291e054" solutionId="2ab1e79c-11c9-4bba-859e-7d0c0291e054" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="TestWorkflow">
+    <features>
+        <featureReference itemId="e230879f-2a00-40aa-8689-edd45abf3156" />
+    </features>
+</package>

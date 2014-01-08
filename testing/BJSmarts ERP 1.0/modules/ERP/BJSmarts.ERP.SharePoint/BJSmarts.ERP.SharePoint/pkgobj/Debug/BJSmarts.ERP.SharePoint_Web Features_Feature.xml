@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="This feature will provision all BJSmarts ERP Core Site Level Features" Id="7e32ba20-d6dc-42d5-a2fd-0c6dc50eb5ff" ReceiverAssembly="BJSmarts.ERP.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e215a73f01ab28e3" ReceiverClass="BJSmarts.ERP.SharePoint.Features.Web_Features.Web_FeaturesEventReceiver" Scope="Web" Title="BJSmarts ERP Core Web Level Features">
+  <ElementManifests>
+    <ElementManifest Location="AppLinkListInstance\Elements.xml" />
+    <ElementManifest Location="Application Links\Elements.xml" />
+    <ElementFile Location="Application Links\Schema.xml" />
+    <ElementManifest Location="AppModulesListInstance\Elements.xml" />
+    <ElementManifest Location="Application Modules\Elements.xml" />
+    <ElementFile Location="Application Modules\Schema.xml" />
+    <ElementManifest Location="ListsCountries_pages\Elements.xml" />
+    <ElementFile Location="Files\Lists\Countries\Schema.xml" />
+    <ElementManifest Location="Countries\Elements.xml" />
+    <ElementManifest Location="ListsCurrency_Type_pages\Elements.xml" />
+    <ElementFile Location="Files\Lists\Currency Type\Schema.xml" />
+    <ElementManifest Location="Currency_Type\Elements.xml" />
+    <ElementManifest Location="ListsGenders_pages\Elements.xml" />
+    <ElementFile Location="Files\Lists\Genders\Schema.xml" />
+    <ElementManifest Location="Genders\Elements.xml" />
+    <ElementManifest Location="ListsIndustry_pages\Elements.xml" />
+    <ElementFile Location="Files\Lists\Industry\Schema.xml" />
+    <ElementManifest Location="Industry\Elements.xml" />
+    <ElementManifest Location="ListsLanguage_pages\Elements.xml" />
+    <ElementFile Location="Files\Lists\Language\Schema.xml" />
+    <ElementManifest Location="Language\Elements.xml" />
+    <ElementManifest Location="ListsMarital_Status_pages\Elements.xml" />
+    <ElementFile Location="Files\Lists\Marital Status\Schema.xml" />
+    <ElementManifest Location="Marital_Status\Elements.xml" />
+    <ElementManifest Location="AppErrorsListInstance\Elements.xml" />
+    <ElementManifest Location="Application Errors\Elements.xml" />
+    <ElementFile Location="Application Errors\Schema.xml" />
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Home.aspx" />
+    <ElementFile Location="Pages\CountriesListViewPage.aspx" />
+    <ElementFile Location="Pages\CountriesInsertPage.aspx" />
+    <ElementFile Location="Pages\CountriesUpdatePage.aspx" />
+    <ElementFile Location="Pages\CountriesViewPage.aspx" />
+    <ElementFile Location="Pages\OrganizationsInsertPage.aspx" />
+    <ElementFile Location="Pages\OrganizationsListViewPage.aspx" />
+    <ElementFile Location="Pages\OrganizationsUpdatePage.aspx" />
+    <ElementFile Location="Pages\OrganizationsViewPage.aspx" />
+    <ElementFile Location="Pages\CurrencyTypeInsertPage.aspx" />
+    <ElementFile Location="Pages\CurrencyTypeListViewPage.aspx" />
+    <ElementFile Location="Pages\CurrencyTypeUpdatePage.aspx" />
+    <ElementFile Location="Pages\CurrencyTypeViewPage.aspx" />
+    <ElementFile Location="Pages\GendersInsertPage.aspx" />
+    <ElementFile Location="Pages\GendersListViewPage.aspx" />
+    <ElementFile Location="Pages\GendersUpdatePage.aspx" />
+    <ElementFile Location="Pages\GendersViewPage.aspx" />
+    <ElementFile Location="Pages\IndustryInsertPage.aspx" />
+    <ElementFile Location="Pages\IndustryListViewPage.aspx" />
+    <ElementFile Location="Pages\IndustryUpdatePage.aspx" />
+    <ElementFile Location="Pages\IndustryViewPage.aspx" />
+    <ElementFile Location="Pages\MaritalStatusInsertPage.aspx" />
+    <ElementFile Location="Pages\MaritalStatusListViewPage.aspx" />
+    <ElementFile Location="Pages\MaritalStatusUpdatePage.aspx" />
+    <ElementFile Location="Pages\MaritalStatusViewPage.aspx" />
+    <ElementFile Location="Pages\Wizard.aspx" />
+    <ElementFile Location="Pages\InitialConfigurationPage.aspx" />
+    <ElementManifest Location="ApplicationSubModulesInstance\Elements.xml" />
+    <ElementManifest Location="Application Sub Modules\Elements.xml" />
+    <ElementFile Location="Application Sub Modules\Schema.xml" />
+    <ElementFile Location="Files\Lists\Organizations\Schema.xml" />
+    <ElementManifest Location="Organizations\Elements.xml" />
+    <ElementManifest Location="ListsOrganizations_pages\Elements.xml" />
+  </ElementManifests>
+</Feature>

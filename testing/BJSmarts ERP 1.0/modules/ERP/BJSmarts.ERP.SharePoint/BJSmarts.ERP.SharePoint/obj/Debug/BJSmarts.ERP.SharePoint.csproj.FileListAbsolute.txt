@@ -1,0 +1,6 @@
+C:\Projects\BJSmarts ERP 1.0\modules\ERP\BJSmarts.ERP.SharePoint\BJSmarts.ERP.SharePoint\bin\Debug\BJSmarts.ERP.SharePoint.dll
+C:\Projects\BJSmarts ERP 1.0\modules\ERP\BJSmarts.ERP.SharePoint\BJSmarts.ERP.SharePoint\bin\Debug\BJSmarts.ERP.SharePoint.pdb
+C:\Projects\BJSmarts ERP 1.0\modules\ERP\BJSmarts.ERP.SharePoint\BJSmarts.ERP.SharePoint\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\BJSmarts ERP 1.0\modules\ERP\BJSmarts.ERP.SharePoint\BJSmarts.ERP.SharePoint\obj\Debug\BJSmarts.ERP.SharePoint.dll
+C:\Projects\BJSmarts ERP 1.0\modules\ERP\BJSmarts.ERP.SharePoint\BJSmarts.ERP.SharePoint\obj\Debug\BJSmarts.ERP.SharePoint.pdb
+C:\Projects\BJSmarts ERP 1.0\modules\ERP\BJSmarts.ERP.SharePoint\BJSmarts.ERP.SharePoint\bin\Debug\Microsoft.Sharepoint.Sandbox.dll

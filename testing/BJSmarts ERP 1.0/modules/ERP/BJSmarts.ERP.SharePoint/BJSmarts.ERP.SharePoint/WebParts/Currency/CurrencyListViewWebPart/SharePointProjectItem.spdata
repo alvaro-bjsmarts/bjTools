@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="CurrencyListViewWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="CurrencyListViewWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="CurrencyListViewWebPart.webpart" Target="CurrencyListViewWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="CurrencyListViewWebPartUserControl.ascx" Target="CONTROLTEMPLATES\BJSmarts.ERP.SharePoint.WebParts.Currency\CurrencyListViewWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="BJSmarts.ERP.SharePoint.WebParts.Currency.CurrencyListViewWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

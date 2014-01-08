@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Cases" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/BJSmarts.ERP.CRM-Cases" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Hidden="TRUE" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" ColName="nvarchar1"/>
+      <Field Type="Note" DisplayName="Description" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{f7a1e021-74d9-4d0b-ab70-5f3fa4ff3f8a}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Description" Name="Description" ColName="ntext2" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="CaseId" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{8dfa5ff6-a3d7-40bf-b415-bdb6531d811d}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="CaseId" Name="CaseId" ColName="nvarchar3" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Customer" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{1d6e14a5-2015-4804-9571-ad2201f50daf}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Customer" Name="Customer" ColName="nvarchar4" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Subject" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{840acaf7-b774-4ef0-8d2a-3085cce7314b}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Subject" Name="Subject" ColName="nvarchar5" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Case Type" Required="FALSE" EnforceUniqueValues="FALSE" ID="{e59a0f24-4289-4da3-8111-d0d513ed87db}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Case_x0020_Type" BaseRenderingType="Text" Name="Case_x0020_Type" ColName="nvarchar6" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM CaseType" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_CaseType_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_CaseType_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM CaseType_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM CaseType_ID" ID="{dff01405-625e-403a-a240-e12f5214354e}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="CRM_x0020_CaseType_ID" Name="CRM_x0020_CaseType_ID" ColName="ntext3" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Case Origin" Required="FALSE" EnforceUniqueValues="FALSE" ID="{faab1abe-c026-487e-8ad4-e353c111f426}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Case_x0020_Origin" BaseRenderingType="Text" Name="Case_x0020_Origin" ColName="nvarchar7" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM CaseOrigin" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_CaseOrigin_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_CaseOrigin_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM CaseOrigin_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM CaseOrigin_ID" ID="{707f3ff9-fbdb-4585-8d60-e0eb820c270d}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="CRM_x0020_CaseOrigin_ID" Name="CRM_x0020_CaseOrigin_ID" ColName="ntext4" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Satisfaction" Required="FALSE" EnforceUniqueValues="FALSE" ID="{6ce24e5b-b90d-4048-ba43-255b2550f8be}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Satisfaction" BaseRenderingType="Text" Name="Satisfaction" ColName="nvarchar8" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM Satisfaction" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_Satisfaction_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_Satisfaction_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM Satisfaction_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM Satisfaction_ID" ID="{a42fae75-b61a-43a1-971e-954d4c5a8f3a}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="CRM_x0020_Satisfaction_ID" Name="CRM_x0020_Satisfaction_ID" ColName="ntext5" RowOrdinal="0"/>
+      <Field Type="Text" DisplayName="Owner" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{c25f7a7d-033d-416d-a604-07bc181104d7}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Owner" Name="Owner" ColName="nvarchar9" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Case Status" Required="FALSE" EnforceUniqueValues="FALSE" ID="{81b28747-a944-46b0-8adb-22db6285e472}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Case_x0020_Status" BaseRenderingType="Text" Name="Case_x0020_Status" ColName="nvarchar10" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM CaseStatus" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_CaseStatus_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_CaseStatus_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM CaseStatus_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM CaseStatus_ID" ID="{8a68b883-cf79-4db1-be95-cc081fe3a20e}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="CRM_x0020_CaseStatus_ID" Name="CRM_x0020_CaseStatus_ID" ColName="ntext6" RowOrdinal="0"/>
+      <Field Type="BusinessData" DisplayName="Priority" Required="FALSE" EnforceUniqueValues="FALSE" ID="{c2b809b2-5571-4bdc-87ce-424a5b188681}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Priority" BaseRenderingType="Text" Name="Priority" ColName="nvarchar11" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="CRM Priority" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="CRM_x0020_Priority_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="CRM_x0020_Priority_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="CRM Priority_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="CRM Priority_ID" ID="{67e0aa68-5a91-4cc8-b51d-3bc213271527}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="CRM_x0020_Priority_ID" Name="CRM_x0020_Priority_ID" ColName="ntext7" RowOrdinal="0"/>
+      <Field Type="URL" DisplayName="Edit Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{eac3be34-abc7-48bb-aac0-702bd5ec1acd}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Edit_x0020_Hyperlink" Name="Edit_x0020_Hyperlink" ColName="nvarchar12" RowOrdinal="0" ColName2="nvarchar13" RowOrdinal2="0"/>
+      <Field Type="URL" DisplayName="View Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{2b9d614c-8ca6-4390-a1b1-16ca6b5fd827}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="View_x0020_Hyperlink" Name="View_x0020_Hyperlink" ColName="nvarchar14" RowOrdinal="0" ColName2="nvarchar15" RowOrdinal2="0"/>
+      <Field Type="URL" DisplayName="Customer Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{113abb33-e157-411c-83be-530f38707743}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Customer_x0020_Hyperlink" Name="Customer_x0020_Hyperlink" ColName="nvarchar16" RowOrdinal="0" ColName2="nvarchar17" RowOrdinal2="0"/>
+      <Field Type="URL" DisplayName="Subject Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{91a6cec4-ccf5-4f45-ad60-a54f5924cdc8}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Subject_x0020_Hyperlink" Name="Subject_x0020_Hyperlink" ColName="nvarchar18" RowOrdinal="0" ColName2="nvarchar19" RowOrdinal2="0"/>
+      <Field Type="URL" DisplayName="Owner Hyperlink" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{ff182bf5-5dcf-411f-8652-9ba888ec5132}" SourceID="{6adc4539-07ad-4117-8286-9ca31858a7e4}" StaticName="Owner_x0020_Hyperlink" Name="Owner_x0020_Hyperlink" ColName="nvarchar20" RowOrdinal="0" ColName2="nvarchar21" RowOrdinal2="0"/>
+      <Field Type="BusinessData" DisplayName="Organization" Required="FALSE" EnforceUniqueValues="FALSE" ID="{e54ea739-fe6c-4ff5-84b9-766139a672b1}" SourceID="{ae37128c-a297-4fb5-94a0-358625001b14}" StaticName="Organization" BaseRenderingType="Text" Name="Organization" ColName="nvarchar22" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="ERP Organizations" BdcField="Name" Profile="" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="ERP_x0020_Organizations_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="ERP_x0020_Organizations_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType" Version="1"/>
+      <Field Type="Note" DisplayName="ERP Organizations_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="ERP Organizations_ID" ID="{c1133598-bf10-43a9-8df7-98c902578ecc}" SourceID="{ae37128c-a297-4fb5-94a0-358625001b14}" StaticName="ERP_x0020_Organizations_ID" Name="ERP_x0020_Organizations_ID" ColName="ntext8" RowOrdinal="0"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Subject"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

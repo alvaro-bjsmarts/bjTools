@@ -1,0 +1,233 @@
+﻿<Entity Namespace="http://localhost:51816" Version="1.0.0.0" EstimatedInstanceCount="10000" Name="HR EmployeeAccounts" DefaultDisplayName="HR EmployeeAccounts">
+          <Identifiers>
+            <Identifier TypeName="System.String" Name="Name" />
+          </Identifiers>
+          <Methods>
+            <Method Name="Create" DefaultDisplayName="HR EmployeeAccounts Create">
+              <Properties>
+                <Property Name="RdbCommandType" Type="System.Data.CommandType, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Text</Property>
+                <Property Name="RdbCommandText" Type="System.String">INSERT INTO [dbo].[EmployeeAccounts]([Name] , [Description] , [Sort_Order] , [Deleted]) VALUES(@Name , @Description , @Sort_Order , @Deleted) SELECT [Name] FROM [dbo].[EmployeeAccounts] WHERE [Name] = @Name</Property>
+                <Property Name="BackEndObjectType" Type="System.String">SqlServerTable</Property>
+                <Property Name="BackEndObject" Type="System.String">EmployeeAccounts</Property>
+                <Property Name="Schema" Type="System.String">dbo</Property>
+              </Properties>
+              <Parameters>
+                <Parameter Direction="In" Name="@Name">
+                  <TypeDescriptor TypeName="System.String" CreatorField="true" IdentifierName="Name" Name="Name">
+                    <Properties>
+                      <Property Name="Size" Type="System.Int32">25</Property>
+                    </Properties>
+                    <Interpretation>
+                      <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                    </Interpretation>
+                  </TypeDescriptor>
+                </Parameter>
+                <Parameter Direction="In" Name="@Description">
+                  <TypeDescriptor TypeName="System.String" CreatorField="true" Name="Description">
+                    <Properties>
+                      <Property Name="Size" Type="System.Int32">100</Property>
+                    </Properties>
+                    <Interpretation>
+                      <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                    </Interpretation>
+                  </TypeDescriptor>
+                </Parameter>
+                <Parameter Direction="In" Name="@Sort_Order">
+                  <TypeDescriptor TypeName="System.Nullable`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" CreatorField="true" Name="Sort_Order" />
+                </Parameter>
+                <Parameter Direction="In" Name="@Deleted">
+                  <TypeDescriptor TypeName="System.Nullable`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" CreatorField="true" Name="Deleted" />
+                </Parameter>
+                <Parameter Direction="Return" Name="Create">
+                  <TypeDescriptor TypeName="System.Data.IDataReader, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsCollection="true" Name="Create">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Data.IDataRecord, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="CreateElement">
+                        <TypeDescriptors>
+                          <TypeDescriptor TypeName="System.String" ReadOnly="true" IdentifierName="Name" Name="Name">
+                            <Properties>
+                              <Property Name="Size" Type="System.Int32">25</Property>
+                            </Properties>
+                            <Interpretation>
+                              <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                            </Interpretation>
+                          </TypeDescriptor>
+                        </TypeDescriptors>
+                      </TypeDescriptor>
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Creator" ReturnParameterName="Create" ReturnTypeDescriptorPath="Create[0]" Default="true" Name="Create" DefaultDisplayName="HR EmployeeAccounts Create" />
+              </MethodInstances>
+            </Method>
+            <Method Name="Read Item" DefaultDisplayName="HR EmployeeAccounts Read Item">
+              <Properties>
+                <Property Name="RdbCommandType" Type="System.Data.CommandType, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Text</Property>
+                <Property Name="RdbCommandText" Type="System.String">SELECT [Name] , [Description] , [Sort_Order] , [Deleted] FROM [dbo].[EmployeeAccounts] WHERE [Name] = @Name</Property>
+                <Property Name="BackEndObjectType" Type="System.String">SqlServerTable</Property>
+                <Property Name="BackEndObject" Type="System.String">EmployeeAccounts</Property>
+                <Property Name="Schema" Type="System.String">dbo</Property>
+              </Properties>
+              <Parameters>
+                <Parameter Direction="In" Name="@Name">
+                  <TypeDescriptor TypeName="System.String" IdentifierName="Name" Name="Name">
+                    <Properties>
+                      <Property Name="Size" Type="System.Int32">25</Property>
+                    </Properties>
+                    <Interpretation>
+                      <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                    </Interpretation>
+                  </TypeDescriptor>
+                </Parameter>
+                <Parameter Direction="Return" Name="Read Item">
+                  <TypeDescriptor TypeName="System.Data.IDataReader, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsCollection="true" Name="Read Item">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Data.IDataRecord, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Read ItemElement">
+                        <TypeDescriptors>
+                          <TypeDescriptor TypeName="System.String" ReadOnly="true" IdentifierName="Name" Name="Name">
+                            <Properties>
+                              <Property Name="Size" Type="System.Int32">25</Property>
+                            </Properties>
+                            <Interpretation>
+                              <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                            </Interpretation>
+                          </TypeDescriptor>
+                          <TypeDescriptor TypeName="System.String" Name="Description">
+                            <Properties>
+                              <Property Name="Size" Type="System.Int32">100</Property>
+                            </Properties>
+                            <Interpretation>
+                              <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                            </Interpretation>
+                          </TypeDescriptor>
+                          <TypeDescriptor TypeName="System.Nullable`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Name="Sort_Order" />
+                          <TypeDescriptor TypeName="System.Nullable`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Name="Deleted" />
+                        </TypeDescriptors>
+                      </TypeDescriptor>
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="SpecificFinder" ReturnParameterName="Read Item" ReturnTypeDescriptorPath="Read Item[0]" Default="true" Name="Read Item" DefaultDisplayName="HR EmployeeAccounts Read Item">
+                  <Properties>
+                    <Property Name="LastDesignedOfficeItemType" Type="System.String">None</Property>
+                  </Properties>
+                </MethodInstance>
+              </MethodInstances>
+            </Method>
+            <Method Name="Update" DefaultDisplayName="HR EmployeeAccounts Update">
+              <Properties>
+                <Property Name="RdbCommandType" Type="System.Data.CommandType, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Text</Property>
+                <Property Name="RdbCommandText" Type="System.String">UPDATE [dbo].[EmployeeAccounts] SET [Description] = @Description , [Sort_Order] = @Sort_Order , [Deleted] = @Deleted WHERE [Name] = @Name</Property>
+                <Property Name="BackEndObjectType" Type="System.String">SqlServerTable</Property>
+                <Property Name="BackEndObject" Type="System.String">EmployeeAccounts</Property>
+                <Property Name="Schema" Type="System.String">dbo</Property>
+              </Properties>
+              <Parameters>
+                <Parameter Direction="In" Name="@Name">
+                  <TypeDescriptor TypeName="System.String" UpdaterField="true" IdentifierName="Name" Name="Name">
+                    <Properties>
+                      <Property Name="Size" Type="System.Int32">25</Property>
+                    </Properties>
+                    <Interpretation>
+                      <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                    </Interpretation>
+                  </TypeDescriptor>
+                </Parameter>
+                <Parameter Direction="In" Name="@Description">
+                  <TypeDescriptor TypeName="System.String" UpdaterField="true" Name="Description">
+                    <Properties>
+                      <Property Name="Size" Type="System.Int32">100</Property>
+                    </Properties>
+                    <Interpretation>
+                      <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                    </Interpretation>
+                  </TypeDescriptor>
+                </Parameter>
+                <Parameter Direction="In" Name="@Sort_Order">
+                  <TypeDescriptor TypeName="System.Nullable`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" UpdaterField="true" Name="Sort_Order" />
+                </Parameter>
+                <Parameter Direction="In" Name="@Deleted">
+                  <TypeDescriptor TypeName="System.Nullable`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" UpdaterField="true" Name="Deleted" />
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Updater" Name="Update" DefaultDisplayName="HR EmployeeAccounts Update" />
+              </MethodInstances>
+            </Method>
+            <Method Name="Delete" DefaultDisplayName="HR EmployeeAccounts Delete">
+              <Properties>
+                <Property Name="RdbCommandType" Type="System.Data.CommandType, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Text</Property>
+                <Property Name="RdbCommandText" Type="System.String">DELETE FROM [dbo].[EmployeeAccounts] WHERE [Name] = @Name</Property>
+                <Property Name="BackEndObjectType" Type="System.String">SqlServerTable</Property>
+                <Property Name="BackEndObject" Type="System.String">EmployeeAccounts</Property>
+                <Property Name="Schema" Type="System.String">dbo</Property>
+              </Properties>
+              <Parameters>
+                <Parameter Direction="In" Name="@Name">
+                  <TypeDescriptor TypeName="System.String" IdentifierName="Name" Name="Name">
+                    <Properties>
+                      <Property Name="Size" Type="System.Int32">25</Property>
+                    </Properties>
+                    <Interpretation>
+                      <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                    </Interpretation>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Deleter" Name="Delete" DefaultDisplayName="HR EmployeeAccounts Delete" />
+              </MethodInstances>
+            </Method>
+            <Method Name="Read List" DefaultDisplayName="HR EmployeeAccounts Read List">
+              <Properties>
+                <Property Name="RdbCommandType" Type="System.Data.CommandType, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Text</Property>
+                <Property Name="RdbCommandText" Type="System.String">SELECT [Name] , [Description] , [Sort_Order] , [Deleted] FROM [dbo].[EmployeeAccounts]</Property>
+                <Property Name="BackEndObjectType" Type="System.String">SqlServerTable</Property>
+                <Property Name="BackEndObject" Type="System.String">EmployeeAccounts</Property>
+                <Property Name="Schema" Type="System.String">dbo</Property>
+              </Properties>
+              <Parameters>
+                <Parameter Direction="Return" Name="Read List">
+                  <TypeDescriptor TypeName="System.Data.IDataReader, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" IsCollection="true" Name="Read List">
+                    <TypeDescriptors>
+                      <TypeDescriptor TypeName="System.Data.IDataRecord, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Name="Read ListElement">
+                        <TypeDescriptors>
+                          <TypeDescriptor TypeName="System.String" ReadOnly="true" IdentifierName="Name" Name="Name">
+                            <Properties>
+                              <Property Name="Size" Type="System.Int32">25</Property>
+                              <Property Name="ShowInPicker" Type="System.Boolean">true</Property>
+                            </Properties>
+                            <Interpretation>
+                              <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                            </Interpretation>
+                          </TypeDescriptor>
+                          <TypeDescriptor TypeName="System.String" Name="Description">
+                            <Properties>
+                              <Property Name="Size" Type="System.Int32">100</Property>
+                            </Properties>
+                            <Interpretation>
+                              <NormalizeString FromLOB="NormalizeToNull" ToLOB="NormalizeToNull" />
+                            </Interpretation>
+                          </TypeDescriptor>
+                          <TypeDescriptor TypeName="System.Nullable`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Name="Sort_Order" />
+                          <TypeDescriptor TypeName="System.Nullable`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Name="Deleted" />
+                        </TypeDescriptors>
+                      </TypeDescriptor>
+                    </TypeDescriptors>
+                  </TypeDescriptor>
+                </Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Type="Finder" ReturnParameterName="Read List" Default="true" Name="Read List" DefaultDisplayName="HR EmployeeAccounts Read List">
+                  <Properties>
+                    <Property Name="UseClientCachingForSearch" Type="System.String"></Property>
+                    <Property Name="RootFinder" Type="System.String"></Property>
+                  </Properties>
+                </MethodInstance>
+              </MethodInstances>
+            </Method>
+          </Methods>
+        </Entity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ListInstance FeatureId="{00bfea71-9549-43f8-b978-e47e54a10600}" TemplateType="600" Title="Campaign Type" Description="" Url="Lists/Campaign Type" CustomSchema="Files\Lists\Campaign Type\Schema.xml" HyperlinkBaseUrl="http://donald:51816" RootWebOnly="FALSE" xmlns="http://schemas.microsoft.com/sharepoint/">
+		<DataSource>
+			<Property Name="LobSystemInstance" Value="BJSmarts.ERP.Database" />
+			<Property Name="EntityNamespace" Value="http://localhost:51816" />
+			<Property Name="Entity" Value="CRM CampaignType" />
+			<Property Name="SpecificFinder" Value="Read Item" />
+		</DataSource>
+	</ListInstance>
+</Elements>

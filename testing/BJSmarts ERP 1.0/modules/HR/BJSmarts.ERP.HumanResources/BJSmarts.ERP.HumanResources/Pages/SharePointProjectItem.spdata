@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Pages\" Type="ElementManifest" />
+    <ProjectItemFile Source="ManageEmployeesPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTimesheetPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeesInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeesUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeesViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTypesInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTypesListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTypesUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTypesViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ResourceTypeInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ResourceTypeListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ResourceTypeUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="ResourceTypeViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeAccountsInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeAccountsListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeAccountsUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeAccountsViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTerminationTypeInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTerminationTypeListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTerminationTypeUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="EmployeeTerminationTypeViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="DepartmentsListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="DepartmentsUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="DepartmentsViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="DepartmentsInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

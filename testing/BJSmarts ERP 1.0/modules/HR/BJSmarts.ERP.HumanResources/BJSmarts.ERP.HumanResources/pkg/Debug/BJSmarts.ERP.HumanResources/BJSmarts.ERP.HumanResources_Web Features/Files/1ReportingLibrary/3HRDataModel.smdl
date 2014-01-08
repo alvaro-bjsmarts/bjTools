@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SemanticModel ID="G5df238b6-c419-4d97-b790-664bef224c8a" xmlns="http://schemas.microsoft.com/sqlserver/2004/10/semanticmodeling" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Culture>en-US</Culture>
+  <DataSourceView xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+    <ID>master</ID>
+    <Name>master</Name>
+    <DataSourceID>master</DataSourceID>
+    <Schema>
+      <xs:schema id="master" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+        <xs:element name="master" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:CompareInfo="&lt;CompareInfo&gt;&lt;Culture&gt;en-US&lt;/Culture&gt;&lt;IgnoreCase&gt;true&lt;/IgnoreCase&gt;&lt;IgnoreKanaType&gt;true&lt;/IgnoreKanaType&gt;&lt;IgnoreWidth&gt;true&lt;/IgnoreWidth&gt;&lt;/CompareInfo&gt;">
+          <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+              <xs:element name="dbo_spt_fallback_db" msprop:FriendlyName="spt_fallback_db" msprop:TableType="Table" msprop:DbTableName="spt_fallback_db" msprop:DbSchemaName="dbo" msprop:stats_RowCount="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="xserver_name" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="varchar" msprop:stats_MaxWidth="0" msprop:DbColumnName="xserver_name" msprop:stats_AvgWidth="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="30" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="xdttm_ins" msprop:DbColumnName="xdttm_ins" msprop:stats_UniqueValuePercent="0" msprop:stats_UniqueValueCount="0" msprop:DbDataType="datetime" type="xs:dateTime" />
+                    <xs:element name="xdttm_last_ins_upd" msprop:DbColumnName="xdttm_last_ins_upd" msprop:stats_UniqueValuePercent="0" msprop:stats_UniqueValueCount="0" msprop:DbDataType="datetime" type="xs:dateTime" />
+                    <xs:element name="xfallback_dbid" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="smallint" msprop:stats_MaxWidth="0" msprop:DbColumnName="xfallback_dbid" msprop:stats_AvgWidth="0" type="xs:short" minOccurs="0" />
+                    <xs:element name="name" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="varchar" msprop:stats_MaxWidth="0" msprop:DbColumnName="name" msprop:stats_AvgWidth="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="30" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="dbid" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="smallint" msprop:stats_MaxWidth="0" msprop:DbColumnName="dbid" msprop:stats_AvgWidth="0" type="xs:short" />
+                    <xs:element name="status" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="smallint" msprop:stats_MaxWidth="0" msprop:DbColumnName="status" msprop:stats_AvgWidth="0" type="xs:short" />
+                    <xs:element name="version" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="smallint" msprop:stats_MaxWidth="0" msprop:DbColumnName="version" msprop:stats_AvgWidth="0" type="xs:short" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="dbo_spt_fallback_dev" msprop:FriendlyName="spt_fallback_dev" msprop:TableType="Table" msprop:DbTableName="spt_fallback_dev" msprop:DbSchemaName="dbo" msprop:stats_RowCount="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="xserver_name" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="varchar" msprop:stats_MaxWidth="0" msprop:DbColumnName="xserver_name" msprop:stats_AvgWidth="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="30" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="xdttm_ins" msprop:DbColumnName="xdttm_ins" msprop:stats_UniqueValuePercent="0" msprop:stats_UniqueValueCount="0" msprop:DbDataType="datetime" type="xs:dateTime" />
+                    <xs:element name="xdttm_last_ins_upd" msprop:DbColumnName="xdttm_last_ins_upd" msprop:stats_UniqueValuePercent="0" msprop:stats_UniqueValueCount="0" msprop:DbDataType="datetime" type="xs:dateTime" />
+                    <xs:element name="xfallback_low" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="0" msprop:DbColumnName="xfallback_low" msprop:stats_AvgWidth="0" type="xs:int" minOccurs="0" />
+                    <xs:element name="xfallback_drive" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="char" msprop:stats_MaxWidth="0" msprop:DbColumnName="xfallback_drive" msprop:stats_AvgWidth="0" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="2" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="low" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="0" msprop:DbColumnName="low" msprop:stats_AvgWidth="0" type="xs:int" />
+                    <xs:element name="high" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="0" msprop:DbColumnName="high" msprop:stats_AvgWidth="0" type="xs:int" />
+                    <xs:element name="status" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="smallint" msprop:stats_MaxWidth="0" msprop:DbColumnName="status" msprop:stats_AvgWidth="0" type="xs:short" />
+                    <xs:element name="name" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="varchar" msprop:stats_MaxWidth="0" msprop:DbColumnName="name" msprop:stats_AvgWidth="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="30" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="phyname" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="varchar" msprop:stats_MaxWidth="0" msprop:DbColumnName="phyname" msprop:stats_AvgWidth="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="127" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="dbo_spt_fallback_usg" msprop:FriendlyName="spt_fallback_usg" msprop:TableType="Table" msprop:DbTableName="spt_fallback_usg" msprop:DbSchemaName="dbo" msprop:stats_RowCount="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="xserver_name" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="varchar" msprop:stats_MaxWidth="0" msprop:DbColumnName="xserver_name" msprop:stats_AvgWidth="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="30" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="xdttm_ins" msprop:DbColumnName="xdttm_ins" msprop:stats_UniqueValuePercent="0" msprop:stats_UniqueValueCount="0" msprop:DbDataType="datetime" type="xs:dateTime" />
+                    <xs:element name="xdttm_last_ins_upd" msprop:DbColumnName="xdttm_last_ins_upd" msprop:stats_UniqueValuePercent="0" msprop:stats_UniqueValueCount="0" msprop:DbDataType="datetime" type="xs:dateTime" />
+                    <xs:element name="xfallback_vstart" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="0" msprop:DbColumnName="xfallback_vstart" msprop:stats_AvgWidth="0" type="xs:int" minOccurs="0" />
+                    <xs:element name="dbid" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="smallint" msprop:stats_MaxWidth="0" msprop:DbColumnName="dbid" msprop:stats_AvgWidth="0" type="xs:short" />
+                    <xs:element name="segmap" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="0" msprop:DbColumnName="segmap" msprop:stats_AvgWidth="0" type="xs:int" />
+                    <xs:element name="lstart" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="0" msprop:DbColumnName="lstart" msprop:stats_AvgWidth="0" type="xs:int" />
+                    <xs:element name="sizepg" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="0" msprop:DbColumnName="sizepg" msprop:stats_AvgWidth="0" type="xs:int" />
+                    <xs:element name="vstart" msprop:stats_UniqueValueCount="0" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="0" msprop:DbColumnName="vstart" msprop:stats_AvgWidth="0" type="xs:int" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="dbo_spt_monitor" msprop:FriendlyName="spt_monitor" msprop:TableType="Table" msprop:DbTableName="spt_monitor" msprop:DbSchemaName="dbo" msprop:stats_RowCount="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="lastrun" msprop:DbColumnName="lastrun" msprop:stats_UniqueValuePercent="100" msprop:stats_UniqueValueCount="1" msprop:DbDataType="datetime" type="xs:dateTime" />
+                    <xs:element name="cpu_busy" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="1" msprop:DbColumnName="cpu_busy" msprop:stats_AvgWidth="1" type="xs:int" />
+                    <xs:element name="io_busy" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="1" msprop:DbColumnName="io_busy" msprop:stats_AvgWidth="1" type="xs:int" />
+                    <xs:element name="idle" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="3" msprop:DbColumnName="idle" msprop:stats_AvgWidth="3" type="xs:int" />
+                    <xs:element name="pack_received" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="2" msprop:DbColumnName="pack_received" msprop:stats_AvgWidth="2" type="xs:int" />
+                    <xs:element name="pack_sent" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="2" msprop:DbColumnName="pack_sent" msprop:stats_AvgWidth="2" type="xs:int" />
+                    <xs:element name="connections" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="2" msprop:DbColumnName="connections" msprop:stats_AvgWidth="2" type="xs:int" />
+                    <xs:element name="pack_errors" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="1" msprop:DbColumnName="pack_errors" msprop:stats_AvgWidth="1" type="xs:int" />
+                    <xs:element name="total_read" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="1" msprop:DbColumnName="total_read" msprop:stats_AvgWidth="1" type="xs:int" />
+                    <xs:element name="total_write" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="1" msprop:DbColumnName="total_write" msprop:stats_AvgWidth="1" type="xs:int" />
+                    <xs:element name="total_errors" msprop:stats_UniqueValueCount="1" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="100" msprop:DbDataType="int" msprop:stats_MaxWidth="1" msprop:DbColumnName="total_errors" msprop:stats_AvgWidth="1" type="xs:int" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="dbo_spt_values" msprop:FriendlyName="spt_values" msprop:TableType="Table" msprop:DbTableName="spt_values" msprop:DbSchemaName="dbo" msprop:stats_RowCount="2508" msprop:stats_ColumnGroupUniqueRows="&lt;ColumnGroupUniqueRows&gt;&lt;GroupRows Key=&quot;IX_spt_valuesclust&quot; Value=&quot;2508&quot; /&gt;&lt;GroupRows Key=&quot;IX_ix2_spt_values_nu_nc&quot; Value=&quot;2459&quot; /&gt;&lt;/ColumnGroupUniqueRows&gt;">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" msprop:stats_UniqueValueCount="368" msprop:stats_ColumnGroups="&lt;ColumnGroups&gt;&lt;Group&gt;IX_spt_valuesclust&lt;/Group&gt;&lt;/ColumnGroups&gt;" msprop:stats_StDevWidth="6.94727" msprop:stats_UniqueValuePercent="80" msprop:DbDataType="nvarchar" msprop:stats_MaxWidth="35" msprop:DbColumnName="name" msprop:stats_AvgWidth="12.12826" minOccurs="0">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="35" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="number" msprop:stats_UniqueValueCount="2164" msprop:stats_ColumnGroups="&lt;ColumnGroups&gt;&lt;Group&gt;IX_ix2_spt_values_nu_nc&lt;/Group&gt;&lt;Group&gt;IX_spt_valuesclust&lt;/Group&gt;&lt;/ColumnGroups&gt;" msprop:stats_StDevWidth="0.9604015" msprop:stats_UniqueValuePercent="86" msprop:DbDataType="int" msprop:stats_MaxWidth="10" msprop:DbColumnName="number" msprop:stats_AvgWidth="3.441388" type="xs:int" />
+                    <xs:element name="type" msprop:stats_UniqueValueCount="29" msprop:stats_ColumnGroups="&lt;ColumnGroups&gt;&lt;Group&gt;IX_ix2_spt_values_nu_nc&lt;/Group&gt;&lt;Group&gt;IX_spt_valuesclust&lt;/Group&gt;&lt;/ColumnGroups&gt;" msprop:stats_StDevWidth="0.6295899" msprop:stats_UniqueValuePercent="1" msprop:DbDataType="nchar" msprop:stats_MaxWidth="3" msprop:DbColumnName="type" msprop:stats_AvgWidth="1.235646">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="3" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="low" msprop:stats_UniqueValueCount="260" msprop:stats_StDevWidth="0.6261842" msprop:stats_UniqueValuePercent="12" msprop:DbDataType="int" msprop:stats_MaxWidth="11" msprop:DbColumnName="low" msprop:stats_AvgWidth="2.542508" type="xs:int" minOccurs="0" />
+                    <xs:element name="high" msprop:stats_UniqueValueCount="9" msprop:stats_StDevWidth="0.6949617" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="3" msprop:DbColumnName="high" msprop:stats_AvgWidth="1.614793" type="xs:int" minOccurs="0" />
+                    <xs:element name="status" msprop:stats_UniqueValueCount="2" msprop:stats_StDevWidth="0" msprop:stats_UniqueValuePercent="0" msprop:DbDataType="int" msprop:stats_MaxWidth="1" msprop:DbColumnName="status" msprop:stats_AvgWidth="1" type="xs:int" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:schema>
+    </Schema>
+  </DataSourceView>
+</SemanticModel>

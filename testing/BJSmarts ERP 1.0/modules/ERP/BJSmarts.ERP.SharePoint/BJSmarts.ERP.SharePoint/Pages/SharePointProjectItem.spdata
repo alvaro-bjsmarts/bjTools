@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Pages\" Type="ElementManifest" />
+    <ProjectItemFile Source="Home.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CountriesListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CountriesInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CountriesUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CountriesViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="OrganizationsInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="OrganizationsListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="OrganizationsUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="OrganizationsViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CurrencyTypeInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CurrencyTypeListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CurrencyTypeUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="CurrencyTypeViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="GendersInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="GendersListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="GendersUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="GendersViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="IndustryInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="IndustryListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="IndustryUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="IndustryViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="MaritalStatusInsertPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="MaritalStatusListViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="MaritalStatusUpdatePage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="MaritalStatusViewPage.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="Wizard.aspx" Target="Pages\" Type="ElementFile" />
+    <ProjectItemFile Source="InitialConfigurationPage.aspx" Target="Pages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

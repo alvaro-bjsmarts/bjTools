@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f61524df-7f69-4d6b-9f80-5ad47a1d98dd" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EmployeeTimeSheetWebPart.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="EmployeeTimeSheetWebPart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=da9ad7b19a694772" Namespace="EmployeeTimeSheetWebPart.EmployeeTimeSheetWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="EmployeeTimeSheetWebPart_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

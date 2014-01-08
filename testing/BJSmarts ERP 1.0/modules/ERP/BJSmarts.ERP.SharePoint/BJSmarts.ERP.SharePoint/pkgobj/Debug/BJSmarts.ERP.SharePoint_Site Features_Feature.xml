@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="This feature will provision all BJSmarts ERP Core Site Level Features" Id="1ef1fa2c-08fc-48bf-a20f-c9d1d6c1efd8" Scope="Site" Title="BJSmarts ERP Core Site Level Features">
+  <ElementManifests>
+    <ElementManifest Location="LinkWebPart\Elements.xml" />
+    <ElementFile Location="LinkWebPart\LinkWebPart.webpart" />
+    <ElementManifest Location="CountriesInsertWebPart\Elements.xml" />
+    <ElementFile Location="CountriesInsertWebPart\CountriesInsertWebPart.webpart" />
+    <ElementManifest Location="CountriesUpdateWebPart\Elements.xml" />
+    <ElementFile Location="CountriesUpdateWebPart\CountriesUpdateWebPart.webpart" />
+    <ElementManifest Location="CountriesViewWebPart\Elements.xml" />
+    <ElementFile Location="CountriesViewWebPart\CountriesViewWebPart.webpart" />
+    <ElementManifest Location="CountriesListViewWebPart\Elements.xml" />
+    <ElementFile Location="CountriesListViewWebPart\CountriesListViewWebPart.webpart" />
+    <ElementManifest Location="OrganizationsInsertWebPart\Elements.xml" />
+    <ElementFile Location="OrganizationsInsertWebPart\OrganizationsInsertWebPart.webpart" />
+    <ElementManifest Location="OrganizationsListViewWebPart\Elements.xml" />
+    <ElementFile Location="OrganizationsListViewWebPart\OrganizationsListViewWebPart.webpart" />
+    <ElementManifest Location="OrganizationsUpdateWebPart\Elements.xml" />
+    <ElementFile Location="OrganizationsUpdateWebPart\OrganizationsUpdateWebPart.webpart" />
+    <ElementManifest Location="OrganizationsViewWebPart\Elements.xml" />
+    <ElementFile Location="OrganizationsViewWebPart\OrganizationsViewWebPart.webpart" />
+    <ElementManifest Location="CurrencyInsertWebPart\Elements.xml" />
+    <ElementFile Location="CurrencyInsertWebPart\CurrencyInsertWebPart.webpart" />
+    <ElementManifest Location="CurrencyListViewWebPart\Elements.xml" />
+    <ElementFile Location="CurrencyListViewWebPart\CurrencyListViewWebPart.webpart" />
+    <ElementManifest Location="CurrencyUpdateWebPart\Elements.xml" />
+    <ElementFile Location="CurrencyUpdateWebPart\CurrencyUpdateWebPart.webpart" />
+    <ElementManifest Location="CurrencyViewWebPart\Elements.xml" />
+    <ElementFile Location="CurrencyViewWebPart\CurrencyViewWebPart.webpart" />
+    <ElementManifest Location="GendersInsertWebPart\Elements.xml" />
+    <ElementFile Location="GendersInsertWebPart\GendersInsertWebPart.webpart" />
+    <ElementManifest Location="GendersListViewWebPart\Elements.xml" />
+    <ElementFile Location="GendersListViewWebPart\GendersListViewWebPart.webpart" />
+    <ElementManifest Location="GendersUpdateWebPart\Elements.xml" />
+    <ElementFile Location="GendersUpdateWebPart\GendersUpdateWebPart.webpart" />
+    <ElementManifest Location="GendersViewWebPart\Elements.xml" />
+    <ElementFile Location="GendersViewWebPart\GendersViewWebPart.webpart" />
+    <ElementManifest Location="IndustryInsertWebPart\Elements.xml" />
+    <ElementFile Location="IndustryInsertWebPart\IndustryInsertWebPart.webpart" />
+    <ElementManifest Location="IndustryListViewWebPart\Elements.xml" />
+    <ElementFile Location="IndustryListViewWebPart\IndustryListViewWebPart.webpart" />
+    <ElementManifest Location="IndustryUpdateWebPart\Elements.xml" />
+    <ElementFile Location="IndustryUpdateWebPart\IndustryUpdateWebPart.webpart" />
+    <ElementManifest Location="IndustryViewWebPart\Elements.xml" />
+    <ElementFile Location="IndustryViewWebPart\IndustryViewWebPart.webpart" />
+    <ElementManifest Location="MaritalStatusInsertWebPart\Elements.xml" />
+    <ElementFile Location="MaritalStatusInsertWebPart\MaritalStatusInsertWebPart.webpart" />
+    <ElementManifest Location="MaritalStatusListViewWebPart\Elements.xml" />
+    <ElementFile Location="MaritalStatusListViewWebPart\MaritalStatusListViewWebPart.webpart" />
+    <ElementManifest Location="MaritalStatusUpdateWebPart\Elements.xml" />
+    <ElementFile Location="MaritalStatusUpdateWebPart\MaritalStatusUpdateWebPart.webpart" />
+    <ElementManifest Location="MaritalStatusViewWebPart\Elements.xml" />
+    <ElementFile Location="MaritalStatusViewWebPart\MaritalStatusViewWebPart.webpart" />
+  </ElementManifests>
+</Feature>

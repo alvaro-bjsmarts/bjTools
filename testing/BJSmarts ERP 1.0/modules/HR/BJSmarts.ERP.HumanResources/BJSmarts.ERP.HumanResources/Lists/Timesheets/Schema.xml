@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Timesheets" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/BJSmarts.ERP.HumanResources-Timesheets" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" ColName="nvarchar1"/>
+      <Field Type="Number" DisplayName="Day1" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1c94bfae-9cfb-4c1b-8b3f-3e205577233c}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="_x0044_ay1" Name="_x0044_ay1" ColName="float1" RowOrdinal="0" Version="1"/>
+      <Field Type="DateTime" DisplayName="Day1Time" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" ID="{d2c3f758-7e30-460f-8fa2-2bc727c779f6}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Day1Time" Name="Day1Time" ColName="datetime1" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Day2" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{1d5637b1-4e93-4ef9-80b9-37eb7407bcf7}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="_x0044_ay2" Name="_x0044_ay2" ColName="float2" RowOrdinal="0" Version="1"/>
+      <Field Type="DateTime" DisplayName="Day2Time" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" ID="{af6eab48-81cd-496e-81dc-0e47b52ba75a}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Day2Time" Name="Day2Time" ColName="datetime2" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Day3" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{634c87f8-2f26-44e8-85bb-c3c08f785da7}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="_x0044_ay3" Name="_x0044_ay3" ColName="float3" RowOrdinal="0" Version="1"/>
+      <Field Type="DateTime" DisplayName="Day3Time" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" ID="{d7992ccb-7b1c-42dc-a595-0760ff89c98c}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Day3Time" Name="Day3Time" ColName="datetime3" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Day4" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{a5826068-24ef-48c6-b47e-5440dcaee812}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="_x0044_ay4" Name="_x0044_ay4" ColName="float4" RowOrdinal="0" Version="1"/>
+      <Field Type="DateTime" DisplayName="Day4Time" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" ID="{9e446e47-bf9e-412b-981a-9dde2a009e9f}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Day4Time" Name="Day4Time" ColName="datetime4" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Day5" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{9d730e5c-033c-408b-9349-0033e3f21216}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="_x0044_ay5" Name="_x0044_ay5" ColName="float5" RowOrdinal="0" Version="1"/>
+      <Field Type="DateTime" DisplayName="Day5Time" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" ID="{7f1fd981-c90f-4aa1-8b6f-f60ed7d8e84e}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Day5Time" Name="Day5Time" ColName="datetime5" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Day6" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5c0e26b3-986e-4f8d-8023-526ba9885897}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="_x0044_ay6" Name="_x0044_ay6" ColName="float6" RowOrdinal="0" Version="1"/>
+      <Field Type="DateTime" DisplayName="Day6Time" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" ID="{072efd4d-5513-4971-8919-da0f735779bd}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Day6Time" Name="Day6Time" ColName="datetime6" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Day7" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{881c227d-2684-4317-acd5-27b18672ac25}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="_x0044_ay7" Name="_x0044_ay7" ColName="float7" RowOrdinal="0" Version="1"/>
+      <Field Type="DateTime" DisplayName="Day7Time" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateTime" ID="{e8633770-24e6-4535-b2d5-f046616cddf6}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Day7Time" Name="Day7Time" ColName="datetime7" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="Total Hours" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{5d5fcfc8-e2ae-417a-aca2-24ac4d415f16}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Total_x0020_Hours" Name="Total_x0020_Hours" ColName="float9" RowOrdinal="0"/>
+      <Field Type="Number" DisplayName="WeekNumber" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" ID="{375843f4-6465-474a-8689-a4245d11e855}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="WeekNumber" Name="WeekNumber" ColName="float8" RowOrdinal="0"/>
+      <Field Type="User" DisplayName="Employee" List="UserInfo" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{51cb9166-8069-42ad-9b43-33ce77c66ede}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Employee" Name="Employee" ColName="int1" RowOrdinal="0"/>
+      <Field Type="Choice" DisplayName="Status" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{5020ade5-8a79-4e9e-8450-cbbdb68c24e9}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Status" Name="Status" ColName="nvarchar3" RowOrdinal="0">
+        <Default>Current</Default>
+        <CHOICES>
+          <CHOICE>Current</CHOICE>
+          <CHOICE>Submitted</CHOICE>
+          <CHOICE>Approved</CHOICE>
+          <CHOICE>Rejected</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="DateTime" DisplayName="Start Period" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{5c56697b-3110-440c-bfd1-fa6824455006}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Start_x0020_Period" Name="Start_x0020_Period" ColName="datetime8" RowOrdinal="0"/>
+      <Field Type="DateTime" DisplayName="End Period" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="DateOnly" ID="{ee5e4824-0924-49ff-b2d0-ef73f1a03e29}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="End_x0020_Period" Name="End_x0020_Period" ColName="datetime1" RowOrdinal="1"/>
+      <Field Type="BusinessData" DisplayName="Account Type" Required="FALSE" ID="{747d8442-3723-44d0-82b4-ccaa87a898d5}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Account_x0020_Type" BaseRenderingType="Text" Name="Account_x0020_Type" ColName="nvarchar4" RowOrdinal="0" SystemInstance="BJSmarts.ERP.Database" EntityNamespace="http://localhost:51816" EntityName="HR EmployeeAccounts" BdcField="Name" Profile="/_layouts/ActionRedirect.aspx?EntityNamespace=http%3A%2F%2Flocalhost%3A51816&amp;EntityName=HR%20EmployeeAccounts&amp;LOBSystemInstanceName=BJSmarts%2EERP%2EDatabase&amp;ItemID=" HasActions="True" SecondaryFieldBdcNames="0" RelatedField="HR_x0020_EmployeeAccounts_ID" SecondaryFieldWssNames="0" RelatedFieldBDCField="" RelatedFieldWssStaticName="HR_x0020_EmployeeAccounts_ID" SecondaryFieldsWssStaticNames="0" AddFieldOption="AddToDefaultContentType, AddFieldToDefaultView" Version="1"/>
+      <Field Type="Note" DisplayName="HR EmployeeAccounts_ID" Hidden="TRUE" ReadOnly="TRUE" BdcField="HR EmployeeAccounts_ID" ID="{638478a5-a304-4059-be14-c237f1a5305c}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="HR_x0020_EmployeeAccounts_ID" Name="HR_x0020_EmployeeAccounts_ID" ColName="ntext2" RowOrdinal="0"/>
+      <Field Type="Note" DisplayName="Comments" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{0114c383-89a1-4b99-a863-46eaef962dd2}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="Comments" Name="Comments" ColName="ntext3" RowOrdinal="0"/>
+      <Field Type="URL" DisplayName="ActionLink1" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{2fca490d-49ee-4a66-a46a-593c3b91d08a}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="ActionLink1" Name="ActionLink1" ColName="nvarchar5" RowOrdinal="0" ColName2="nvarchar6" RowOrdinal2="0"/>
+      <Field Type="URL" DisplayName="ActionLink1" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" Format="Hyperlink" ID="{7ae66edb-2f19-4bf2-9084-fb5a325d8e7c}" SourceID="{03db3b3c-947d-4a6c-8823-60fb628eeada}" StaticName="ActionLink2" Name="ActionLink2" ColName="nvarchar7" RowOrdinal="0" ColName2="nvarchar8" RowOrdinal2="0"/>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Title"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View Name="{3061D46A-ECC1-45E0-B649-16AB53D08D60}" MobileView="TRUE" Type="HTML" DisplayName="Inline View" DefaultView="FALSE" SetupPath="pages\viewpage.aspx" WebPartZoneID="Main" Url="Inline View.aspx" BaseViewID="2" ContentTypeID="0x" ImageUrl="/_layouts/images/generic.png">
+        <ViewFields>
+          <FieldRef Name="Account_x0020_Type"/>
+          <FieldRef Name="_x0044_ay1"/>
+          <FieldRef Name="_x0044_ay2"/>
+          <FieldRef Name="_x0044_ay3"/>
+          <FieldRef Name="_x0044_ay4"/>
+          <FieldRef Name="_x0044_ay5"/>
+          <FieldRef Name="_x0044_ay6"/>
+          <FieldRef Name="_x0044_ay7"/>
+          <FieldRef Name="Total_x0020_Hours"/>
+        </ViewFields>
+        <Query>
+          <Where>
+            <And>
+              <Eq>
+                <FieldRef Name="Employee"/>
+                <Value Type="Integer">
+                  <UserID Type="Integer"/>
+                </Value>
+              </Eq>
+              <Eq>
+                <FieldRef Name="Status"/>
+                <Value Type="Text">Current</Value>
+              </Eq>
+            </And>
+          </Where>
+        </Query>
+        <Aggregations Value="Off"/>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Mobile MobileItemLimit="3" MobileSimpleViewField="Account_x0020_Type"/>
+        <InlineEdit>TRUE</InlineEdit>
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <Toolbar Type="Standard"/>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)"/>
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)"/>
+        </ParameterBindings>
+      </View>
+
+      <View Name="{A2F10FA4-AE1B-4002-BB98-D334CD45D856}" MobileView="TRUE" Type="HTML" DisplayName="Submitted View" SetupPath="pages\viewpage.aspx" WebPartZoneID="Main" Url="Submitted View.aspx" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/images/generic.png">
+        <ViewFields>
+          <FieldRef Name="ActionLink1"/>
+          <FieldRef Name="Employee"/>
+          <FieldRef Name="Start_x0020_Period"/>
+          <FieldRef Name="End_x0020_Period"/>
+          <FieldRef Name="Status"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"/>
+          </OrderBy>
+          <Where>
+            <Eq>
+              <FieldRef Name="Status"/>
+              <Value Type="Text">Submitted</Value>
+            </Eq>
+          </Where>
+        </Query>
+        <Aggregations Value="Off"/>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Mobile MobileItemLimit="3" MobileSimpleViewField="ActionLink1"/>
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <Toolbar Type="Standard"/>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)"/>
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)"/>
+        </ParameterBindings>
+      </View>
+      <View Name="{19CE8791-2DD6-4C44-A2E6-04F29710340C}" MobileView="TRUE" Type="HTML" DisplayName="Rejected View" SetupPath="pages\viewpage.aspx" WebPartZoneID="Main" Url="Rejected View.aspx" BaseViewID="4" ContentTypeID="0x" ImageUrl="/_layouts/images/generic.png">
+        <ViewFields>
+          <FieldRef Name="ActionLink2"/>
+          <FieldRef Name="Employee"/>
+          <FieldRef Name="Start_x0020_Period"/>
+          <FieldRef Name="End_x0020_Period"/>
+          <FieldRef Name="Status"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"/>
+          </OrderBy>
+          <Where>
+            <Eq>
+              <FieldRef Name="Status"/>
+              <Value Type="Text">Rejected</Value>
+            </Eq>
+          </Where>
+        </Query>
+        <Aggregations Value="Off"/>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <Mobile MobileItemLimit="3" MobileSimpleViewField="ActionLink2"/>
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <Toolbar Type="Standard"/>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)"/>
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)"/>
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

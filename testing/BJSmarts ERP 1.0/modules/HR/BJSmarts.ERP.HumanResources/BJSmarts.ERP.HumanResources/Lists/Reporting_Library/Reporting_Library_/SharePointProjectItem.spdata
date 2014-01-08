@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Files\1ReportingLibrary\2HRDataSource.rsds" Target="Files\1ReportingLibrary\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\1ReportingLibrary\3HRDataModel.smdl" Target="Files\1ReportingLibrary\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\1ReportingLibrary\HRDetail.rdl" Target="Files\1ReportingLibrary\" Type="ElementFile" />
+    <ProjectItemFile Source="Files\1ReportingLibrary\HRSummary.rdl" Target="Files\1ReportingLibrary\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements.xml" Target="Reporting_Library_\" Type="ElementManifest" />
+  </Files>
+</ProjectItem>

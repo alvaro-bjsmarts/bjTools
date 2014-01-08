@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJSmarts.ERP.HumanResources", "BJSmarts.ERP.HumanResources\BJSmarts.ERP.HumanResources.csproj", "{4CC55EAB-6258-47E6-85A5-925D1AF22C16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJSmarts.ERP.HR.DataModel", "BJSmarts.ERP.HR.DataModel\BJSmarts.ERP.HR.DataModel.csproj", "{AFC081BD-74C7-44ED-8751-7C9D4689D3E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJSmarts.ERP.HR.TimeSheet", "BJSmarts.ERP.HR.TimeSheet\BJSmarts.ERP.HR.TimeSheet.csproj", "{4509D64A-BEA1-4AAE-AC60-56C5546284A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BJSmarts.ERP.HR.TimerJob", "BJSmarts.ERP.HR.TimerJob\BJSmarts.ERP.HR.TimerJob.csproj", "{7EE3205A-9792-4A31-AA1B-EECAC52A1034}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CC55EAB-6258-47E6-85A5-925D1AF22C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC55EAB-6258-47E6-85A5-925D1AF22C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC55EAB-6258-47E6-85A5-925D1AF22C16}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4CC55EAB-6258-47E6-85A5-925D1AF22C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC55EAB-6258-47E6-85A5-925D1AF22C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC55EAB-6258-47E6-85A5-925D1AF22C16}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AFC081BD-74C7-44ED-8751-7C9D4689D3E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFC081BD-74C7-44ED-8751-7C9D4689D3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFC081BD-74C7-44ED-8751-7C9D4689D3E8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AFC081BD-74C7-44ED-8751-7C9D4689D3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFC081BD-74C7-44ED-8751-7C9D4689D3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFC081BD-74C7-44ED-8751-7C9D4689D3E8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4509D64A-BEA1-4AAE-AC60-56C5546284A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4509D64A-BEA1-4AAE-AC60-56C5546284A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4509D64A-BEA1-4AAE-AC60-56C5546284A9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4509D64A-BEA1-4AAE-AC60-56C5546284A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4509D64A-BEA1-4AAE-AC60-56C5546284A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4509D64A-BEA1-4AAE-AC60-56C5546284A9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7EE3205A-9792-4A31-AA1B-EECAC52A1034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE3205A-9792-4A31-AA1B-EECAC52A1034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE3205A-9792-4A31-AA1B-EECAC52A1034}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7EE3205A-9792-4A31-AA1B-EECAC52A1034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE3205A-9792-4A31-AA1B-EECAC52A1034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE3205A-9792-4A31-AA1B-EECAC52A1034}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

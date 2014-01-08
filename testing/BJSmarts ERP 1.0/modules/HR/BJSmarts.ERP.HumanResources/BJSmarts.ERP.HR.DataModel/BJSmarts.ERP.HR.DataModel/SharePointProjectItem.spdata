@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.BusinessDataConnectivity" FeatureReceiverClass="BJSmarts.ERP.HR.DataModel.Features.Feature1.Feature1EventReceiver" FeatureReceiverAssembly="$SharePoint.Project.AssemblyFullName$" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Farm" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="BJSmarts.ERP.HR.Model.bdcm" Target="BJSmarts.ERP.HR.DataModel\" Type="ElementFile" />
+    <ProjectOutputFile ProjectId="afc081bd-74c7-44ed-8751-7c9d4689d3e8" ProjectPath="BJSmarts.ERP.HR.DataModel.csproj" Target="BdcAssemblies\" Type="ElementFile" />
+  </Files>
+  <FeatureProperties>
+    <FeatureProperty Key="BdcModel1" Value="BdcAssemblies\$SharePoint.Project.AssemblyFileName$" />
+    <FeatureProperty Key="BJSmarts.ERP.HR.ModelLobSystem" Value="BdcAssemblies\$SharePoint.Project.AssemblyFileName$" />
+    <FeatureProperty Key="IncrementalUpdate" Value="true" />
+    <FeatureProperty Key="ModelFileName" Value="BJSmarts.ERP.HR.DataModel\BJSmarts.ERP.HR.Model.bdcm" />
+  </FeatureProperties>
+</ProjectItem>

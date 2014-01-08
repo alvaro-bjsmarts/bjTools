@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="db1459ce-62ae-40a6-bee5-b01a4dd242df" solutionId="db1459ce-62ae-40a6-bee5-b01a4dd242df" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="BJSmarts.ERP.DataModel">
+    <features>
+        <featureReference itemId="b520e6bc-bece-4f57-a9ad-e18e89c42b0b" />
+    </features>
+</package>

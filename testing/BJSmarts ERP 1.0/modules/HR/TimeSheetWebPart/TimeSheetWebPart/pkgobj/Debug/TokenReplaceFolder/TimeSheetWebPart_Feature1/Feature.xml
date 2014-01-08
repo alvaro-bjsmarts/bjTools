@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="0594855a-9068-4f82-9654-5cd29758f2f8" Scope="Site" Title="TimeSheetWebPart Feature1">
+  <ElementManifests>
+    <ElementManifest Location="TimeSheetWebPart\Elements.xml" />
+    <ElementFile Location="TimeSheetWebPart\TimeSheetWebPart.webpart" />
+  </ElementManifests>
+</Feature>
