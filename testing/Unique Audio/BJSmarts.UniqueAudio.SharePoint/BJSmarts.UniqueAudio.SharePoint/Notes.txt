@@ -1,0 +1,6 @@
+﻿1. Create the following lists
+
+Navigation List
+Image Navigation List
+Footer Navigation List
+Site Images List

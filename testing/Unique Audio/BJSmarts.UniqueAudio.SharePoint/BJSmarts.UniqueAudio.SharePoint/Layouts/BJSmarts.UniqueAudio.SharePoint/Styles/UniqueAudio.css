@@ -1,0 +1,690 @@
+﻿
+/* Beginning Basic Styles */
+
+body 
+{    
+    background-image: url('/_layouts/BJSmarts.UniqueAudio.SharePoint/Images/bg.png');
+    background-repeat:repeat;
+}     
+
+.topMain
+{
+    background-image: url('/_layouts/BJSmarts.UniqueAudio.SharePoint/Images/bg-top.png');
+    background-repeat:repeat-x;
+}
+        
+.s4-trc-container-menu {
+    float:none;
+    margin: 0px 0px;
+}
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #297595;
+    text-decoration: none;
+}
+
+.logo
+{
+    margin-bottom: 19px;
+    margin-top: 24px;
+}
+
+.Social
+{
+    background-image: url("/_layouts/BJSmarts.UniqueAudio.SharePoint/Images/top_bg_search-2.png") ;
+    float: right;
+    height: 41px;
+    padding: 12px 0 0 19px;
+    width: 300px;
+    background-repeat:no-repeat;
+    
+}
+
+.s4-signInLink
+{
+    color:#ffffff !important;
+}
+
+.contacUs
+{
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0 5px 0 0;
+    text-align: right;
+    margin: 20px 0 0;
+}
+.address
+{
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.menuImage
+{
+    float:right;
+    margin-right: 12px;
+}
+
+.ms-linksection-level1 h3
+{
+    color:#ffffff !important;
+}
+.backgroundTd
+{
+    background-image: url('/_layouts/BJSmarts.UniqueAudio.SharePoint/Images/bg.png');
+    background-repeat:repeat;
+}
+
+.custom-breadcrumb 
+{
+    background-image: url('/_layouts/BJSmarts.UniqueAudio.SharePoint/Images/bg.png') !important;
+    background-repeat:repeat;
+    color:#ffffff !important;
+    margin-left: 15px !important ;
+    width:975px;
+}
+
+/* End Basic Styles */
+
+
+/* Beginning Top Bar */
+
+.topNav
+{
+    *position:relative;
+    *top:-1px;
+    width: 100%;  
+}
+.topNavItem
+{	
+	color: #FFFFFF !important;
+    display: block;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 13px;
+    font-weight: bold;
+	padding: 10.5px 16px;
+	
+}
+.topNavItem a {
+    display: block;
+    font-weight: bold;  
+    text-align: center;
+    text-shadow:1px;    
+}
+.topNavSelected
+{	
+	 font-family: Arial,Helvetica,sans-serif !important;
+    color: #DB3232 !impotant;
+    background-color:#171717;
+    padding: 10.5px 15.5px;
+    border-left: 1px solid #414143;
+    border-right: 1px solid #414143;
+}
+
+.topNavHover
+{
+    font-family: Arial,Helvetica,sans-serif !important;
+    color: #DB3232 !impotant;
+    background-color:#171717;
+    padding: 10.5px 15.5px;
+    border-left: 1px solid #414143;
+    border-right: 1px solid #414143;
+}
+
+.topNavHover a
+{
+    color: #DB3232 !important;
+    background-color:#171717;
+    background-position:top right;
+}
+
+.topNavFlyOutsItem {
+    background-color: #38383B;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif !important;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    min-width: 220px;
+    padding-left: 10px;
+}
+
+.topNavFlyOutsHover {
+    background-color: #52000B;
+    border-right: 1px solid #505053;
+    color: #FFFFFF;
+    border-left: 5px solid #75333C;
+    padding-left: 2.5px !important;
+}
+
+topNavFlyOutsHover a {
+    padding: 6px 0px ;
+}
+
+.topNavFlyOuts {
+    background-color: #191919 !important;
+    color: #FFFFFF;
+    padding: 0 7px 3px;
+}
+
+.topNavFlyOutsItem a {
+    color: #FFFFFF !important;
+    display: block;
+    padding: 6px 0px;
+}
+
+.topNavRoundLeft, .topNavRoundRight
+{
+    width:0px;
+}
+
+/* End Top Bar */
+
+
+/* Down Footer Menu Bar */
+
+.footerNavItem
+{
+    color:#FFFFFF !important;
+    margin: 0 10px;
+    padding: 0;
+    text-decoration:none;
+    font-size: 12px;
+    line-height: 30px
+}
+
+.footerNavHover
+{
+    color:#DB3232 !important;
+}
+
+
+/* End Down Footer Menu Bar */
+
+.ImageNavItem
+{
+     margin: 0 2px;
+}
+
+/* Beginning Left Bar */
+
+.leftStaticItem
+{
+    color: #000000;
+}
+.leftNav
+{
+	margin-right:15px;
+	margin-left:7px;
+	margin-top:4px;
+	padding-top:0px;
+	border:1px #8997BC solid;
+	background-color: #D0D6E3;	
+	width:160px;
+}
+.leftNavSpacer
+{
+	width:160px;
+}
+.leftNavSelected
+{
+	background-color: #B2BCD3;
+	color: #ffffff;
+	border-top:1px #B2BCDD solid;
+	border-bottom:1px #B2BCDD solid;
+	line-height:14pt;
+}
+.leftNav1, .leftNav2, .leftNav3
+{
+	color: #354260;
+}
+.leftNav1
+{
+	font-family: tahoma;  
+	font-size: 8pt; 
+	font-weight:bold; 
+	line-height:14pt;
+}
+.leftNav1 a
+{
+	font-family: tahoma;  
+	font-size: 9pt; 
+	font-weight:bold; 
+	padding-left:5px;
+	display:block;
+	padding-right:10px;
+}
+.leftNav2
+{	
+	font-family: tahoma;  
+	font-size: 8pt; 
+	line-height:14pt;
+}
+.leftNav2 a
+{
+	padding-left:10px;
+	display:block;
+	padding-right:10px;
+}
+.leftNav3
+{	
+	font-family: tahoma;  
+	font-size: 8pt; 
+	line-height:14pt;
+}
+.leftNav3 a
+{
+	padding-left:18px;
+	display:block;
+	padding-right:10px;
+}
+.leftNavHover
+{
+	background-color: #c8c8c8;
+	color:#FFFFFF;
+}
+.leftNavFlyOuts
+{
+	font-family:Tahoma; 
+	font-size:8pt; 
+	border-top:1px #CBD1E0 solid;
+	border-left:1px #CBD1E0 solid;
+	border-right:1px #CBD1E0 solid;	
+}
+.leftNavFlyOutsItem
+{
+	border-bottom:1px #CBD1E0 solid;
+	background-color: #ECEFF3;
+}
+.leftNavFlyOutsItem a
+{
+	padding:1px 5px 1px 5px;
+	display:block;
+	color:ff#f;
+	*width:100px;
+	min-width:100px;
+}
+.leftNavFlyOutsHover
+{
+	background-color: #fff;
+}
+
+/* End Left Bar */
+    
+/* style site actions and system account */
+    
+.ms-siteactionsmenu .ms-viewselector-arrow {
+    display: inline-block;
+    margin: 6px 0 1px;
+    vertical-align: top;
+}
+        
+.ms-siteactionsmenu > span > a > span {
+    display: inline-block;
+    margin: 0 0 0 2px;
+}
+
+.ms-siteactionsmenuinner {
+    background:none;
+    border-color:transparent;
+}   
+    
+    
+.ms-siteactionsmenuhover {
+    background: none;
+    border-color:transparent;
+}
+
+
+.ms-welcomeMenu.ms-SpLinkButtonActive {
+    background: none;
+    border-color: transparent;
+}
+        
+.ms-siteactionsmenu > span > a {
+    color: #999999;
+}
+
+.ms-welcomeMenu a:link {
+    color: #999999;
+}
+    
+.ms-welcomeMenu.ms-SpLinkButtonActive a:link {
+    color: #999999;
+}
+    
+.ms-siteactionsmenu {
+    font-size: 10px;
+}
+
+.ms-siteactionsmenuinner, .ms-siteactionsmenuhover {
+    border-style: none;
+    font-family: arial;
+}
+    
+.ms-siteactionsmenuinner, .ms-siteactionsmenuhover {
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    font-family: "Segoe UI",Tahoma,Verdana,sans-serif;
+    height: 16px;
+    margin-right: 0;
+    padding: 0;
+}
+    
+/* welcome menu */ 
+       
+.ms-welcomeMenu {
+    font-family: arial;
+    font-size: 10px;
+}
+
+.ms-welcomeMenu {
+    border: 1px solid transparent;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 10px;
+    margin: 0;
+    padding: 0 0 3px 0;
+}
+    
+    
+/* Ribbon color */
+    
+body #s4-ribbonrow {
+    background-color:#860119;
+    min-height: 43px;
+    overflow-y: hidden;  
+    margin-left: 15px !important ;
+    width:980px;
+}
+
+/* navigation */
+
+.s4-tn li.static > .menu-item {
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    display: inline-block;
+    height: 15px;
+    padding: 10px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+    
+.menu ul, .menu li {
+    background: none repeat scroll 0 0 #C6C6C6;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-horizontal {
+    display: table;
+    padding: 0 0 0 0.2px;
+}
+
+.s4-tn li.static > .menu-item 
+{
+    border-bottom: 0 none;
+    border-right: 2px solid #FFFFFF;
+    border-top: 0 none;
+    color: #006089;
+    display: inline-block;
+    font-size: 11pt;
+    font-family:Tahoma;
+    height: 22px;
+    padding:10px 30px 10px 29.8px;
+    vertical-align: middle;
+    white-space: nowrap;
+}    
+
+.s4-tn li.static > a:hover {
+    color: #fff;
+    text-decoration: none;    
+}
+
+
+.s4-toplinks .s4-tn a.selected {
+    background: #CCcccc;
+    color: #003759;   
+}
+
+.s4-toplinks .s4-tn a.selected:hover {
+    color: #003759;
+}
+
+s4-tn li.static > a:active {
+    color: #ccc;
+    text-decoration: none;    
+}
+
+
+#Menu
+{ 
+    list-style:none;
+    font-size:12px;
+    font-weight:bold;
+}
+                
+#Firstlink a:link
+{
+    font-size:12px;
+    font-weight:bold;
+    color:#4B4B4B;
+}
+            
+#Firstlink    A:visited
+{
+    font-size:12px;
+    font-weight:bold;
+    color:#4B4B4B;
+}            
+            
+.SecondLink
+{
+    float:right;
+}
+
+#Menu1
+{ 
+    list-style:none;
+    font-size:12px;
+    font-weight:bold;
+}
+                
+
+#Menu1 a:visited {
+    color: #4B4B4B;
+}
+                
+.Marmenu1
+{
+    width:500px;
+}
+                    
+table.scorecard
+{
+	width: 100%;
+	background-color: #fafafa;
+	border: 0px #000000 solid;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+/* Begin scorecard */
+
+td.scorecardTitle
+{    
+	background-color: #004773;
+	border: 0px #000000 solid;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding: 14px;
+}
+td.scorecardPicture
+{
+	background-color: #004773;
+	border: 0px #000000 solid;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 12px;
+	color: #FFFFFF;
+	padding: 14px;
+}
+td.scorecardDescription
+{
+	background-color: #004773;
+	border: 0px #004773 solid;
+	font-family:  Tahoma;	
+	font-size: 11px;
+	color: #FFFFFF;
+	padding: 0 14px;
+}
+td.scorecardLink
+{
+	background-color: #004773;
+	border: 0px #000000 solid;
+	font-family: Book Antiqua;
+	font-weight: bold;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+/* End scorecard */
+
+/* Begin symbolcard */
+
+table.symbolcard
+{
+	width: 80%;
+	background-color: #fafafa;
+	border: 0px #000000 solid;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}           
+
+td.symbolcardTitle
+{
+  font-family: Tahoma; 
+  font-size: 14px;
+}
+
+td.symbolcardLink
+{
+    color: #3A6AA8; 
+    font-family: Tahoma; 
+    font-weight: bold;
+}                     
+
+/* End symbolcard */
+               
+               
+.borderMenu
+{
+    border:1px #1C2025 solid;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    padding: 0 0 0 3px;
+}        
+    
+.buttonVerMas
+{
+    border:1px solid #111111 !important;
+    color:#F8F8F8 !important;
+    display:inline-block;
+    font-size:1em;
+    line-height:1.25em;
+    margin:0.42em 0.83em 0.42em 0;
+    padding:0.83em 1.5em;
+    text-decoration:none !important;
+    background-color:#111111 !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    
+    }
+    
+.titlewidget
+{    
+    background: url("/_layouts/BJSmartsMasterPage/Images/title-bg.png") repeat-x scroll 0 0 #F0F0F0;
+    border-bottom: 1px solid #EAEAEA;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 14px;  
+    padding: 0 10px 10px 10px;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+.divwidget ul.simple-contact li 
+{
+    background: url("../images/parts/simple-contact.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    line-height: 20px;
+    margin: 2px 0;
+    padding: 0 0 0 30px;
+   
+}
+       
+.divwidget
+{ 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid rgb(234, 234, 234);
+    width:250px;
+    }    
+    
+ .divwidget ul.simple-contact   
+ {
+     list-style:none outside;
+     padding:0;
+     margin:0; 
+ }
+
+.footerlist
+{
+    list-style:none outside;
+    margin:20px 0 0 0;
+}
+
+.footerlist li
+{
+    margin:10px;
+}
+.footerlistTitle
+{
+    font-family: Droid Sans,Arial,sans-serif;
+    font-size: 18px;
+    margin:30px 0 0 25px;
+    color: #444444    
+}
+
+.divfooter
+{
+    float: left;
+    margin-right: 4%;
+    min-height: 200px;
+    
+}

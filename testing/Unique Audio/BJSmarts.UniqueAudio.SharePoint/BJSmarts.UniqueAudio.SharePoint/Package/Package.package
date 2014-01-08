@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="09b4b662-3ce8-4cb3-959c-f2c9cc262e1d" solutionId="09b4b662-3ce8-4cb3-959c-f2c9cc262e1d" resetWebServer="false" name="BJSmarts.UniqueAudio.SharePoint" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="6fc69981-31b1-43dd-9b30-f5ca8b8cc843" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="d87f9de3-1439-4600-9513-36650c20bf98" />
+  </projectItems>
+</package>

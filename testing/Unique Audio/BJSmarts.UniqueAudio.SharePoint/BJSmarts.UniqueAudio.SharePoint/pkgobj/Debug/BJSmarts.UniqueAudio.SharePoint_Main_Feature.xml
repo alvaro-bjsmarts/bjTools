@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="BJSmarts Unique Audio SharePoint  Web Feature" Description="This feature will enable all web features for Unique Audio Main Site" Id="9c0cef28-b876-4238-a56d-9a60efd6e021" ReceiverAssembly="BJSmarts.UniqueAudio.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d3ad0a2a75a890b1" ReceiverClass="BJSmarts.UniqueAudio.SharePoint.Features.Main.MainEventReceiver" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="MasterPage\Elements.xml" />
+    <ElementFile Location="MasterPage\UniqueMasterPage.master" />
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Home.aspx" />
+    <ElementFile Location="Pages\about.aspx" />
+    <ElementFile Location="Pages\services.aspx" />
+    <ElementFile Location="Pages\gallery.aspx" />
+    <ElementFile Location="Pages\reviews.aspx" />
+    <ElementFile Location="Pages\contact.aspx" />
+    <ElementFile Location="Pages\faqs.aspx" />
+    <ElementFile Location="Pages\specials.aspx" />
+  </ElementManifests>
+</Feature>

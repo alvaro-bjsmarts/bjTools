@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="09b4b662-3ce8-4cb3-959c-f2c9cc262e1d" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="BJSmarts.UniqueAudio.SharePoint.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\bg-top.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\bg.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\icon_fb.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\icon_mail.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\icon_twit.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\icon_youtube.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\logo_unique-audio.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\logo_uniqueaudio-small.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\shadow-top.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\shadow_bg.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\shadow_bottom.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\top_bg_search-2.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Images\user_gray_chat.png" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Scripts\jquery-1.10.2.min.js" />
+    <TemplateFile Location="Layouts\BJSmarts.UniqueAudio.SharePoint\Styles\UniqueAudio.css" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="BJSmarts.UniqueAudio.SharePoint_Main\Feature.xml" />
+  </FeatureManifests>
+</Solution>

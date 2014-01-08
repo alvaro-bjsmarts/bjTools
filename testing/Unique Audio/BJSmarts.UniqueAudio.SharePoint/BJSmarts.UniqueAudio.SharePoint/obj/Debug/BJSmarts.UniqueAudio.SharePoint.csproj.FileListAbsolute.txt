@@ -1,0 +1,6 @@
+C:\Projects\Unique Audio\BJSmarts.UniqueAudio.SharePoint\BJSmarts.UniqueAudio.SharePoint\bin\Debug\BJSmarts.UniqueAudio.SharePoint.dll
+C:\Projects\Unique Audio\BJSmarts.UniqueAudio.SharePoint\BJSmarts.UniqueAudio.SharePoint\bin\Debug\BJSmarts.UniqueAudio.SharePoint.pdb
+C:\Projects\Unique Audio\BJSmarts.UniqueAudio.SharePoint\BJSmarts.UniqueAudio.SharePoint\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Projects\Unique Audio\BJSmarts.UniqueAudio.SharePoint\BJSmarts.UniqueAudio.SharePoint\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\Unique Audio\BJSmarts.UniqueAudio.SharePoint\BJSmarts.UniqueAudio.SharePoint\obj\Debug\BJSmarts.UniqueAudio.SharePoint.dll
+C:\Projects\Unique Audio\BJSmarts.UniqueAudio.SharePoint\BJSmarts.UniqueAudio.SharePoint\obj\Debug\BJSmarts.UniqueAudio.SharePoint.pdb
